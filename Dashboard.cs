@@ -28,5 +28,12 @@ namespace Goodness_Pharmacy
             logsign.Show();
             this.Hide();
         }
+
+        private void bunifuButton22_Click(object sender, EventArgs e)
+        {
+            Inventory inventory = new Inventory();
+            inventory.Show();
+            this.Hide();
+        }
     }
 }
