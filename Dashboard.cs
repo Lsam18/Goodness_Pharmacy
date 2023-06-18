@@ -35,5 +35,39 @@ namespace Goodness_Pharmacy
             inventory.Show();
             this.Hide();
         }
+
+        private void bunifuButton23_Click(object sender, EventArgs e)
+        {
+            Report report = new Report();
+            report.Show();
+            this.Hide();
+        }
+
+        private void bunifuButton24_Click(object sender, EventArgs e)
+        {
+            Customer customer = new Customer();
+            customer.Show();
+            this.Hide();
+        }
+
+        private void bunifuButton25_Click(object sender, EventArgs e)
+        {
+            Supplier supplier = new Supplier();
+            supplier.Show();
+        }
+
+        private void bunifuButton26_Click(object sender, EventArgs e)
+        {
+            Purchase purchase = new Purchase();
+            purchase.Show();
+            this.Hide();
+        }
+
+        private void bunifuButton27_Click(object sender, EventArgs e)
+        {
+            Sales sales = new Sales();
+            sales.Show();
+            this.Hide();
+        }
     }
 }

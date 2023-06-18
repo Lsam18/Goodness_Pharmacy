@@ -53,6 +53,7 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.bunifuShapes1 = new Bunifu.UI.WinForms.BunifuShapes();
             this.bunifuButton29 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.bunifuButton28 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
@@ -101,6 +102,7 @@
             this.bunifuButton214 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.bunifuPanel8 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuPanel12 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.bunifuLabel35 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel34 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel28 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel26 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -131,8 +133,6 @@
             this.bunifuButton215 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.bunifuLabel16 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuShapes2 = new Bunifu.UI.WinForms.BunifuShapes();
-            this.bunifuLabel35 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.bunifuPanel2.SuspendLayout();
@@ -189,6 +189,23 @@
             this.bunifuPanel1.ShowBorders = true;
             this.bunifuPanel1.Size = new System.Drawing.Size(299, 804);
             this.bunifuPanel1.TabIndex = 0;
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.linkLabel1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.ForeColor = System.Drawing.Color.Gold;
+            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabel1.LinkColor = System.Drawing.Color.Gold;
+            this.linkLabel1.Location = new System.Drawing.Point(101, 127);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(110, 21);
+            this.linkLabel1.TabIndex = 25;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Super Admin";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // bunifuShapes1
             // 
@@ -473,6 +490,7 @@
             this.bunifuButton27.TextMarginLeft = 0;
             this.bunifuButton27.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton27.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton27.Click += new System.EventHandler(this.bunifuButton27_Click);
             // 
             // bunifuButton26
             // 
@@ -562,6 +580,7 @@
             this.bunifuButton26.TextMarginLeft = 0;
             this.bunifuButton26.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton26.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton26.Click += new System.EventHandler(this.bunifuButton26_Click);
             // 
             // bunifuButton25
             // 
@@ -651,6 +670,7 @@
             this.bunifuButton25.TextMarginLeft = 0;
             this.bunifuButton25.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton25.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton25.Click += new System.EventHandler(this.bunifuButton25_Click);
             // 
             // bunifuButton24
             // 
@@ -740,6 +760,7 @@
             this.bunifuButton24.TextMarginLeft = 0;
             this.bunifuButton24.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton24.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton24.Click += new System.EventHandler(this.bunifuButton24_Click);
             // 
             // bunifuButton23
             // 
@@ -829,6 +850,7 @@
             this.bunifuButton23.TextMarginLeft = 0;
             this.bunifuButton23.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton23.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton23.Click += new System.EventHandler(this.bunifuButton23_Click);
             // 
             // bunifuButton22
             // 
@@ -1030,7 +1052,7 @@
             this.bunifuPictureBox1.AllowFocused = false;
             this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.bunifuPictureBox1.AutoSizeHeight = true;
-            this.bunifuPictureBox1.BorderRadius = 8;
+            this.bunifuPictureBox1.BorderRadius = 25;
             this.bunifuPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox1.Image")));
             this.bunifuPictureBox1.IsCircle = false;
             this.bunifuPictureBox1.Location = new System.Drawing.Point(38, 97);
@@ -2068,10 +2090,10 @@
             this.bunifuPanel8.Controls.Add(this.bunifuPanel11);
             this.bunifuPanel8.Controls.Add(this.bunifuPanel10);
             this.bunifuPanel8.Controls.Add(this.bunifuPanel9);
-            this.bunifuPanel8.Location = new System.Drawing.Point(297, 420);
+            this.bunifuPanel8.Location = new System.Drawing.Point(290, 420);
             this.bunifuPanel8.Name = "bunifuPanel8";
             this.bunifuPanel8.ShowBorders = true;
-            this.bunifuPanel8.Size = new System.Drawing.Size(1161, 383);
+            this.bunifuPanel8.Size = new System.Drawing.Size(1168, 383);
             this.bunifuPanel8.TabIndex = 54;
             // 
             // bunifuPanel12
@@ -2094,6 +2116,22 @@
             this.bunifuPanel12.ShowBorders = true;
             this.bunifuPanel12.Size = new System.Drawing.Size(490, 136);
             this.bunifuPanel12.TabIndex = 1;
+            // 
+            // bunifuLabel35
+            // 
+            this.bunifuLabel35.AllowParentOverrides = false;
+            this.bunifuLabel35.AutoEllipsis = false;
+            this.bunifuLabel35.CursorType = null;
+            this.bunifuLabel35.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel35.ForeColor = System.Drawing.Color.Black;
+            this.bunifuLabel35.Location = new System.Drawing.Point(320, 72);
+            this.bunifuLabel35.Name = "bunifuLabel35";
+            this.bunifuLabel35.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel35.Size = new System.Drawing.Size(135, 25);
+            this.bunifuLabel35.TabIndex = 65;
+            this.bunifuLabel35.Text = "Adalimumab";
+            this.bunifuLabel35.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel35.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // bunifuLabel34
             // 
@@ -2845,39 +2883,6 @@
             this.bunifuShapes2.Size = new System.Drawing.Size(487, 10);
             this.bunifuShapes2.TabIndex = 0;
             this.bunifuShapes2.Text = "bunifuShapes2";
-            // 
-            // bunifuLabel35
-            // 
-            this.bunifuLabel35.AllowParentOverrides = false;
-            this.bunifuLabel35.AutoEllipsis = false;
-            this.bunifuLabel35.CursorType = null;
-            this.bunifuLabel35.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel35.ForeColor = System.Drawing.Color.Black;
-            this.bunifuLabel35.Location = new System.Drawing.Point(320, 72);
-            this.bunifuLabel35.Name = "bunifuLabel35";
-            this.bunifuLabel35.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel35.Size = new System.Drawing.Size(135, 25);
-            this.bunifuLabel35.TabIndex = 65;
-            this.bunifuLabel35.Text = "Adalimumab";
-            this.bunifuLabel35.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel35.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.linkLabel1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.ForeColor = System.Drawing.Color.Gold;
-            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabel1.LinkColor = System.Drawing.Color.Gold;
-            this.linkLabel1.Location = new System.Drawing.Point(101, 127);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(110, 21);
-            this.linkLabel1.TabIndex = 25;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Super Admin";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // Dashboard
             // 
