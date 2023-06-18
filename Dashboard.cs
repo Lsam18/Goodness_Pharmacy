@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,6 +13,8 @@ namespace Goodness_Pharmacy
 {
     public partial class Dashboard : Form
     {
+        
+
         public Dashboard()
         {
             InitializeComponent();
@@ -26,7 +29,9 @@ namespace Goodness_Pharmacy
         {
             Login_and_Signup logsign = new Login_and_Signup();
             logsign.Show();
-            this.Hide();
+
+           
+
         }
 
         private void bunifuButton22_Click(object sender, EventArgs e)

@@ -17,6 +17,10 @@ namespace Goodness_Pharmacy
             InitializeComponent();
         }
 
-        
+        private void bunifuButton211_Click(object sender, EventArgs e)
+        {
+            Bill bill = new Bill();
+            bill.Show();
+        }   
     }
 }

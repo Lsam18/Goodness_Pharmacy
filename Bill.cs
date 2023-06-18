@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Goodness_Pharmacy
 {
-    public partial class Employee_SignUp : Form
+    public partial class Bill : Form
     {
-        public Employee_SignUp()
+        public Bill()
         {
             InitializeComponent();
         }
 
-        private void bunifuImageButton1_Click_1(object sender, EventArgs e)
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
             this.Close();
         }
