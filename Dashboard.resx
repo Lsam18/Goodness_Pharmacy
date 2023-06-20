@@ -120,7 +120,20 @@
   <metadata name="bunifuElipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1460, 802</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="bunifuPanel8.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
   <data name="bunifuPanel8.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABJAAAAF/CAYAAAAW+jPZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -281,6 +294,9 @@
         AgQIEPinwF/sUbWL2MCgcAAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="bunifuPanel8.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
   <data name="bunifuPanel12.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAeoAAACICAYAAAAoJqjfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -314,17 +330,141 @@
         KWTXFpsAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="bunifuPanel12.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
   <data name="bunifuLabel35.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 15.75pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel35.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 15.75pt, style=Bold</value>
+  </data>
+  <data name="bunifuLabel35.Location" type="System.Drawing.Point, System.Drawing">
+    <value>320, 72</value>
+  </data>
+  <data name="bunifuLabel35.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bunifuLabel35.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 25</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="bunifuLabel35.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="bunifuLabel35.Text" xml:space="preserve">
+    <value>Adalimumab</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel35.Name" xml:space="preserve">
+    <value>bunifuLabel35</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel35.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel35.Parent" xml:space="preserve">
+    <value>bunifuPanel12</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel35.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="bunifuLabel34.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 20.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
+  <data name="bunifuLabel34.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 20.25pt, style=Bold</value>
+  </data>
+  <data name="bunifuLabel34.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 67</value>
+  </data>
+  <data name="bunifuLabel34.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bunifuLabel34.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 32</value>
+  </data>
+  <data name="bunifuLabel34.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="bunifuLabel34.Text" xml:space="preserve">
+    <value>845</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel34.Name" xml:space="preserve">
+    <value>bunifuLabel34</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel34.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel34.Parent" xml:space="preserve">
+    <value>bunifuPanel12</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel34.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="bunifuLabel28.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
+  <data name="bunifuLabel28.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt, style=Bold</value>
+  </data>
+  <data name="bunifuLabel28.Location" type="System.Drawing.Point, System.Drawing">
+    <value>298, 105</value>
+  </data>
+  <data name="bunifuLabel28.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bunifuLabel28.Size" type="System.Drawing.Size, System.Drawing">
+    <value>179, 19</value>
+  </data>
+  <data name="bunifuLabel28.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="bunifuLabel28.Text" xml:space="preserve">
+    <value>Frequently bought Item</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel28.Name" xml:space="preserve">
+    <value>bunifuLabel28</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel28.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel28.Parent" xml:space="preserve">
+    <value>bunifuPanel12</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel28.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="bunifuLabel26.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel26.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt, style=Bold</value>
+  </data>
+  <data name="bunifuLabel26.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 105</value>
+  </data>
+  <data name="bunifuLabel26.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bunifuLabel26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 19</value>
+  </data>
+  <data name="bunifuLabel26.TabIndex" type="System.Int32, mscorlib">
+    <value>61</value>
+  </data>
+  <data name="bunifuLabel26.Text" xml:space="preserve">
+    <value>Total no of Customers</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel26.Name" xml:space="preserve">
+    <value>bunifuLabel26</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel26.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel26.Parent" xml:space="preserve">
+    <value>bunifuPanel12</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel26.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="bunifuButton216.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -335,8 +475,107 @@
         c+8AAdkOTtYAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="bunifuButton216.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 11.25pt</value>
+  </data>
+  <data name="bunifuButton216.Location" type="System.Drawing.Point, System.Drawing">
+    <value>287, 4</value>
+  </data>
+  <data name="bunifuButton216.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 39</value>
+  </data>
+  <data name="bunifuButton216.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton216.Name" xml:space="preserve">
+    <value>bunifuButton216</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton216.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuButton.BunifuButton2, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton216.Parent" xml:space="preserve">
+    <value>bunifuPanel12</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton216.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="bunifuLabel19.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel19.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 14.25pt, style=Bold</value>
+  </data>
+  <data name="bunifuLabel19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="bunifuLabel19.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bunifuLabel19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 23</value>
+  </data>
+  <data name="bunifuLabel19.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="bunifuLabel19.Text" xml:space="preserve">
+    <value>Customers</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel19.Name" xml:space="preserve">
+    <value>bunifuLabel19</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel19.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel19.Parent" xml:space="preserve">
+    <value>bunifuPanel12</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel19.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="bunifuShapes5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 44</value>
+  </data>
+  <data name="bunifuShapes5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>487, 10</value>
+  </data>
+  <data name="bunifuShapes5.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="bunifuShapes5.Text" xml:space="preserve">
+    <value>bunifuShapes5</value>
+  </data>
+  <data name="&gt;&gt;bunifuShapes5.Name" xml:space="preserve">
+    <value>bunifuShapes5</value>
+  </data>
+  <data name="&gt;&gt;bunifuShapes5.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuShapes, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuShapes5.Parent" xml:space="preserve">
+    <value>bunifuPanel12</value>
+  </data>
+  <data name="&gt;&gt;bunifuShapes5.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="bunifuPanel12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>624, 233</value>
+  </data>
+  <data name="bunifuPanel12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>490, 136</value>
+  </data>
+  <data name="bunifuPanel12.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel12.Name" xml:space="preserve">
+    <value>bunifuPanel12</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel12.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuPanel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel12.Parent" xml:space="preserve">
+    <value>bunifuPanel8</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel12.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="bunifuPanel11.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -371,20 +610,272 @@
         KWTXFpsAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="bunifuPanel11.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
   <data name="bunifuLabel33.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 20.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel33.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 20.25pt, style=Bold</value>
+  </data>
+  <data name="bunifuLabel33.Location" type="System.Drawing.Point, System.Drawing">
+    <value>367, 63</value>
+  </data>
+  <data name="bunifuLabel33.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bunifuLabel33.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 32</value>
+  </data>
+  <data name="bunifuLabel33.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="bunifuLabel33.Text" xml:space="preserve">
+    <value>5288</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel33.Name" xml:space="preserve">
+    <value>bunifuLabel33</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel33.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel33.Parent" xml:space="preserve">
+    <value>bunifuPanel11</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel33.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="bunifuLabel32.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 20.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
+  <data name="bunifuLabel32.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 20.25pt, style=Bold</value>
+  </data>
+  <data name="bunifuLabel32.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 63</value>
+  </data>
+  <data name="bunifuLabel32.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bunifuLabel32.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 32</value>
+  </data>
+  <data name="bunifuLabel32.TabIndex" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="bunifuLabel32.Text" xml:space="preserve">
+    <value>70,856</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel32.Name" xml:space="preserve">
+    <value>bunifuLabel32</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel32.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel32.Parent" xml:space="preserve">
+    <value>bunifuPanel11</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel32.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="bunifuLabel27.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel27.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt, style=Bold</value>
+  </data>
+  <data name="bunifuLabel27.Location" type="System.Drawing.Point, System.Drawing">
+    <value>316, 101</value>
+  </data>
+  <data name="bunifuLabel27.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bunifuLabel27.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 19</value>
+  </data>
+  <data name="bunifuLabel27.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="bunifuLabel27.Text" xml:space="preserve">
+    <value>Invoices Generated</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel27.Name" xml:space="preserve">
+    <value>bunifuLabel27</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel27.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel27.Parent" xml:space="preserve">
+    <value>bunifuPanel11</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel27.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="bunifuLabel25.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
+  <data name="bunifuLabel25.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt, style=Bold</value>
+  </data>
+  <data name="bunifuLabel25.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 101</value>
+  </data>
+  <data name="bunifuLabel25.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bunifuLabel25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 19</value>
+  </data>
+  <data name="bunifuLabel25.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="bunifuLabel25.Text" xml:space="preserve">
+    <value>Qty of Medicines Sold</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel25.Name" xml:space="preserve">
+    <value>bunifuLabel25</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel25.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel25.Parent" xml:space="preserve">
+    <value>bunifuPanel11</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel25.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="bunifuDropdown3.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="bunifuDropdown3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="bunifuDropdown3.ItemHeight" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="bunifuDropdown3.Items" xml:space="preserve">
+    <value>June 2024</value>
+  </data>
+  <data name="bunifuDropdown3.Items1" xml:space="preserve">
+    <value>July 2024</value>
+  </data>
+  <data name="bunifuDropdown3.Items2" xml:space="preserve">
+    <value>August 2024</value>
+  </data>
+  <data name="bunifuDropdown3.Items3" xml:space="preserve">
+    <value>September 2024</value>
+  </data>
+  <data name="bunifuDropdown3.Items4" xml:space="preserve">
+    <value>October 2024</value>
+  </data>
+  <data name="bunifuDropdown3.Items5" xml:space="preserve">
+    <value>November 2024</value>
+  </data>
+  <data name="bunifuDropdown3.Items6" xml:space="preserve">
+    <value>December 2024</value>
+  </data>
+  <data name="bunifuDropdown3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>377, 7</value>
+  </data>
+  <data name="bunifuDropdown3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 32</value>
+  </data>
+  <data name="bunifuDropdown3.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="bunifuDropdown3.Text" xml:space="preserve">
+    <value>June 2023</value>
+  </data>
+  <data name="&gt;&gt;bunifuDropdown3.Name" xml:space="preserve">
+    <value>bunifuDropdown3</value>
+  </data>
+  <data name="&gt;&gt;bunifuDropdown3.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuDropdown, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuDropdown3.Parent" xml:space="preserve">
+    <value>bunifuPanel11</value>
+  </data>
+  <data name="&gt;&gt;bunifuDropdown3.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="bunifuLabel17.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel17.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 14.25pt, style=Bold</value>
+  </data>
+  <data name="bunifuLabel17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 10</value>
+  </data>
+  <data name="bunifuLabel17.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bunifuLabel17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 23</value>
+  </data>
+  <data name="bunifuLabel17.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="bunifuLabel17.Text" xml:space="preserve">
+    <value>Quick Report</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel17.Name" xml:space="preserve">
+    <value>bunifuLabel17</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel17.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel17.Parent" xml:space="preserve">
+    <value>bunifuPanel11</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel17.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="bunifuShapes3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 39</value>
+  </data>
+  <data name="bunifuShapes3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>487, 10</value>
+  </data>
+  <data name="bunifuShapes3.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="bunifuShapes3.Text" xml:space="preserve">
+    <value>bunifuShapes3</value>
+  </data>
+  <data name="&gt;&gt;bunifuShapes3.Name" xml:space="preserve">
+    <value>bunifuShapes3</value>
+  </data>
+  <data name="&gt;&gt;bunifuShapes3.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuShapes, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuShapes3.Parent" xml:space="preserve">
+    <value>bunifuPanel11</value>
+  </data>
+  <data name="&gt;&gt;bunifuShapes3.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="bunifuPanel11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>624, 39</value>
+  </data>
+  <data name="bunifuPanel11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>490, 136</value>
+  </data>
+  <data name="bunifuPanel11.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel11.Name" xml:space="preserve">
+    <value>bunifuPanel11</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel11.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuPanel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel11.Parent" xml:space="preserve">
+    <value>bunifuPanel8</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel11.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="bunifuPanel10.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -419,17 +910,140 @@
         KWTXFpsAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="bunifuPanel10.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
   <data name="bunifuLabel31.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 20.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel31.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 20.25pt, style=Bold</value>
+  </data>
+  <data name="bunifuLabel31.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 67</value>
+  </data>
+  <data name="bunifuLabel31.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bunifuLabel31.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 32</value>
+  </data>
+  <data name="bunifuLabel31.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="bunifuLabel31.Text" xml:space="preserve">
+    <value>05</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel31.Name" xml:space="preserve">
+    <value>bunifuLabel31</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel31.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel31.Parent" xml:space="preserve">
+    <value>bunifuPanel10</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel31.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="bunifuLabel30.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 20.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
+  <data name="bunifuLabel30.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 20.25pt, style=Bold</value>
+  </data>
+  <data name="bunifuLabel30.Location" type="System.Drawing.Point, System.Drawing">
+    <value>69, 67</value>
+  </data>
+  <data name="bunifuLabel30.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bunifuLabel30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 32</value>
+  </data>
+  <data name="bunifuLabel30.TabIndex" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="bunifuLabel30.Text" xml:space="preserve">
+    <value>04</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel30.Name" xml:space="preserve">
+    <value>bunifuLabel30</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel30.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel30.Parent" xml:space="preserve">
+    <value>bunifuPanel10</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel30.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="bunifuLabel24.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
+  <data name="bunifuLabel24.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt, style=Bold</value>
+  </data>
+  <data name="bunifuLabel24.Location" type="System.Drawing.Point, System.Drawing">
+    <value>310, 107</value>
+  </data>
+  <data name="bunifuLabel24.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bunifuLabel24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 19</value>
+  </data>
+  <data name="bunifuLabel24.TabIndex" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="bunifuLabel24.Text" xml:space="preserve">
+    <value>Total no of Users</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel24.Name" xml:space="preserve">
+    <value>bunifuLabel24</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel24.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel24.Parent" xml:space="preserve">
+    <value>bunifuPanel10</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel24.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="bunifuLabel23.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel23.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt, style=Bold</value>
+  </data>
+  <data name="bunifuLabel23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 107</value>
+  </data>
+  <data name="bunifuLabel23.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bunifuLabel23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 19</value>
+  </data>
+  <data name="bunifuLabel23.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="bunifuLabel23.Text" xml:space="preserve">
+    <value>Total no of Suppliers</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel23.Name" xml:space="preserve">
+    <value>bunifuLabel23</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel23.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel23.Parent" xml:space="preserve">
+    <value>bunifuPanel10</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel23.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="bunifuButton217.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -440,8 +1054,107 @@
         AYB2h/QAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="bunifuButton217.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 11.25pt</value>
+  </data>
+  <data name="bunifuButton217.Location" type="System.Drawing.Point, System.Drawing">
+    <value>258, 6</value>
+  </data>
+  <data name="bunifuButton217.Size" type="System.Drawing.Size, System.Drawing">
+    <value>219, 33</value>
+  </data>
+  <data name="bunifuButton217.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton217.Name" xml:space="preserve">
+    <value>bunifuButton217</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton217.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuButton.BunifuButton2, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton217.Parent" xml:space="preserve">
+    <value>bunifuPanel10</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton217.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="bunifuLabel18.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel18.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 14.25pt, style=Bold</value>
+  </data>
+  <data name="bunifuLabel18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 9</value>
+  </data>
+  <data name="bunifuLabel18.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bunifuLabel18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 23</value>
+  </data>
+  <data name="bunifuLabel18.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="bunifuLabel18.Text" xml:space="preserve">
+    <value>My Pharmacy</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel18.Name" xml:space="preserve">
+    <value>bunifuLabel18</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel18.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel18.Parent" xml:space="preserve">
+    <value>bunifuPanel10</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel18.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="bunifuShapes4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 38</value>
+  </data>
+  <data name="bunifuShapes4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>487, 10</value>
+  </data>
+  <data name="bunifuShapes4.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="bunifuShapes4.Text" xml:space="preserve">
+    <value>bunifuShapes4</value>
+  </data>
+  <data name="&gt;&gt;bunifuShapes4.Name" xml:space="preserve">
+    <value>bunifuShapes4</value>
+  </data>
+  <data name="&gt;&gt;bunifuShapes4.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuShapes, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuShapes4.Parent" xml:space="preserve">
+    <value>bunifuPanel10</value>
+  </data>
+  <data name="&gt;&gt;bunifuShapes4.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="bunifuPanel10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 231</value>
+  </data>
+  <data name="bunifuPanel10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>490, 136</value>
+  </data>
+  <data name="bunifuPanel10.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel10.Name" xml:space="preserve">
+    <value>bunifuPanel10</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel10.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuPanel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel10.Parent" xml:space="preserve">
+    <value>bunifuPanel8</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel10.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="bunifuPanel9.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -476,17 +1189,140 @@
         KWTXFpsAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="bunifuPanel9.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
   <data name="bunifuLabel29.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 20.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel29.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 20.25pt, style=Bold</value>
+  </data>
+  <data name="bunifuLabel29.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 63</value>
+  </data>
+  <data name="bunifuLabel29.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bunifuLabel29.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 32</value>
+  </data>
+  <data name="bunifuLabel29.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="bunifuLabel29.Text" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel29.Name" xml:space="preserve">
+    <value>bunifuLabel29</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel29.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel29.Parent" xml:space="preserve">
+    <value>bunifuPanel9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel29.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="bunifuLabel22.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
+  <data name="bunifuLabel22.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt, style=Bold</value>
+  </data>
+  <data name="bunifuLabel22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 101</value>
+  </data>
+  <data name="bunifuLabel22.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bunifuLabel22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 19</value>
+  </data>
+  <data name="bunifuLabel22.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="bunifuLabel22.Text" xml:space="preserve">
+    <value>Medicine Groups</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel22.Name" xml:space="preserve">
+    <value>bunifuLabel22</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel22.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel22.Parent" xml:space="preserve">
+    <value>bunifuPanel9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel22.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="bunifuLabel21.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 20.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
+  <data name="bunifuLabel21.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 20.25pt, style=Bold</value>
+  </data>
+  <data name="bunifuLabel21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>69, 63</value>
+  </data>
+  <data name="bunifuLabel21.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bunifuLabel21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 32</value>
+  </data>
+  <data name="bunifuLabel21.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="bunifuLabel21.Text" xml:space="preserve">
+    <value>298</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel21.Name" xml:space="preserve">
+    <value>bunifuLabel21</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel21.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel21.Parent" xml:space="preserve">
+    <value>bunifuPanel9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel21.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="bunifuLabel20.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel20.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt, style=Bold</value>
+  </data>
+  <data name="bunifuLabel20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 101</value>
+  </data>
+  <data name="bunifuLabel20.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bunifuLabel20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 19</value>
+  </data>
+  <data name="bunifuLabel20.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="bunifuLabel20.Text" xml:space="preserve">
+    <value>Total no of Medicines</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel20.Name" xml:space="preserve">
+    <value>bunifuLabel20</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel20.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel20.Parent" xml:space="preserve">
+    <value>bunifuPanel9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel20.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="bunifuButton215.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -497,8 +1333,131 @@
         BgwYMGDAgIHLgQF9rwABjXYHzQAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="bunifuButton215.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 11.25pt</value>
+  </data>
+  <data name="bunifuButton215.Location" type="System.Drawing.Point, System.Drawing">
+    <value>281, 3</value>
+  </data>
+  <data name="bunifuButton215.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 39</value>
+  </data>
+  <data name="bunifuButton215.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton215.Name" xml:space="preserve">
+    <value>bunifuButton215</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton215.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuButton.BunifuButton2, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton215.Parent" xml:space="preserve">
+    <value>bunifuPanel9</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton215.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="bunifuLabel16.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel16.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 14.25pt, style=Bold</value>
+  </data>
+  <data name="bunifuLabel16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 10</value>
+  </data>
+  <data name="bunifuLabel16.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bunifuLabel16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 23</value>
+  </data>
+  <data name="bunifuLabel16.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="bunifuLabel16.Text" xml:space="preserve">
+    <value>Inventory</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel16.Name" xml:space="preserve">
+    <value>bunifuLabel16</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel16.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel16.Parent" xml:space="preserve">
+    <value>bunifuPanel9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel16.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="bunifuShapes2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 39</value>
+  </data>
+  <data name="bunifuShapes2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>487, 10</value>
+  </data>
+  <data name="bunifuShapes2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="bunifuShapes2.Text" xml:space="preserve">
+    <value>bunifuShapes2</value>
+  </data>
+  <data name="&gt;&gt;bunifuShapes2.Name" xml:space="preserve">
+    <value>bunifuShapes2</value>
+  </data>
+  <data name="&gt;&gt;bunifuShapes2.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuShapes, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuShapes2.Parent" xml:space="preserve">
+    <value>bunifuPanel9</value>
+  </data>
+  <data name="&gt;&gt;bunifuShapes2.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="bunifuPanel9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 39</value>
+  </data>
+  <data name="bunifuPanel9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>490, 136</value>
+  </data>
+  <data name="bunifuPanel9.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel9.Name" xml:space="preserve">
+    <value>bunifuPanel9</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel9.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuPanel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel9.Parent" xml:space="preserve">
+    <value>bunifuPanel8</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel9.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="bunifuPanel8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>290, 420</value>
+  </data>
+  <data name="bunifuPanel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1168, 383</value>
+  </data>
+  <data name="bunifuPanel8.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel8.Name" xml:space="preserve">
+    <value>bunifuPanel8</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel8.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuPanel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel8.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel8.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="bunifuButton214.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
   </data>
   <data name="bunifuButton214.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -510,6 +1469,30 @@
         cZMJDC0DcQ1AGzeZwNAyENcAtHGTCQwtA3ENQBs3mcDQMhDXALRxkwkMLQNxDUAbN5nA0DIQ18BA27+s
         PH7H3qOBgAYG2qXuFBBWRA3sq4L+f5BpW3epa8FOB2s2cCuj8xvMdJ14zoahlwAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="bunifuButton214.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt</value>
+  </data>
+  <data name="bunifuButton214.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1261, 96</value>
+  </data>
+  <data name="bunifuButton214.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 39</value>
+  </data>
+  <data name="bunifuButton214.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton214.Name" xml:space="preserve">
+    <value>bunifuButton214</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton214.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuButton.BunifuButton2, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton214.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton214.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="bunifuPanel7.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -542,8 +1525,41 @@
         vL+ftAAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="bunifuPanel7.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
   <data name="bunifuLabel14.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel14.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 14.25pt</value>
+  </data>
+  <data name="bunifuLabel14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 117</value>
+  </data>
+  <data name="bunifuLabel14.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bunifuLabel14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="bunifuLabel14.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="bunifuLabel14.Text" xml:space="preserve">
+    <value>Medicines Shortage</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel14.Name" xml:space="preserve">
+    <value>bunifuLabel14</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel14.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel14.Parent" xml:space="preserve">
+    <value>bunifuPanel7</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel14.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="pictureBox7.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -559,8 +1575,62 @@
         baL9+52Aj8AffeBR3NB6oPUAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="pictureBox7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 17</value>
+  </data>
+  <data name="pictureBox7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 50</value>
+  </data>
+  <data name="pictureBox7.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="pictureBox7.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;pictureBox7.Name" xml:space="preserve">
+    <value>pictureBox7</value>
+  </data>
+  <data name="&gt;&gt;pictureBox7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox7.Parent" xml:space="preserve">
+    <value>bunifuPanel7</value>
+  </data>
+  <data name="&gt;&gt;pictureBox7.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="bunifuLabel15.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 20.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel15.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 20.25pt, style=Bold</value>
+  </data>
+  <data name="bunifuLabel15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 79</value>
+  </data>
+  <data name="bunifuLabel15.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bunifuLabel15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 32</value>
+  </data>
+  <data name="bunifuLabel15.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="bunifuLabel15.Text" xml:space="preserve">
+    <value>01</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel15.Name" xml:space="preserve">
+    <value>bunifuLabel15</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel15.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel15.Parent" xml:space="preserve">
+    <value>bunifuPanel7</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel15.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="bunifuButton213.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -572,6 +1642,51 @@
         UiGBBFIhQxsAMnQMhVRIIIFUyNAGgAwdQyEVEkggFTK0ASBDx1BIhQQSSIUMbQDI0DEUUiGBBFIhQxsA
         MnQMhVRIIIFUyNAGgAwdQyEV8gE5piEYgg0UNjDmDRUmXIKydw0sAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="bunifuButton213.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 14.25pt, style=Bold</value>
+  </data>
+  <data name="bunifuButton213.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 155</value>
+  </data>
+  <data name="bunifuButton213.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 39</value>
+  </data>
+  <data name="bunifuButton213.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton213.Name" xml:space="preserve">
+    <value>bunifuButton213</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton213.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuButton.BunifuButton2, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton213.Parent" xml:space="preserve">
+    <value>bunifuPanel7</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton213.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="bunifuPanel7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1206, 182</value>
+  </data>
+  <data name="bunifuPanel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 196</value>
+  </data>
+  <data name="bunifuPanel7.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel7.Name" xml:space="preserve">
+    <value>bunifuPanel7</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel7.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuPanel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel7.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel7.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="bunifuPanel6.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -604,8 +1719,41 @@
         4XtE4wAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="bunifuPanel6.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
   <data name="bunifuLabel12.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 14.25pt</value>
+  </data>
+  <data name="bunifuLabel12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 117</value>
+  </data>
+  <data name="bunifuLabel12.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bunifuLabel12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 22</value>
+  </data>
+  <data name="bunifuLabel12.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="bunifuLabel12.Text" xml:space="preserve">
+    <value>Medicines Available</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel12.Name" xml:space="preserve">
+    <value>bunifuLabel12</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel12.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel12.Parent" xml:space="preserve">
+    <value>bunifuPanel6</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel12.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="pictureBox6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -619,8 +1767,62 @@
         VAbABI74f/Jk+tOrKnABbSDuHMgtUDkAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="pictureBox6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>93, 17</value>
+  </data>
+  <data name="pictureBox6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 50</value>
+  </data>
+  <data name="pictureBox6.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="pictureBox6.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;pictureBox6.Name" xml:space="preserve">
+    <value>pictureBox6</value>
+  </data>
+  <data name="&gt;&gt;pictureBox6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox6.Parent" xml:space="preserve">
+    <value>bunifuPanel6</value>
+  </data>
+  <data name="&gt;&gt;pictureBox6.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="bunifuLabel13.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 20.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel13.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 20.25pt, style=Bold</value>
+  </data>
+  <data name="bunifuLabel13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>93, 78</value>
+  </data>
+  <data name="bunifuLabel13.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bunifuLabel13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 32</value>
+  </data>
+  <data name="bunifuLabel13.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="bunifuLabel13.Text" xml:space="preserve">
+    <value>298</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel13.Name" xml:space="preserve">
+    <value>bunifuLabel13</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel13.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel13.Parent" xml:space="preserve">
+    <value>bunifuPanel6</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel13.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="bunifuButton212.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -632,6 +1834,51 @@
         JJBAKmRoA0CGjqGQCgkkkAoZ2gCQoWMopEICCaRChjYAZOgYCqmQQAKpkKENABk6hkIqJJBAKmRoA0CG
         jqGQCgkkkAoZ2gCQoWMopEKOeTl3QzAEGwhs4LF4A3tXMm7SXT4VAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="bunifuButton212.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 14.25pt, style=Bold</value>
+  </data>
+  <data name="bunifuButton212.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 155</value>
+  </data>
+  <data name="bunifuButton212.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 39</value>
+  </data>
+  <data name="bunifuButton212.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton212.Name" xml:space="preserve">
+    <value>bunifuButton212</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton212.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuButton.BunifuButton2, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton212.Parent" xml:space="preserve">
+    <value>bunifuPanel6</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton212.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="bunifuPanel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>934, 182</value>
+  </data>
+  <data name="bunifuPanel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 196</value>
+  </data>
+  <data name="bunifuPanel6.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel6.Name" xml:space="preserve">
+    <value>bunifuPanel6</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel6.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuPanel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel6.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="bunifuPanel5.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -664,6 +1911,63 @@
         AABJRU5ErkJggg==
 </value>
   </data>
+  <data name="bunifuPanel5.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="bunifuDropdown2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="bunifuDropdown2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="bunifuDropdown2.ItemHeight" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="bunifuDropdown2.Items" xml:space="preserve">
+    <value>June 2024</value>
+  </data>
+  <data name="bunifuDropdown2.Items1" xml:space="preserve">
+    <value>July 2024</value>
+  </data>
+  <data name="bunifuDropdown2.Items2" xml:space="preserve">
+    <value>August 2024</value>
+  </data>
+  <data name="bunifuDropdown2.Items3" xml:space="preserve">
+    <value>September 2024</value>
+  </data>
+  <data name="bunifuDropdown2.Items4" xml:space="preserve">
+    <value>October 2024</value>
+  </data>
+  <data name="bunifuDropdown2.Items5" xml:space="preserve">
+    <value>November 2024</value>
+  </data>
+  <data name="bunifuDropdown2.Items6" xml:space="preserve">
+    <value>December 2024</value>
+  </data>
+  <data name="bunifuDropdown2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>120, 113</value>
+  </data>
+  <data name="bunifuDropdown2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 32</value>
+  </data>
+  <data name="bunifuDropdown2.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="bunifuDropdown2.Text" xml:space="preserve">
+    <value>June 2023</value>
+  </data>
+  <data name="&gt;&gt;bunifuDropdown2.Name" xml:space="preserve">
+    <value>bunifuDropdown2</value>
+  </data>
+  <data name="&gt;&gt;bunifuDropdown2.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuDropdown, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuDropdown2.Parent" xml:space="preserve">
+    <value>bunifuPanel5</value>
+  </data>
+  <data name="&gt;&gt;bunifuDropdown2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="pictureBox5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -676,11 +1980,95 @@
         8ABPzlJI+LrRC7c28x70llapN+DAL8uEqV1zDk6emzOQMzAnA79AUt4zjVWBIgAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="pictureBox5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>96, 13</value>
+  </data>
+  <data name="pictureBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 50</value>
+  </data>
+  <data name="pictureBox5.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="pictureBox5.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;pictureBox5.Name" xml:space="preserve">
+    <value>pictureBox5</value>
+  </data>
+  <data name="&gt;&gt;pictureBox5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox5.Parent" xml:space="preserve">
+    <value>bunifuPanel5</value>
+  </data>
+  <data name="&gt;&gt;pictureBox5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="bunifuLabel10.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
+  <data name="bunifuLabel10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 14.25pt, style=Bold</value>
+  </data>
+  <data name="bunifuLabel10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 117</value>
+  </data>
+  <data name="bunifuLabel10.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bunifuLabel10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 23</value>
+  </data>
+  <data name="bunifuLabel10.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="bunifuLabel10.Text" xml:space="preserve">
+    <value>Revenue:</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel10.Name" xml:space="preserve">
+    <value>bunifuLabel10</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel10.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel10.Parent" xml:space="preserve">
+    <value>bunifuPanel5</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel10.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="bunifuLabel11.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 20.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 20.25pt, style=Bold</value>
+  </data>
+  <data name="bunifuLabel11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 72</value>
+  </data>
+  <data name="bunifuLabel11.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bunifuLabel11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 32</value>
+  </data>
+  <data name="bunifuLabel11.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="bunifuLabel11.Text" xml:space="preserve">
+    <value>Rs. 8,555,875</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel11.Name" xml:space="preserve">
+    <value>bunifuLabel11</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel11.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel11.Parent" xml:space="preserve">
+    <value>bunifuPanel5</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel11.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="bunifuButton211.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -693,11 +2081,116 @@
         q7LCCquyRjYAa+RQyqqsc605DcEQbGDvDXxOX+o7IX9t990fAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="bunifuButton211.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt, style=Bold</value>
+  </data>
+  <data name="bunifuButton211.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 155</value>
+  </data>
+  <data name="bunifuButton211.Size" type="System.Drawing.Size, System.Drawing">
+    <value>235, 39</value>
+  </data>
+  <data name="bunifuButton211.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton211.Name" xml:space="preserve">
+    <value>bunifuButton211</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton211.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuButton.BunifuButton2, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton211.Parent" xml:space="preserve">
+    <value>bunifuPanel5</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton211.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="bunifuPanel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>645, 182</value>
+  </data>
+  <data name="bunifuPanel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 196</value>
+  </data>
+  <data name="bunifuPanel5.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel5.Name" xml:space="preserve">
+    <value>bunifuPanel5</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel5.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuPanel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel5.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="bunifuLabel7.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
+  <data name="bunifuLabel7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 14.25pt</value>
+  </data>
+  <data name="bunifuLabel7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>347, 125</value>
+  </data>
+  <data name="bunifuLabel7.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bunifuLabel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>370, 22</value>
+  </data>
+  <data name="bunifuLabel7.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="bunifuLabel7.Text" xml:space="preserve">
+    <value>A quick data overview of the inventory.</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel7.Name" xml:space="preserve">
+    <value>bunifuLabel7</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel7.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel7.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel7.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
   <data name="bunifuLabel6.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 14.25pt, style=Bold</value>
+  </data>
+  <data name="bunifuLabel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>347, 96</value>
+  </data>
+  <data name="bunifuLabel6.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bunifuLabel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 23</value>
+  </data>
+  <data name="bunifuLabel6.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="bunifuLabel6.Text" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel6.Name" xml:space="preserve">
+    <value>bunifuLabel6</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel6.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel6.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="bunifuPanel4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -729,6 +2222,9 @@
         eby/3m8/Xkt3OHAH3uAdeA36/ulD44VCwQAD/xj4BR2A/8GzcgBLAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="bunifuPanel4.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
   <data name="pictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -744,11 +2240,95 @@
         aeFk4NZOi+ogxm9KrpCBH9UOELPo0DJpAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="pictureBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>96, 17</value>
+  </data>
+  <data name="pictureBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 46</value>
+  </data>
+  <data name="pictureBox4.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="pictureBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;pictureBox4.Name" xml:space="preserve">
+    <value>pictureBox4</value>
+  </data>
+  <data name="&gt;&gt;pictureBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox4.Parent" xml:space="preserve">
+    <value>bunifuPanel4</value>
+  </data>
+  <data name="&gt;&gt;pictureBox4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="bunifuLabel9.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
+  <data name="bunifuLabel9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 14.25pt</value>
+  </data>
+  <data name="bunifuLabel9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 117</value>
+  </data>
+  <data name="bunifuLabel9.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bunifuLabel9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 22</value>
+  </data>
+  <data name="bunifuLabel9.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="bunifuLabel9.Text" xml:space="preserve">
+    <value>Inventory Status</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel9.Name" xml:space="preserve">
+    <value>bunifuLabel9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel9.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel9.Parent" xml:space="preserve">
+    <value>bunifuPanel4</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel9.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="bunifuLabel8.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 20.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 20.25pt, style=Bold</value>
+  </data>
+  <data name="bunifuLabel8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>79, 72</value>
+  </data>
+  <data name="bunifuLabel8.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bunifuLabel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 32</value>
+  </data>
+  <data name="bunifuLabel8.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="bunifuLabel8.Text" xml:space="preserve">
+    <value>Good</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel8.Name" xml:space="preserve">
+    <value>bunifuLabel8</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel8.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel8.Parent" xml:space="preserve">
+    <value>bunifuPanel4</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel8.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="bunifuButton210.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -760,6 +2340,54 @@
         tEKHNgB06JgKrdBAA63QoQ0AHTqmQis00EArdGgDQIeOqdAKDTTQCh3aANChYyq0QgMNtEKHNgB06JgK
         rdBAA63QoQ0AHTqmQiv0B3oZgiHYQGID6wHv64mpa2GDZgAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="bunifuButton210.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt, style=Bold</value>
+  </data>
+  <data name="bunifuButton210.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 155</value>
+  </data>
+  <data name="bunifuButton210.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 39</value>
+  </data>
+  <data name="bunifuButton210.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton210.Name" xml:space="preserve">
+    <value>bunifuButton210</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton210.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuButton.BunifuButton2, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton210.Parent" xml:space="preserve">
+    <value>bunifuPanel4</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton210.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="bunifuPanel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>347, 182</value>
+  </data>
+  <data name="bunifuPanel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>245, 196</value>
+  </data>
+  <data name="bunifuPanel4.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel4.Name" xml:space="preserve">
+    <value>bunifuPanel4</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel4.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuPanel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel4.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="bunifuPanel3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
   <data name="bunifuPanel3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -801,6 +2429,9 @@
         2C/wA/wmKnPDpoYIAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="bunifuPanel3.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
   <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -811,11 +2442,134 @@
         AABJRU5ErkJggg==
 </value>
   </data>
+  <data name="pictureBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>856, 16</value>
+  </data>
+  <data name="pictureBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 37</value>
+  </data>
+  <data name="pictureBox3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="pictureBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.Name" xml:space="preserve">
+    <value>pictureBox3</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.Parent" xml:space="preserve">
+    <value>bunifuPanel3</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="bunifuLabel5.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 11.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
+  <data name="bunifuLabel5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 11.25pt</value>
+  </data>
+  <data name="bunifuLabel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>927, 40</value>
+  </data>
+  <data name="bunifuLabel5.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bunifuLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 20</value>
+  </data>
+  <data name="bunifuLabel5.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="bunifuLabel5.Text" xml:space="preserve">
+    <value>14th june 2023</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel5.Name" xml:space="preserve">
+    <value>bunifuLabel5</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel5.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel5.Parent" xml:space="preserve">
+    <value>bunifuPanel3</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="bunifuLabel4.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt, style=Bold</value>
+  </data>
+  <data name="bunifuLabel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>890, 16</value>
+  </data>
+  <data name="bunifuLabel4.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bunifuLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 19</value>
+  </data>
+  <data name="bunifuLabel4.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="bunifuLabel4.Text" xml:space="preserve">
+    <value>Good Morning</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel4.Name" xml:space="preserve">
+    <value>bunifuLabel4</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel4.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel4.Parent" xml:space="preserve">
+    <value>bunifuPanel3</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel4.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Language_Dashboard.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="Language_Dashboard.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="Language_Dashboard.ItemHeight" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="Language_Dashboard.Items" xml:space="preserve">
+    <value>English (Uk)</value>
+  </data>
+  <data name="Language_Dashboard.Items1" xml:space="preserve">
+    <value>Sinhala</value>
+  </data>
+  <data name="Language_Dashboard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>556, 23</value>
+  </data>
+  <data name="Language_Dashboard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 32</value>
+  </data>
+  <data name="Language_Dashboard.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="Language_Dashboard.Text" xml:space="preserve">
+    <value>English (UK)</value>
+  </data>
+  <data name="&gt;&gt;Language_Dashboard.Name" xml:space="preserve">
+    <value>Language_Dashboard</value>
+  </data>
+  <data name="&gt;&gt;Language_Dashboard.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuDropdown, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;Language_Dashboard.Parent" xml:space="preserve">
+    <value>bunifuPanel3</value>
+  </data>
+  <data name="&gt;&gt;Language_Dashboard.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -829,6 +2583,30 @@
         QmCC
 </value>
   </data>
+  <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>516, 24</value>
+  </data>
+  <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 31</value>
+  </data>
+  <data name="pictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
+    <value>pictureBox2</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
+    <value>bunifuPanel3</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="bunifuTextBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAUwAAAAsCAYAAAAO7YGxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -841,6 +2619,57 @@
         UUAwI5QzAgQICKYNECBAIAoIZoRyRoAAAcG0AQIECEQBwYxQzggQICCYNkCAAIEo8BPM67re88PHwAZs
         wAaeG5hGLo8AAQIEusANSBqhUJiiBWQAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="bunifuTextBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 16</value>
+  </data>
+  <data name="bunifuTextBox1.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="bunifuTextBox1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="bunifuTextBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>332, 44</value>
+  </data>
+  <data name="bunifuTextBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;bunifuTextBox1.Name" xml:space="preserve">
+    <value>bunifuTextBox1</value>
+  </data>
+  <data name="&gt;&gt;bunifuTextBox1.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuTextBox, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuTextBox1.Parent" xml:space="preserve">
+    <value>bunifuPanel3</value>
+  </data>
+  <data name="&gt;&gt;bunifuTextBox1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="bunifuPanel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>295, -1</value>
+  </data>
+  <data name="bunifuPanel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1163, 74</value>
+  </data>
+  <data name="bunifuPanel3.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel3.Name" xml:space="preserve">
+    <value>bunifuPanel3</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel3.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuPanel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel3.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="bunifuPanel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
   </data>
   <data name="bunifuPanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -980,6 +2809,63 @@
         C7iAC6xf4G/1jcKRJx2yJAAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="bunifuPanel1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="linkLabel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="linkLabel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt</value>
+  </data>
+  <data name="linkLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>101, 127</value>
+  </data>
+  <data name="linkLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 21</value>
+  </data>
+  <data name="linkLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="linkLabel1.Text" xml:space="preserve">
+    <value>Super Admin</value>
+  </data>
+  <data name="&gt;&gt;linkLabel1.Name" xml:space="preserve">
+    <value>linkLabel1</value>
+  </data>
+  <data name="&gt;&gt;linkLabel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabel1.Parent" xml:space="preserve">
+    <value>bunifuPanel1</value>
+  </data>
+  <data name="&gt;&gt;linkLabel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="bunifuShapes1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 653</value>
+  </data>
+  <data name="bunifuShapes1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 11</value>
+  </data>
+  <data name="bunifuShapes1.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="bunifuShapes1.Text" xml:space="preserve">
+    <value>bunifuShapes1</value>
+  </data>
+  <data name="&gt;&gt;bunifuShapes1.Name" xml:space="preserve">
+    <value>bunifuShapes1</value>
+  </data>
+  <data name="&gt;&gt;bunifuShapes1.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuShapes, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuShapes1.Parent" xml:space="preserve">
+    <value>bunifuPanel1</value>
+  </data>
+  <data name="&gt;&gt;bunifuShapes1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="bunifuButton29.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAASQAAAAnCAYAAACmGjX2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -991,6 +2877,9 @@
         ZIABg6SODDCQMZA5RB3VkQEGDJI6MsBAxkDmEHVURwYYMEjqyAADGQOZQ9RRHRlgwCCpIwMMZAxkDlFH
         dWSAgXHMxygpJAMMbDewtugDX+PwjKBjgoEAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="bunifuButton29.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 14.25pt, style=Bold</value>
   </data>
   <data name="bunifuButton29.IdleIconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1588,6 +3477,9 @@
         d9VVV3V33nknARU6nNcYwAAGMICBKAb+H+I9x6weCpbhAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="bunifuButton29.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 739</value>
+  </data>
   <data name="bunifuButton29.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAA6IAAAPUCAYAAAC3g4RbAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
@@ -2184,6 +4076,24 @@
         d9VVV3V33nknARU6nNcYwAAGMICBKAb+H+I9x6weCpbhAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="bunifuButton29.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 39</value>
+  </data>
+  <data name="bunifuButton29.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton29.Name" xml:space="preserve">
+    <value>bunifuButton29</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton29.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuButton.BunifuButton2, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton29.Parent" xml:space="preserve">
+    <value>bunifuPanel1</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton29.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="bunifuButton28.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAASQAAAAnCAYAAACmGjX2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -2196,6 +4106,9 @@
         SBaSIAmSIDGQMSBIMGYwWkgW0hekCQIIDDAQMDAfSHebWJsek2AAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="bunifuButton28.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 14.25pt, style=Bold</value>
+  </data>
   <data name="bunifuButton28.IdleIconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -2205,6 +4118,9 @@
         QmCC
 </value>
   </data>
+  <data name="bunifuButton28.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 673</value>
+  </data>
   <data name="bunifuButton28.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -2213,6 +4129,24 @@
         LgAFBLImEBtn4CBpFAAqQrGNWI2gQHlPjo0gpxYQ0giKaJKTHDheSAQNACfC2GsPCo9ZAAAAAElFTkSu
         QmCC
 </value>
+  </data>
+  <data name="bunifuButton28.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 39</value>
+  </data>
+  <data name="bunifuButton28.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton28.Name" xml:space="preserve">
+    <value>bunifuButton28</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton28.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuButton.BunifuButton2, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton28.Parent" xml:space="preserve">
+    <value>bunifuPanel1</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton28.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="bunifuButton27.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2226,6 +4160,9 @@
         y0mcxEmcGEgaECcwkzAtJ8vpi9MGAQQGGIgZ2A9sXVezCZiIywAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="bunifuButton27.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 14.25pt, style=Bold</value>
+  </data>
   <data name="bunifuButton27.IdleIconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAwAAAAOCAYAAAAbvf3sAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -2235,6 +4172,9 @@
         AAAASUVORK5CYII=
 </value>
   </data>
+  <data name="bunifuButton27.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 597</value>
+  </data>
   <data name="bunifuButton27.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAwAAAAOCAYAAAAbvf3sAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -2243,6 +4183,24 @@
         B/jQ+QYo/wGGt5FUj7eRdVPYhth7FxBbIqYNwvmDqtDvkcmAzaB9jKdQE4fIeOfDMmgFH9EdM2mOrSEA
         AAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="bunifuButton27.Size" type="System.Drawing.Size, System.Drawing">
+    <value>295, 39</value>
+  </data>
+  <data name="bunifuButton27.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton27.Name" xml:space="preserve">
+    <value>bunifuButton27</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton27.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuButton.BunifuButton2, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton27.Parent" xml:space="preserve">
+    <value>bunifuPanel1</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton27.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="bunifuButton26.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2256,6 +4214,9 @@
         SpaSKImSKDGQMiBKQKZAWkqW0helCQIIDDAQMTAfvWXaHA1pqj4AAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="bunifuButton26.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 14.25pt, style=Bold</value>
+  </data>
   <data name="bunifuButton26.IdleIconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAA8AAAANCAYAAAB2HjRBAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -2266,6 +4227,9 @@
         YII=
 </value>
   </data>
+  <data name="bunifuButton26.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 531</value>
+  </data>
   <data name="bunifuButton26.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAA8AAAANCAYAAAB2HjRBAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -2275,6 +4239,24 @@
         imaLkpuMsNl/Yt+dM11Nzt/b4nBHrEtEggUWBSwaN5Sze1o8uDheAfsCz/9pSWqqx/QAAAAASUVORK5C
         YII=
 </value>
+  </data>
+  <data name="bunifuButton26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>293, 39</value>
+  </data>
+  <data name="bunifuButton26.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton26.Name" xml:space="preserve">
+    <value>bunifuButton26</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton26.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuButton.BunifuButton2, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton26.Parent" xml:space="preserve">
+    <value>bunifuPanel1</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton26.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="bunifuButton25.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2288,6 +4270,9 @@
         SpaSKImSKDGQMiBKQKZAWkqW0helCQIIDDAQMTAfvWXaHA1pqj4AAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="bunifuButton25.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 14.25pt, style=Bold</value>
+  </data>
   <data name="bunifuButton25.IdleIconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAA4AAAAKCAYAAACE2W/HAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -2297,6 +4282,9 @@
         5TeMFpYvWR+2E1nfy+9ptAAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="bunifuButton25.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 461</value>
+  </data>
   <data name="bunifuButton25.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAA4AAAAKCAYAAACE2W/HAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -2305,6 +4293,24 @@
         7YTrZmFbZdw1y5n/U3rtIARhIadd6S8CedkPQsc9u/pCpGghfxWUnDxEfsRwqICwFA7TC4r4bpPN5IiQ
         5TeMFpYvWR+2E1nfy+9ptAAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="bunifuButton25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>293, 39</value>
+  </data>
+  <data name="bunifuButton25.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton25.Name" xml:space="preserve">
+    <value>bunifuButton25</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton25.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuButton.BunifuButton2, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton25.Parent" xml:space="preserve">
+    <value>bunifuPanel1</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton25.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="bunifuButton24.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2318,6 +4324,9 @@
         C0qgBEqgGMgaECg4szgtKAvqC9QGAQQGGAga2A+mWJZ3MF7z9wAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="bunifuButton24.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 14.25pt, style=Bold</value>
+  </data>
   <data name="bunifuButton24.IdleIconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAYAAAAmlE46AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -2327,6 +4336,9 @@
         mYFRZ1QGvR/kE4Pb3SxsLk5YkiZU+4cf9Eq3s5IbFx0AAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="bunifuButton24.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 389</value>
+  </data>
   <data name="bunifuButton24.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAYAAAAmlE46AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -2335,6 +4347,24 @@
         bgHZrYzjDyTixYRC8z5Rffa/fx2ouEiz9PAztYlLyqM/Zm4M5IWKvbyFgyVrBCCarQFsDgBTI8W9Md/t
         mYFRZ1QGvR/kE4Pb3SxsLk5YkiZU+4cf9Eq3s5IbFx0AAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="bunifuButton24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>296, 39</value>
+  </data>
+  <data name="bunifuButton24.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton24.Name" xml:space="preserve">
+    <value>bunifuButton24</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton24.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuButton.BunifuButton2, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton24.Parent" xml:space="preserve">
+    <value>bunifuPanel1</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton24.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="bunifuButton23.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2348,6 +4378,9 @@
         SpaSKImSKDGQMiBKQKZAWkqW0helCQIIDDAQMTAfvWXaHA1pqj4AAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="bunifuButton23.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 14.25pt, style=Bold</value>
+  </data>
   <data name="bunifuButton23.IdleIconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAA4AAAAICAYAAADJEc7MAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -2356,6 +4389,9 @@
         DeQcEEA1EaoKKA4KYYSfkDwNkgB5GCP4sUUVTAwAy1TBIreiVQQAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="bunifuButton23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 322</value>
+  </data>
   <data name="bunifuButton23.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAA4AAAAICAYAAADJEc7MAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -2363,6 +4399,24 @@
         EkQZwDQD2fVQ8flA2gFuKJKm+yANQNwAxCBnOSBpakBxBZomuN+A4hOQbMfQ1A81GWQTSoBAbYPpFUC3
         DeQcEEA1EaoKKA4KYYSfkDwNkgB5GCP4sUUVTAwAy1TBIreiVQQAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="bunifuButton23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>293, 39</value>
+  </data>
+  <data name="bunifuButton23.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton23.Name" xml:space="preserve">
+    <value>bunifuButton23</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton23.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuButton.BunifuButton2, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton23.Parent" xml:space="preserve">
+    <value>bunifuPanel1</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton23.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="bunifuButton22.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2376,6 +4430,9 @@
         SpaSKImSKDGQMiBKQKZAWkqW0helCQIIDDAQMTAfvWXaHA1pqj4AAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="bunifuButton22.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 14.25pt, style=Bold</value>
+  </data>
   <data name="bunifuButton22.IdleIconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -2384,6 +4441,9 @@
         T1AjVBEoeiaQ5FRcoYvLxnyos/AlvQLk6BCARjyWMMEqBPK7AgCrUw5CYNqPxQAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="bunifuButton22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 254</value>
+  </data>
   <data name="bunifuButton22.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -2391,6 +4451,24 @@
         WOMEqHPvA2liMEh5A0ijA1SjAiHXAtUpQNU64NQINdAB2TBiNYJCbz9JGrFEKthmgjZCg3w/kD4PZYP9
         T1AjVBEoeiaQ5FRcoYvLxnyos/AlvQLk6BCARjyWMMEqBPK7AgCrUw5CYNqPxQAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="bunifuButton22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>293, 39</value>
+  </data>
+  <data name="bunifuButton22.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton22.Name" xml:space="preserve">
+    <value>bunifuButton22</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton22.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuButton.BunifuButton2, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton22.Parent" xml:space="preserve">
+    <value>bunifuPanel1</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton22.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="bunifuButton21.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2404,12 +4482,18 @@
         SpaSKImSKDGQMiBKQKZAWkqW0helCQIIDDAQMTAfvWXaHA1pqj4AAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="bunifuButton21.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 14.25pt, style=Bold</value>
+  </data>
   <data name="bunifuButton21.IdleIconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         EwAACxMBAJqcGAAAAEhJREFUOE9j+P//fz0QkwrqGaA69gPpBjR8H8gHYXRxkNr/MI0NDGgAKAdSsB+L
         OMigQaiRbD/iDO1hFDi0i0eykhw4CZEIGgAfGNLoFP7D0AAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="bunifuButton21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 183</value>
   </data>
   <data name="bunifuButton21.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2418,8 +4502,59 @@
         OMigQaiRbD/iDO1hFDi0i0eykhw4CZEIGgAfGNLoFP7D0AAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="bunifuButton21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>293, 39</value>
+  </data>
+  <data name="bunifuButton21.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton21.Name" xml:space="preserve">
+    <value>bunifuButton21</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton21.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuButton.BunifuButton2, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton21.Parent" xml:space="preserve">
+    <value>bunifuPanel1</value>
+  </data>
+  <data name="&gt;&gt;bunifuButton21.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
   <data name="bunifuLabel2.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 14.25pt, style=Bold</value>
+  </data>
+  <data name="bunifuLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 97</value>
+  </data>
+  <data name="bunifuLabel2.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bunifuLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 23</value>
+  </data>
+  <data name="bunifuLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="bunifuLabel2.Text" xml:space="preserve">
+    <value>Eranga</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel2.Name" xml:space="preserve">
+    <value>bunifuLabel2</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel2.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel2.Parent" xml:space="preserve">
+    <value>bunifuPanel1</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel2.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="bunifuPictureBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
   </data>
   <data name="bunifuPictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2511,6 +4646,30 @@
         BhBDaTMQBrCpm1jVGEAMpc1AGMCmbmJVezTA/wDcsCN4taRlawAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="bunifuPictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 97</value>
+  </data>
+  <data name="bunifuPictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="bunifuPictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="bunifuPictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;bunifuPictureBox1.Name" xml:space="preserve">
+    <value>bunifuPictureBox1</value>
+  </data>
+  <data name="&gt;&gt;bunifuPictureBox1.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuPictureBox, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuPictureBox1.Parent" xml:space="preserve">
+    <value>bunifuPanel1</value>
+  </data>
+  <data name="&gt;&gt;bunifuPictureBox1.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
   <data name="bunifuPanel2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAASUAAABJCAYAAAB7JjDiAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -2528,8 +4687,41 @@
         UgAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="bunifuPanel2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
   <data name="bunifuLabel1.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 14.25pt, style=Bold</value>
+  </data>
+  <data name="bunifuLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 28</value>
+  </data>
+  <data name="bunifuLabel1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bunifuLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 23</value>
+  </data>
+  <data name="bunifuLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="bunifuLabel1.Text" xml:space="preserve">
+    <value>Goodness Pharmacy</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel1.Name" xml:space="preserve">
+    <value>bunifuLabel1</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel1.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel1.Parent" xml:space="preserve">
+    <value>bunifuPanel2</value>
+  </data>
+  <data name="&gt;&gt;bunifuLabel1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -8566,5 +10758,89 @@
         MSAGxIAYEANiQAyIATEQVQxE1cHKShJdVhLNl+ZLDIgBMSAGxIAYEANiQAyIgUgw8P+DxKf/pBLMkgAA
         AABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 3</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 67</value>
+  </data>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>bunifuPanel2</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="bunifuPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 1</value>
+  </data>
+  <data name="bunifuPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>293, 73</value>
+  </data>
+  <data name="bunifuPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel2.Name" xml:space="preserve">
+    <value>bunifuPanel2</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel2.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuPanel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel2.Parent" xml:space="preserve">
+    <value>bunifuPanel1</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel2.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="bunifuPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-7, -1</value>
+  </data>
+  <data name="bunifuPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>299, 804</value>
+  </data>
+  <data name="bunifuPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel1.Name" xml:space="preserve">
+    <value>bunifuPanel1</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel1.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuPanel, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;bunifuPanel1.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="&gt;&gt;bunifuElipse1.Name" xml:space="preserve">
+    <value>bunifuElipse1</value>
+  </data>
+  <data name="&gt;&gt;bunifuElipse1.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuElipse, Bunifu.UI.WinForms.1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

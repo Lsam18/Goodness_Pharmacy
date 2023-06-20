@@ -74,5 +74,7 @@ namespace Goodness_Pharmacy
             sales.Show();
             this.Hide();
         }
+
     }
+
 }
