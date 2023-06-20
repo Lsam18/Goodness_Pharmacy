@@ -133,6 +133,7 @@
             this.bunifuButton215 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.bunifuLabel16 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuShapes2 = new Bunifu.UI.WinForms.BunifuShapes();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.bunifuPanel2.SuspendLayout();
@@ -153,6 +154,7 @@
             this.bunifuPanel11.SuspendLayout();
             this.bunifuPanel10.SuspendLayout();
             this.bunifuPanel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -1041,6 +1043,7 @@
             this.bunifuPanel3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(253)))));
             this.bunifuPanel3.BorderRadius = 3;
             this.bunifuPanel3.BorderThickness = 1;
+            this.bunifuPanel3.Controls.Add(this.pictureBox8);
             this.bunifuPanel3.Controls.Add(this.pictureBox3);
             this.bunifuPanel3.Controls.Add(this.bunifuLabel5);
             this.bunifuPanel3.Controls.Add(this.bunifuLabel4);
@@ -1119,7 +1122,6 @@
             this.Language_Dashboard.Name = "Language_Dashboard";
             this.Language_Dashboard.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
             this.Language_Dashboard.TextLeftMargin = 5;
-            
             // 
             // pictureBox2
             // 
@@ -2517,6 +2519,13 @@
             this.bunifuShapes2.Shape = Bunifu.UI.WinForms.BunifuShapes.Shapes.Line;
             this.bunifuShapes2.Sides = 5;
             // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.pictureBox8, "pictureBox8");
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.TabStop = false;
+            // 
             // Dashboard
             // 
             resources.ApplyResources(this, "$this");
@@ -2566,6 +2575,7 @@
             this.bunifuPanel10.PerformLayout();
             this.bunifuPanel9.ResumeLayout(false);
             this.bunifuPanel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2655,5 +2665,6 @@
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel29;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel35;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.PictureBox pictureBox8;
     }
 }

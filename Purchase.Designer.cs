@@ -105,6 +105,7 @@
             this.bunifuButton213 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.bunifuButton210 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.bunifuButton211 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.bunifuPanel2.SuspendLayout();
@@ -112,6 +113,7 @@
             this.bunifuPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -1067,6 +1069,7 @@
             this.bunifuPanel3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(253)))));
             this.bunifuPanel3.BorderRadius = 3;
             this.bunifuPanel3.BorderThickness = 1;
+            this.bunifuPanel3.Controls.Add(this.pictureBox4);
             this.bunifuPanel3.Controls.Add(this.pictureBox3);
             this.bunifuPanel3.Controls.Add(this.bunifuLabel5);
             this.bunifuPanel3.Controls.Add(this.bunifuLabel4);
@@ -1245,7 +1248,7 @@
             this.bunifuTextBox1.SelectionLength = 0;
             this.bunifuTextBox1.SelectionStart = 0;
             this.bunifuTextBox1.ShortcutsEnabled = true;
-            this.bunifuTextBox1.Size = new System.Drawing.Size(332, 44);
+            this.bunifuTextBox1.Size = new System.Drawing.Size(381, 44);
             this.bunifuTextBox1.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.bunifuTextBox1.TabIndex = 0;
             this.bunifuTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -2081,6 +2084,17 @@
             this.bunifuButton211.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton211.UseDefaultRadiusAndThickness = true;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.White;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(392, 22);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(34, 33);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 47;
+            this.pictureBox4.TabStop = false;
+            // 
             // Purchase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2121,6 +2135,7 @@
             this.bunifuPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2171,5 +2186,6 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 bunifuButton213;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 bunifuButton210;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 bunifuButton211;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }
