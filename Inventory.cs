@@ -26,8 +26,14 @@ namespace Goodness_Pharmacy
 
         private void bunifuButton214_Click(object sender, EventArgs e)
         {
-            List_of_Medicines_Details list_Of_Medicines = new List_of_Medicines_Details();
-            list_Of_Medicines.Show();
+            List_of_Medicines_Main list_Of_Medicines_Main = new List_of_Medicines_Main();
+            list_Of_Medicines_Main.Show();
+        }
+
+        private void bunifuButton215_Click(object sender, EventArgs e)
+        {
+            Medicine_Groups medicine_Groups = new Medicine_Groups();
+            medicine_Groups.Show();
         }
     }
 }

@@ -1668,7 +1668,7 @@
     <value>3</value>
   </data>
   <data name="bunifuPanel7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1206, 182</value>
+    <value>1192, 182</value>
   </data>
   <data name="bunifuPanel7.Size" type="System.Drawing.Size, System.Drawing">
     <value>228, 196</value>
@@ -1860,7 +1860,7 @@
     <value>3</value>
   </data>
   <data name="bunifuPanel6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>934, 182</value>
+    <value>919, 182</value>
   </data>
   <data name="bunifuPanel6.Size" type="System.Drawing.Size, System.Drawing">
     <value>228, 196</value>
@@ -2106,7 +2106,7 @@
     <value>4</value>
   </data>
   <data name="bunifuPanel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>645, 182</value>
+    <value>634, 182</value>
   </data>
   <data name="bunifuPanel5.Size" type="System.Drawing.Size, System.Drawing">
     <value>237, 196</value>

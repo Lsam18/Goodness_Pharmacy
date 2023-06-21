@@ -2069,6 +2069,7 @@
             this.bunifuButton215.TextMarginLeft = 0;
             this.bunifuButton215.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton215.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton215.Click += new System.EventHandler(this.bunifuButton215_Click);
             // 
             // bunifuLabel15
             // 
