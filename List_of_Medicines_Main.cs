@@ -10,24 +10,17 @@ using System.Windows.Forms;
 
 namespace Goodness_Pharmacy
 {
-    public partial class Inventory : Form
+    public partial class List_of_Medicines_Main : Form
     {
-        public Inventory()
+        public List_of_Medicines_Main()
         {
             InitializeComponent();
         }
 
         private void bunifuButton21_Click(object sender, EventArgs e)
         {
-            Dashboard dashboard = new Dashboard();
-            dashboard.Show();
-            this.Hide();
-        }
-
-        private void bunifuButton214_Click(object sender, EventArgs e)
-        {
-            List_of_Medicines_Details list_Of_Medicines = new List_of_Medicines_Details();
-            list_Of_Medicines.Show();
+            Add_Medicine addmed = new Add_Medicine();
+            addmed.Show();
         }
     }
 }

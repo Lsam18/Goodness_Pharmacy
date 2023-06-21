@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Goodness_Pharmacy
 {
-    public partial class List_of_Medicines : Form
+    public partial class Medicine_Groups : Form
     {
-        public List_of_Medicines()
+        public Medicine_Groups()
         {
             InitializeComponent();
         }

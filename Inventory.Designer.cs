@@ -1979,6 +1979,7 @@
             this.bunifuButton214.TextMarginLeft = 0;
             this.bunifuButton214.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton214.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton214.Click += new System.EventHandler(this.bunifuButton214_Click);
             // 
             // bunifuButton215
             // 
