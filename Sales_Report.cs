@@ -10,17 +10,13 @@ using System.Windows.Forms;
 
 namespace Goodness_Pharmacy
 {
-    public partial class Report : Form
+    public partial class Sales_Report : Form
     {
-        public Report()
+        public Sales_Report()
         {
             InitializeComponent();
         }
 
-        private void bunifuButton214_Click(object sender, EventArgs e)
-        {
-            Sales_Report salesrep = new Sales_Report();
-            salesrep.Show();
-        }
+      
     }
 }
