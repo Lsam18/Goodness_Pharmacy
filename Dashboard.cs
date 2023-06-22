@@ -75,6 +75,12 @@ namespace Goodness_Pharmacy
             this.Hide();
         }
 
+        private void bunifuButton28_Click(object sender, EventArgs e)
+        {
+            Technical_Support technical = new Technical_Support();
+            technical.Show();
+
+        }
     }
 
 }

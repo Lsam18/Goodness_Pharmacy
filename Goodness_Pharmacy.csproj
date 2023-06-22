@@ -372,6 +372,12 @@
     <Compile Include="Supplier.Designer.cs">
       <DependentUpon>Supplier.cs</DependentUpon>
     </Compile>
+    <Compile Include="Technical_Support.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technical_Support.Designer.cs">
+      <DependentUpon>Technical_Support.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Add_Medicine.resx">
       <DependentUpon>Add_Medicine.cs</DependentUpon>
     </EmbeddedResource>
@@ -450,6 +456,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Supplier.resx">
       <DependentUpon>Supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technical_Support.resx">
+      <DependentUpon>Technical_Support.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
