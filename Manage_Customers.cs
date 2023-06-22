@@ -10,19 +10,18 @@ using System.Windows.Forms;
 
 namespace Goodness_Pharmacy
 {
-    public partial class Supplier : Form
+    public partial class Manage_Customers : Form
     {
-        public Supplier()
+        public Manage_Customers()
         {
             InitializeComponent();
         }
 
-        private void bunifuButton210_Click(object sender, EventArgs e)
+        private void bunifuButton21_Click(object sender, EventArgs e)
         {
-            Manage_Customers managesup =  new Manage_Customers();
-            managesup.Show();
+            Customer customer = new Customer();
+            customer.Show();
             this.Close();
-
         }
     }
 }

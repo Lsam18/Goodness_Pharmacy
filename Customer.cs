@@ -16,5 +16,11 @@ namespace Goodness_Pharmacy
         {
             InitializeComponent();
         }
+
+        private void bunifuButton210_Click(object sender, EventArgs e)
+        {
+            Manage_Customers manage = new Manage_Customers();
+            manage.Show();
+        }
     }
 }

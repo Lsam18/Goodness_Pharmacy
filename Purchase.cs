@@ -17,6 +17,11 @@ namespace Goodness_Pharmacy
             InitializeComponent();
         }
 
-       
+        private void bunifuButton212_Click(object sender, EventArgs e)
+        {
+            Manage_Purchases manage_purch =   new Manage_Purchases();
+            manage_purch.Show();
+            this.Close();
+        }
     }
 }
