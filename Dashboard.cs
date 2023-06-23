@@ -26,7 +26,7 @@ namespace Goodness_Pharmacy
 
             if (result == DialogResult.Yes)
             {
-                // Code to close the application
+                
                 Application.Exit();
             }
         }
