@@ -158,6 +158,7 @@
             this.linkLabel2.TabIndex = 25;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Super Admin";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // bunifuShapes2
             // 
@@ -263,6 +264,7 @@
             this.bunifuButton210.TextMarginLeft = 0;
             this.bunifuButton210.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton210.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton210.Click += new System.EventHandler(this.bunifuButton210_Click);
             // 
             // bunifuButton211
             // 
@@ -352,6 +354,7 @@
             this.bunifuButton211.TextMarginLeft = 0;
             this.bunifuButton211.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton211.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton211.Click += new System.EventHandler(this.bunifuButton211_Click);
             // 
             // bunifuButton212
             // 
@@ -441,6 +444,7 @@
             this.bunifuButton212.TextMarginLeft = 0;
             this.bunifuButton212.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton212.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton212.Click += new System.EventHandler(this.bunifuButton212_Click);
             // 
             // bunifuButton213
             // 
@@ -530,6 +534,7 @@
             this.bunifuButton213.TextMarginLeft = 0;
             this.bunifuButton213.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton213.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton213.Click += new System.EventHandler(this.bunifuButton213_Click);
             // 
             // bunifuButton214
             // 
@@ -619,6 +624,7 @@
             this.bunifuButton214.TextMarginLeft = 0;
             this.bunifuButton214.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton214.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton214.Click += new System.EventHandler(this.bunifuButton214_Click);
             // 
             // bunifuButton215
             // 
@@ -708,6 +714,7 @@
             this.bunifuButton215.TextMarginLeft = 0;
             this.bunifuButton215.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton215.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton215.Click += new System.EventHandler(this.bunifuButton215_Click);
             // 
             // bunifuButton216
             // 
@@ -797,6 +804,7 @@
             this.bunifuButton216.TextMarginLeft = 0;
             this.bunifuButton216.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton216.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton216.Click += new System.EventHandler(this.bunifuButton216_Click);
             // 
             // bunifuButton217
             // 
@@ -886,6 +894,7 @@
             this.bunifuButton217.TextMarginLeft = 0;
             this.bunifuButton217.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton217.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton217.Click += new System.EventHandler(this.bunifuButton217_Click);
             // 
             // bunifuButton218
             // 
@@ -975,6 +984,7 @@
             this.bunifuButton218.TextMarginLeft = 0;
             this.bunifuButton218.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton218.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton218.Click += new System.EventHandler(this.bunifuButton218_Click);
             // 
             // bunifuLabel3
             // 

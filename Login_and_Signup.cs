@@ -19,7 +19,13 @@ namespace Goodness_Pharmacy
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult result = MessageBox.Show("This will close the application. Do you wish to proceed?", "Warning", MessageBoxButtons.YesNo);
+
+            if (result == DialogResult.Yes)
+            {
+
+                Application.Exit();
+            }
         }
 
 

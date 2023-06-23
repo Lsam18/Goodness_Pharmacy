@@ -22,15 +22,27 @@ namespace Goodness_Pharmacy
 
         private void bunifuButton29_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult result = MessageBox.Show("This will close the application. Do you wish to proceed?", "Warning", MessageBoxButtons.YesNo);
+
+            if (result == DialogResult.Yes)
+            {
+                // Code to close the application
+                Application.Exit();
+            }
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Login_and_Signup logsign = new Login_and_Signup();
-            logsign.Show();
+            DialogResult result = MessageBox.Show("Are you sure you want to sign out?", "Sign Out", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                Login_and_Signup logsign = new Login_and_Signup();
+                logsign.Show();
+                this.Hide();
+                
+            }
 
-           
+
 
         }
 
@@ -38,21 +50,21 @@ namespace Goodness_Pharmacy
         {
             Inventory inventory = new Inventory();
             inventory.Show();
-            this.Hide();
+            
         }
 
         private void bunifuButton23_Click(object sender, EventArgs e)
         {
             Report report = new Report();
             report.Show();
-            this.Hide();
+            
         }
 
         private void bunifuButton24_Click(object sender, EventArgs e)
         {
             Customer customer = new Customer();
             customer.Show();
-            this.Hide();
+            
         }
 
         private void bunifuButton25_Click(object sender, EventArgs e)
@@ -65,14 +77,14 @@ namespace Goodness_Pharmacy
         {
             Purchase purchase = new Purchase();
             purchase.Show();
-            this.Hide();
+            
         }
 
         private void bunifuButton27_Click(object sender, EventArgs e)
         {
             Sales sales = new Sales();
             sales.Show();
-            this.Hide();
+            
         }
 
         private void bunifuButton28_Click(object sender, EventArgs e)
@@ -81,6 +93,50 @@ namespace Goodness_Pharmacy
             technical.Show();
 
         }
+
+        private void bunifuButton210_Click(object sender, EventArgs e)
+        {
+            Inventory inventory = new Inventory();
+            inventory.Show();
+        }
+
+        private void bunifuButton211_Click(object sender, EventArgs e)
+        {
+            Report report = new Report();
+            report.Show();
+        }
+
+        private void bunifuButton212_Click(object sender, EventArgs e)
+        {
+            Inventory inventory = new Inventory();
+            inventory.Show();
+        }
+
+        private void bunifuButton213_Click(object sender, EventArgs e)
+        {
+            List_of_Medicines_Main list_Of_ = new List_of_Medicines_Main();
+            list_Of_.Show();
+        }
+
+        private void bunifuButton215_Click(object sender, EventArgs e)
+        {
+            Inventory inventory = new Inventory();
+            inventory.Show();
+        }
+
+        private void bunifuButton217_Click(object sender, EventArgs e)
+        {
+            Manage_Suppliers ms = new Manage_Suppliers();
+            ms.Show();
+        }
+
+        private void bunifuButton216_Click(object sender, EventArgs e)
+        {
+            Customer customer = new Customer();
+            customer.Show();
+        }
+
+        
     }
 
 }

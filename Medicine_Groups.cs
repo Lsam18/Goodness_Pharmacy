@@ -16,5 +16,92 @@ namespace Goodness_Pharmacy
         {
             InitializeComponent();
         }
+
+        private void bunifuButton218_Click(object sender, EventArgs e)
+        {
+            Dashboard dash = new Dashboard();
+            dash.Show();
+            this.Close();
+        }
+
+        private void bunifuButton217_Click(object sender, EventArgs e)
+        {
+            Inventory inventory = new Inventory();
+            inventory.Show();
+            this.Close();
+            
+        }
+
+        private void bunifuButton216_Click(object sender, EventArgs e)
+        {
+            Report report = new Report();
+            report.Show();
+            this.Close();
+        }
+
+        private void bunifuButton215_Click(object sender, EventArgs e)
+        {
+            Customer customer = new Customer();
+            customer.Show();
+            this.Close();
+        }
+
+        private void bunifuButton214_Click(object sender, EventArgs e)
+        {
+            Manage_Suppliers ms = new Manage_Suppliers();
+            ms.Show();
+            this.Close();
+        }
+
+        private void bunifuButton213_Click(object sender, EventArgs e)
+        {
+            Purchase purchase = new Purchase();
+            purchase.Show();
+            this.Close();
+        }
+
+        private void bunifuButton212_Click(object sender, EventArgs e)
+        {
+            Sales sales = new Sales();
+            sales.Show();
+            this.Close();
+        }
+
+        private void bunifuButton211_Click(object sender, EventArgs e)
+        {
+            Technical_Support technical = new Technical_Support();
+            technical.Show();
+            this.Close();
+        }
+
+        private void bunifuButton210_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("This will close the application. Do you wish to proceed?", "Warning", MessageBoxButtons.YesNo);
+
+            if (result == DialogResult.Yes)
+            {
+
+                Application.Exit();
+            }
+        }
+
+        private void bunifuButton21_Click(object sender, EventArgs e)
+        {
+            Add_Medicine add = new Add_Medicine();
+            add.Show();
+            this.Close();
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure you want to sign out?", "Sign Out", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                Login_and_Signup logsign = new Login_and_Signup();
+                logsign.Show();
+                this.Hide();
+
+            }
+        }
     }
 }
