@@ -112,5 +112,12 @@ namespace Goodness_Pharmacy
             admind.Show();
             this.Close();
         }
+
+        private void bunifuButton21_Click(object sender, EventArgs e)
+        {
+            Employee_Details employee_Details = new Employee_Details();
+            employee_Details.Show();
+            this.Close();
+        }
     }
 }

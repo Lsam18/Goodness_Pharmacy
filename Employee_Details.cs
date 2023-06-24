@@ -1,5 +1,4 @@
-﻿using Bunifu.UI.WinForms;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Goodness_Pharmacy
 {
-    public partial class admin_Details : Form
+    public partial class Employee_Details : Form
     {
-        public admin_Details()
+        public Employee_Details()
         {
             InitializeComponent();
         }
@@ -88,7 +87,6 @@ namespace Goodness_Pharmacy
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
             DialogResult result = MessageBox.Show("Are you sure you want to sign out?", "Sign Out", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
@@ -99,14 +97,14 @@ namespace Goodness_Pharmacy
             }
         }
 
-        private void admin_Details_Load(object sender, EventArgs e)
+        private void Employee_Details_Load(object sender, EventArgs e)
         {
             using (SqlConnection connection = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30"))
             {
                 try
                 {
                     // Create the SQL select query
-                    string query = "SELECT * FROM adminsignup";
+                    string query = "SELECT * FROM Employeesign";
 
                     // Create a SqlCommand object with the query and connection
                     using (SqlCommand command = new SqlCommand(query, connection))
@@ -140,7 +138,6 @@ namespace Goodness_Pharmacy
         private int currentIndex = 0;
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-          
             if (currentIndex < bunifuDataGridView1.Rows.Count - 1)
             {
                 // Increment the current index to move to the next record
@@ -153,6 +150,7 @@ namespace Goodness_Pharmacy
 
         private void bunifuImageButton2_Click(object sender, EventArgs e)
         {
+
             if (currentIndex > 0)
             {
                 // Decrement the current index to move to the previous record
@@ -162,7 +160,5 @@ namespace Goodness_Pharmacy
                 bunifuDataGridView1.CurrentCell = bunifuDataGridView1.Rows[currentIndex].Cells[0];
             }
         }
-
-       
     }
 }
