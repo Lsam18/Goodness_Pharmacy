@@ -55,6 +55,7 @@ namespace Goodness_Pharmacy
                         if (count > 0)
                         {
                             // Successful login
+                            Program.UserRole = "admin";
                             MessageBox.Show("Login successful!");
                             Dashboard dashboardForm = new Dashboard();
                             dashboardForm.Show();

@@ -108,16 +108,26 @@ namespace Goodness_Pharmacy
 
         private void bunifuButton219_Click(object sender, EventArgs e)
         {
+            if (Program.UserRole == "admin")
+            {
             admin_Details admind = new admin_Details();
             admind.Show();
             this.Close();
         }
+            else
+                MessageBox.Show("Access denied");
+        }
 
         private void bunifuButton21_Click(object sender, EventArgs e)
         {
+            if (Program.UserRole == "admin")
+            {
             Employee_Details employee_Details = new Employee_Details();
             employee_Details.Show();
             this.Close();
         }
+            else
+                MessageBox.Show("Access Denied");
     }
+}
 }
