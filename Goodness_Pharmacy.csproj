@@ -274,12 +274,6 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard_Emp.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dashboard_Emp.Designer.cs">
-      <DependentUpon>Dashboard_Emp.cs</DependentUpon>
-    </Compile>
     <Compile Include="Employee_Details.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -410,9 +404,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dashboard_Emp.resx">
-      <DependentUpon>Dashboard_Emp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Employee_Details.resx">
       <DependentUpon>Employee_Details.cs</DependentUpon>

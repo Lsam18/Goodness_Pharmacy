@@ -116,7 +116,7 @@ namespace Goodness_Pharmacy
             this.Close();
         }
             else
-                MessageBox.Show("You do not have permission to access this");
+                MessageBox.Show("You do not have permission to access this!");
         }
 
         private void bunifuButton21_Click(object sender, EventArgs e)
@@ -131,5 +131,7 @@ namespace Goodness_Pharmacy
             else
                 MessageBox.Show("You do not have permission to access this");
     }
-}
+
+        
+    }
 }

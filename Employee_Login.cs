@@ -57,7 +57,7 @@ namespace Goodness_Pharmacy
                             Program.UserRole = "employee"; //for employee privileges
                             // Successful login
                             MessageBox.Show("Login successful!");
-                            Dashboard_Emp dashboardForm = new Dashboard_Emp();
+                            Dashboard dashboardForm = new Dashboard();
                             dashboardForm.Show();
                             this.Close();
                             // Perform any additional tasks or navigate to the next page
