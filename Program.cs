@@ -12,6 +12,8 @@ namespace Goodness_Pharmacy
         /// The main entry point for the application.
         /// </summary>
         public static string UserRole { get; set; } //for special admin privileges
+        public static string UserName { get; set; } //to display username in dashboard
+        
         [STAThread]
         static void Main()
         {

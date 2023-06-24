@@ -17,6 +17,8 @@ namespace Goodness_Pharmacy
         public Add_Medicine()
         {
             InitializeComponent();
+            linkLabel2.Text = Program.UserRole + " -Sign Out";
+            bunifuLabel3.Text = Program.UserName;
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
