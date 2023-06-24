@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -82,6 +83,60 @@ namespace Goodness_Pharmacy
             Login_and_Signup logsign = new Login_and_Signup();
             logsign.Show();
             this.Close();
+        }
+
+        private void bunifuButton213_Click(object sender, EventArgs e)
+        {
+            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    // Get the values to be inserted from your Windows Form controls
+                    int id = Convert.ToInt32(bunifuTextBoxCustomerId.Text);
+                    string name = bunifuTextBoxCustomerName.Text;
+                    string address = bunifuTextBoxCustomerAddress.Text;
+                    int phone = Convert.ToInt32(bunifuTextBoxCustomerPhone.Text);
+
+                    // Create the SQL insert query
+                    string query = "INSERT INTO customer (Id, Name, Address, Phone) " +
+                                   "VALUES (@Id, @Name, @Address, @Phone)";
+
+                    // Create a SqlCommand object with the query and connection
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        // Add parameters to prevent SQL injection and set their values
+                        command.Parameters.AddWithValue("@Id", id);
+                        command.Parameters.AddWithValue("@Name", name);
+                        command.Parameters.AddWithValue("@Address", address);
+                        command.Parameters.AddWithValue("@Phone", phone);
+
+                        // Open the connection
+                        connection.Open();
+
+                        // Execute the query
+                        command.ExecuteNonQuery();
+
+                        // Close the connection
+                        connection.Close();
+
+                        // Display a success message or perform any additional tasks
+                        MessageBox.Show("Customer data inserted successfully!");
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                // Handle SQL exception
+                MessageBox.Show("An SQL exception occurred: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                // Handle other exceptions
+                MessageBox.Show("An exception occurred: " + ex.Message);
+            }
+
         }
     }
 }

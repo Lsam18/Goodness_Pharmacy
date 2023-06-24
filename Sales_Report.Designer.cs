@@ -1658,7 +1658,7 @@
             this.bunifuChartCanvas1.BackColor = System.Drawing.Color.White;
             this.bunifuChartCanvas1.CanvasPadding = new System.Windows.Forms.Padding(0);
             this.bunifuChartCanvas1.Labels = new string[] {
-        "dec1"};
+        "daDD"};
             this.bunifuChartCanvas1.LegendAlignment = Bunifu.Charts.WinForms.BunifuChartCanvas.LegendAlignmentOptions.center;
             this.bunifuChartCanvas1.LegendDisplay = true;
             this.bunifuChartCanvas1.LegendFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
