@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,6 +19,8 @@ namespace Goodness_Pharmacy
             InitializeComponent();
         }
 
+       
+        
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -55,7 +58,7 @@ namespace Goodness_Pharmacy
                         if (count > 0)
                         {
                             // Successful login
-                            Program.UserRole = "admin";
+                            Program.UserRole = "admin"; //for special admin privileges
                             MessageBox.Show("Login successful!");
                             Dashboard dashboardForm = new Dashboard();
                             dashboardForm.Show();

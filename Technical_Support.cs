@@ -110,24 +110,26 @@ namespace Goodness_Pharmacy
         {
             if (Program.UserRole == "admin")
             {
-            admin_Details admind = new admin_Details();
-            admind.Show();
+                MessageBox.Show("Access granted");
+                admin_Details objAdmin = new admin_Details();
+                objAdmin.Show();
             this.Close();
         }
             else
-                MessageBox.Show("Access denied");
+                MessageBox.Show("You do not have permission to access this");
         }
 
         private void bunifuButton21_Click(object sender, EventArgs e)
         {
             if (Program.UserRole == "admin")
             {
-            Employee_Details employee_Details = new Employee_Details();
-            employee_Details.Show();
+                MessageBox.Show("Access granted");
+                Employee_Details objEmp = new Employee_Details();
+                objEmp.Show();
             this.Close();
         }
             else
-                MessageBox.Show("Access Denied");
+                MessageBox.Show("You do not have permission to access this");
     }
 }
 }

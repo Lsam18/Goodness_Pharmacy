@@ -54,7 +54,7 @@ namespace Goodness_Pharmacy
                         // Check if the user exists
                         if (count > 0)
                         {
-                            Program.UserRole = "Employee";
+                            Program.UserRole = "employee"; //for employee privileges
                             // Successful login
                             MessageBox.Show("Login successful!");
                             Dashboard_Emp dashboardForm = new Dashboard_Emp();
