@@ -17,6 +17,8 @@ namespace Goodness_Pharmacy
         public admin_Details()
         {
             InitializeComponent();
+            linkLabel2.Text = Program.UserRole + " - Sign Out";
+            bunifuLabel3.Text = Program.UserName;
         }
 
         private void bunifuButton218_Click(object sender, EventArgs e)
@@ -101,7 +103,7 @@ namespace Goodness_Pharmacy
 
         private void admin_Details_Load(object sender, EventArgs e)
         {
-            using (SqlConnection connection = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30"))
+            using (SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\mifra\source\repos\Goodness_Pharmacy\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30"))
             {
                 try
                 {

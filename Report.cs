@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bunifu.UI.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,8 @@ namespace Goodness_Pharmacy
         public Report()
         {
             InitializeComponent();
+            linkLabel1.Text = Program.UserRole + " - Sign Out";
+            bunifuLabel2.Text = Program.UserName;
         }
 
         private void bunifuButton214_Click(object sender, EventArgs e)

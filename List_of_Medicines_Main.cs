@@ -15,6 +15,8 @@ namespace Goodness_Pharmacy
         public List_of_Medicines_Main()
         {
             InitializeComponent();
+            linkLabel2.Text = Program.UserRole + " - Sign Out";
+            bunifuLabel3.Text = Program.UserName;
         }
 
         private void bunifuButton21_Click(object sender, EventArgs e)
