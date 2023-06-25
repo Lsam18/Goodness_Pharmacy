@@ -49,16 +49,26 @@ namespace Goodness_Pharmacy
 
         private void bunifuButton216_Click(object sender, EventArgs e)
         {
+            if (Program.UserRole == "Admin")
+            {
             Sales_Report salesrep = new Sales_Report();
             salesrep.Show();
             this.Close();
         }
+            else
+                MessageBox.Show("You do not have permission to access this");
+        }
 
         private void bunifuButton215_Click(object sender, EventArgs e)
         {
+            if (Program.UserRole == "Admin")
+            {
             Sales_Report salesrep = new Sales_Report();
             salesrep.Show();
             this.Close();
+        }
+            else
+                MessageBox.Show("You do not have permission to access this");
         }
 
         private void bunifuButton214_Click(object sender, EventArgs e)
@@ -103,7 +113,7 @@ namespace Goodness_Pharmacy
 
         private void bunifuButton21_Click(object sender, EventArgs e)
         {
-            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\mifra\source\repos\Goodness_Pharmacy\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
 
             try
             {

@@ -33,24 +33,28 @@ namespace Goodness_Pharmacy
         {
             Admin_Login adlog = new Admin_Login();
             adlog.Show();
+            this.Close();
         }
 
         private void bunifuButton24_Click(object sender, EventArgs e)
         {
             Employee_Login emplog = new Employee_Login();
             emplog.Show();
+            this.Close();
         }
 
         private void bunifuButton23_Click(object sender, EventArgs e)
         {
             Employee_SignUp empsignup = new Employee_SignUp();
             empsignup.Show();
+            this.Close();
         }
 
         private void bunifuButton22_Click(object sender, EventArgs e)
         {
             Admin_Signup adminsignup = new Admin_Signup();
             adminsignup.Show();
+            this.Close();
         }
     }
 }

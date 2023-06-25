@@ -58,9 +58,15 @@ namespace Goodness_Pharmacy
 
         private void bunifuButton23_Click(object sender, EventArgs e)
         {
-            Sales_Report salesrep = new Sales_Report();
-            salesrep.Show();
-            
+            if (Program.UserRole == "Admin")
+            {
+                Sales_Report salesrep = new Sales_Report();
+                salesrep.Show();
+                this.Close();
+            }
+            else
+                MessageBox.Show("You do not have permission to access this");
+
         }
 
         private void bunifuButton24_Click(object sender, EventArgs e)
@@ -105,8 +111,14 @@ namespace Goodness_Pharmacy
 
         private void bunifuButton211_Click(object sender, EventArgs e)
         {
-            Sales_Report salesrep = new Sales_Report();
-            salesrep.Show();
+            if (Program.UserRole == "Admin")
+            {
+                Sales_Report salesrep = new Sales_Report();
+                salesrep.Show();
+                this.Close();
+            }
+            else
+                MessageBox.Show("You do not have permission to access this");
         }
 
         private void bunifuButton212_Click(object sender, EventArgs e)
@@ -129,6 +141,7 @@ namespace Goodness_Pharmacy
 
         private void bunifuButton217_Click(object sender, EventArgs e)
         {
+
             Manage_Suppliers ms = new Manage_Suppliers();
             ms.Show();
         }
