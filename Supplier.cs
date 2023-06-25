@@ -213,12 +213,13 @@ namespace Goodness_Pharmacy
         private void bunifuButton212_Click(object sender, EventArgs e)
         {
             // Get the purchase ID from your Windows Form control
-            int id = Convert.ToInt32(bunifuTextBoxSupplierIdsup.Text);
-
-            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
+           
 
             try
             {
+                int id = Convert.ToInt32(bunifuTextBoxSupplierIdsup.Text);
+
+                string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     // Create the SQL delete query
@@ -240,7 +241,7 @@ namespace Goodness_Pharmacy
                         connection.Close();
 
                         // Display a success message or perform any additional tasks
-                        MessageBox.Show("Purchase data deleted successfully!");
+                        MessageBox.Show("Supplier data deleted successfully!");
 
                         // Call the method to update the DataGridView in the "manage_purchase" form
                         Manage_Purchases managePurchaseForm = Application.OpenForms["ManagePurchaseForm"] as Manage_Purchases;

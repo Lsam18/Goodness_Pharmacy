@@ -113,13 +113,13 @@ namespace Goodness_Pharmacy
                     int id = Convert.ToInt32(bunifuTextBoxId.Text);
                     string medicineName = bunifuTextBoxMedicineName.Text;
                     DateTime expireDate = bunifuDatePickerExpireDate.Value;
-                    string medicineGroup = bunifuDropdownMedicineGroup.SelectedItem?.ToString();
+                    string medicineGroup = bunifuTextBox1.Text;
                     string quantity = bunifuTextBoxQuantity.Text;
                     string boxSize = bunifuTextBoxBoxSize.Text;
                     string howToUse = bunifuTextBoxHowToUse.Text;
                     float sellPrice = Convert.ToSingle(bunifuSellPrice.Text);
                     float supplierPrice = Convert.ToSingle(bunifuTextBoxSupplierPrice.Text);
-                    string category = bunifuDropdownCategory.SelectedItem?.ToString();
+                    string category = bunifuTextBox2.Text;
 
                     // Perform form validation
                     if (string.IsNullOrEmpty(medicineName) ||

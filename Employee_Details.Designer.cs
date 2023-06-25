@@ -1096,7 +1096,7 @@
             this.bunifuImageButton1.ImageSize = new System.Drawing.Size(20, 17);
             this.bunifuImageButton1.ImageZoomSize = new System.Drawing.Size(40, 37);
             this.bunifuImageButton1.InitialImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.InitialImage")));
-            this.bunifuImageButton1.Location = new System.Drawing.Point(1383, 749);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(1379, 749);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
             this.bunifuImageButton1.Rotation = 0;
             this.bunifuImageButton1.ShowActiveImage = true;

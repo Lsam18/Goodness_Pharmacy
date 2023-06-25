@@ -221,13 +221,14 @@ namespace Goodness_Pharmacy
 
         private void bunifuButton210_Click(object sender, EventArgs e)
         {
-            // Get the purchase ID from your Windows Form control
-            int id = Convert.ToInt32(bunifuTextBoxPurchaseId.Text);
-
-            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
+            
 
             try
             {
+                // Get the purchase ID from your Windows Form control
+                int id = Convert.ToInt32(bunifuTextBoxPurchaseId.Text);
+
+                string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     // Create the SQL delete query
