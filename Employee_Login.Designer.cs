@@ -42,7 +42,6 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.EmployeePanel = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuImageButton1 = new Bunifu.UI.WinForms.BunifuImageButton();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.bunifuButton24 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.bunifuTextBoxPassword = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -111,24 +110,6 @@
             this.bunifuImageButton1.Zoom = 20;
             this.bunifuImageButton1.ZoomSpeed = 10;
             this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.linkLabel1.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.linkLabel1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.ForeColor = System.Drawing.Color.Lime;
-            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(430, 418);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(123, 17);
-            this.linkLabel1.TabIndex = 18;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Forgot Password?";
-            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.Lime;
             // 
             // bunifuButton24
             // 
@@ -443,7 +424,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(51)))), ((int)(((byte)(66)))));
             this.ClientSize = new System.Drawing.Size(800, 540);
-            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.bunifuButton24);
             this.Controls.Add(this.bunifuTextBoxPassword);
             this.Controls.Add(this.bunifuLabel3);
@@ -468,7 +448,6 @@
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.UI.WinForms.BunifuPanel EmployeePanel;
         private Bunifu.UI.WinForms.BunifuImageButton bunifuImageButton1;
-        private System.Windows.Forms.LinkLabel linkLabel1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 bunifuButton24;
         private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBoxPassword;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;

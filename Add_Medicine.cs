@@ -189,37 +189,37 @@ namespace Goodness_Pharmacy
 
         private void bunifuButton22_Click(object sender, EventArgs e)
         {
-            // Get the values to be updated from your Windows Form controls
-            int id = Convert.ToInt32(bunifuTextBoxPurchaseId.Text);
-            string medicineName = bunifuTextBoxMedicineName.Text;
-            DateTime expireDate = bunifuDatePickerExpireDate.Value;
-            string medicineGroup = bunifuTextBox1.Text;
-            string quantity = bunifuTextBoxQuantity.Text;
-            string boxSize = bunifuTextBoxBoxSize.Text;
-            string howToUse = bunifuTextBoxHowToUse.Text;
-            float sellPrice = Convert.ToSingle(bunifuSellPrice.Text);
-            float supplierPrice = Convert.ToSingle(bunifuTextBoxSupplierPrice.Text);
-            string category = bunifuTextBox2.Text;
-
-            // Perform form validation
-            if (string.IsNullOrEmpty(medicineName) ||
-                string.IsNullOrEmpty(quantity) ||
-                string.IsNullOrEmpty(boxSize) ||
-                string.IsNullOrEmpty(howToUse) ||
-                string.IsNullOrEmpty(category) ||
-                string.IsNullOrEmpty(medicineGroup))
-            {
-                MessageBox.Show("Please fill in all the required fields.");
-                return; // Stop further execution
-            }
-
-            // Create the SQL update query
-            string query = "UPDATE AddMedicine SET Medicine_Name = @MedicineName, Expire_Date = @ExpireDate, Medicine_Group = @MedicineGroup, " +
-                           "Quantity = @Quantity, Box_Size = @BoxSize, How_to_use = @HowToUse, Sell_Price = @SellPrice, Supplier_Price = @SupplierPrice, " +
-                           "Category = @Category WHERE Id = @Id";
-
+     
             try
             {
+                // Get the values to be updated from your Windows Form controls
+                int id = Convert.ToInt32(bunifuTextBoxPurchaseId.Text);
+                string medicineName = bunifuTextBoxMedicineName.Text;
+                DateTime expireDate = bunifuDatePickerExpireDate.Value;
+                string medicineGroup = bunifuTextBox1.Text;
+                string quantity = bunifuTextBoxQuantity.Text;
+                string boxSize = bunifuTextBoxBoxSize.Text;
+                string howToUse = bunifuTextBoxHowToUse.Text;
+                float sellPrice = Convert.ToSingle(bunifuSellPrice.Text);
+                float supplierPrice = Convert.ToSingle(bunifuTextBoxSupplierPrice.Text);
+                string category = bunifuTextBox2.Text;
+
+                // Perform form validation
+                if (string.IsNullOrEmpty(medicineName) ||
+                    string.IsNullOrEmpty(quantity) ||
+                    string.IsNullOrEmpty(boxSize) ||
+                    string.IsNullOrEmpty(howToUse) ||
+                    string.IsNullOrEmpty(category) ||
+                    string.IsNullOrEmpty(medicineGroup))
+                {
+                    MessageBox.Show("Please fill in all the required fields.");
+                    return; // Stop further execution
+                }
+
+                // Create the SQL update query
+                string query = "UPDATE AddMedicine SET Medicine_Name = @MedicineName, Expire_Date = @ExpireDate, Medicine_Group = @MedicineGroup, " +
+                               "Quantity = @Quantity, Box_Size = @BoxSize, How_to_use = @HowToUse, Sell_Price = @SellPrice, Supplier_Price = @SupplierPrice, " +
+                               "Category = @Category WHERE Id = @Id";
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     // Create a SqlCommand object with the query and connection
@@ -279,13 +279,14 @@ namespace Goodness_Pharmacy
 
         private void bunifuButton23_Click(object sender, EventArgs e)
         {
-            // Get the purchase ID from your Windows Form control
-            int id = Convert.ToInt32(bunifuTextBoxPurchaseId.Text);
-
-            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
+            
 
             try
             {
+                // Get the purchase ID from your Windows Form control
+                int id = Convert.ToInt32(bunifuTextBoxPurchaseId.Text);
+
+                string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     // Create the SQL delete query

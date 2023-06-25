@@ -54,9 +54,9 @@ namespace Goodness_Pharmacy
                         return; // Stop further execution
                     }
 
-                    // Create the SQL insert query
-                    string query = "INSERT INTO Sales (Sale_Code, Supplier_Name, Date, Medicine, Quantity, Notes, Discount, Grand_Total, Payment) " +
-                                   "VALUES (@SaleCode, @SupplierName, @Date, @Medicine, @Quantity, @Notes, @Discount, @GrandTotal, @Payment)";
+                    // Create the SQL insert query without the grand total parameter
+                    string query = "INSERT INTO Sales (Sale_Code, Supplier_Name, Date, Medicine, Quantity, Notes, Discount, Payment) " +
+                                   "VALUES (@SaleCode, @SupplierName, @Date, @Medicine, @Quantity, @Notes, @Discount, @Payment)";
 
                     // Create a SqlCommand object with the query and connection
                     using (SqlCommand command = new SqlCommand(query, connection))
@@ -85,7 +85,7 @@ namespace Goodness_Pharmacy
                     }
 
                     // After inserting the data, retrieve the required columns from the Sales table
-                    string selectQuery = "SELECT Medicine, Sale_Code, Quantity, Grand_Total FROM Sales";
+                    string selectQuery = "SELECT Medicine, Sale_Code, Quantity FROM Sales";
 
                     // Clear the existing rows in the DataGridView
                     bunifuDataGridView1.Rows.Clear();
@@ -105,17 +105,33 @@ namespace Goodness_Pharmacy
                                 // Iterate through the rows and add them to the DataGridView
                                 while (reader.Read())
                                 {
-
                                     // Retrieve the values from the reader
-                                    
                                     string selectedMedicine = reader.GetString(0);
                                     int selectedSaleCode = Convert.ToInt32(reader.GetValue(1));
                                     int selectedQuantity = reader.GetInt32(2);
-                                    double selectedGrandTotal = reader.GetDouble(3);
+
+                                    // Close the reader before executing the sell price query
+                                    reader.Close();
+
+                                    // Fetch the sell price for the selected medicine from the database
+                                    float sellPrice = 0.0f; // Initialize with a default value
+                                    string sellPriceQuery = "SELECT Sell_Price FROM AddMedicine WHERE Medicine_Name = @Medicine_Name";
+
+                                    using (SqlCommand sellPriceCommand = new SqlCommand(sellPriceQuery, connection))
+                                    {
+                                        sellPriceCommand.Parameters.AddWithValue("@Medicine_Name", selectedMedicine);
+                                        object sellPriceResult = sellPriceCommand.ExecuteScalar();
+                                        if (sellPriceResult != null)
+                                        {
+                                            sellPrice = Convert.ToSingle(sellPriceResult);
+                                        }
+                                    }
+
+                                    // Calculate the grand total based on the quantity and discount
+                                    float selectedGrandTotal = selectedQuantity * (sellPrice - discount);
 
                                     // Add the values to the DataGridView as a new row
                                     bunifuDataGridView1.Rows.Add(selectedMedicine, selectedSaleCode, selectedQuantity, selectedGrandTotal);
-
                                 }
                             }
                         }
@@ -123,6 +139,8 @@ namespace Goodness_Pharmacy
                         // Close the connection
                         connection.Close();
                     }
+
+
                 }
             }
             catch (SqlException ex)

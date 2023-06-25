@@ -49,7 +49,6 @@
             this.bunifuTextBoxPassword = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuButton24 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Adminloginpanel.SuspendLayout();
@@ -412,24 +411,6 @@
             this.bunifuButton24.UseDefaultRadiusAndThickness = true;
             this.bunifuButton24.Click += new System.EventHandler(this.bunifuButton24_Click);
             // 
-            // linkLabel1
-            // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.linkLabel1.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.linkLabel1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.ForeColor = System.Drawing.Color.Lime;
-            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(433, 430);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(123, 17);
-            this.linkLabel1.TabIndex = 10;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Forgot Password?";
-            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.Lime;
-            // 
             // bunifuDragControl1
             // 
             this.bunifuDragControl1.Fixed = true;
@@ -443,7 +424,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(51)))), ((int)(((byte)(66)))));
             this.ClientSize = new System.Drawing.Size(800, 540);
-            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.bunifuButton24);
             this.Controls.Add(this.bunifuTextBoxPassword);
             this.Controls.Add(this.bunifuLabel3);
@@ -475,7 +455,6 @@
         private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBoxusername;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 bunifuButton24;
-        private System.Windows.Forms.LinkLabel linkLabel1;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
     }
 }

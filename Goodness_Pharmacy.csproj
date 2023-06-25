@@ -328,18 +328,6 @@
     <Compile Include="Manage_Suppliers.Designer.cs">
       <DependentUpon>Manage_Suppliers.cs</DependentUpon>
     </Compile>
-    <Compile Include="Medicine_Groups.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Medicine_Groups.Designer.cs">
-      <DependentUpon>Medicine_Groups.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Medicine_Group_Item_Lists.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Medicine_Group_Item_Lists.Designer.cs">
-      <DependentUpon>Medicine_Group_Item_Lists.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Purchase.cs">
@@ -426,12 +414,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Manage_Suppliers.resx">
       <DependentUpon>Manage_Suppliers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Medicine_Groups.resx">
-      <DependentUpon>Medicine_Groups.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Medicine_Group_Item_Lists.resx">
-      <DependentUpon>Medicine_Group_Item_Lists.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

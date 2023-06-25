@@ -32,11 +32,7 @@ namespace Goodness_Pharmacy
             list_Of_Medicines_Main.Show();
         }
 
-        private void bunifuButton215_Click(object sender, EventArgs e)
-        {
-            Medicine_Groups medicine_Groups = new Medicine_Groups();
-            medicine_Groups.Show();
-        }
+      
 
         private void bunifuButton23_Click(object sender, EventArgs e)
         {
@@ -91,11 +87,7 @@ namespace Goodness_Pharmacy
             lists.Show();
         }
 
-        private void bunifuButton211_Click(object sender, EventArgs e)
-        {
-            Medicine_Groups medicine_Groups = new Medicine_Groups();
-            medicine_Groups.Show();
-        }
+      
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -107,6 +99,13 @@ namespace Goodness_Pharmacy
                 this.Hide();
 
             }
+        }
+
+        private void bunifuButton212_Click(object sender, EventArgs e)
+        {
+            List_of_Medicines_Main list_Of_ = new List_of_Medicines_Main();
+            list_Of_.Show();
+            this.Close();
         }
     }
 }
