@@ -298,12 +298,6 @@
     <Compile Include="Inventory.Designer.cs">
       <DependentUpon>Inventory.cs</DependentUpon>
     </Compile>
-    <Compile Include="List_of_Medicines_Details.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="List_of_Medicines_Details.Designer.cs">
-      <DependentUpon>List_of_Medicines_Details.cs</DependentUpon>
-    </Compile>
     <Compile Include="List_of_Medicines_Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -417,9 +411,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Inventory.resx">
       <DependentUpon>Inventory.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="List_of_Medicines_Details.resx">
-      <DependentUpon>List_of_Medicines_Details.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="List_of_Medicines_Main.resx">
       <DependentUpon>List_of_Medicines_Main.cs</DependentUpon>
