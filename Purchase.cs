@@ -43,8 +43,14 @@ namespace Goodness_Pharmacy
 
         private void bunifuButton23_Click(object sender, EventArgs e)
         {
-            Sales_Report salesrep = new Sales_Report();
-            salesrep.Show();
+            if (Program.UserRole == "Admin")
+            {
+                Sales_Report salesrep = new Sales_Report();
+                salesrep.Show();
+                this.Close();
+            }
+            else
+                MessageBox.Show("You do not have permission to access this");
         }
 
         private void bunifuButton24_Click(object sender, EventArgs e)
@@ -96,7 +102,7 @@ namespace Goodness_Pharmacy
 
         private void bunifuButton213_Click(object sender, EventArgs e)
         {
-            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\mifra\source\repos\Goodness_Pharmacy\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
 
             try
             {
@@ -156,7 +162,7 @@ namespace Goodness_Pharmacy
 
         private void bunifuButton211_Click(object sender, EventArgs e)
         {
-            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\mifra\source\repos\Goodness_Pharmacy\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
 
             try
             {
@@ -228,7 +234,7 @@ namespace Goodness_Pharmacy
                 // Get the purchase ID from your Windows Form control
                 int id = Convert.ToInt32(bunifuTextBoxPurchaseId.Text);
 
-                string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
+                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\mifra\source\repos\Goodness_Pharmacy\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     // Create the SQL delete query
@@ -281,7 +287,7 @@ namespace Goodness_Pharmacy
                 try
                 {
                     // Establish the database connection
-                    using (SqlConnection connection = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30"))
+                    using (SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\mifra\source\repos\Goodness_Pharmacy\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30"))
                     {
                         // Create the SQL query to fetch suppliers
                         string query = "SELECT Name FROM Supplier";
