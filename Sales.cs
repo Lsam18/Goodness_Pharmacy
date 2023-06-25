@@ -43,7 +43,6 @@ namespace Goodness_Pharmacy
                     int quantity = Convert.ToInt32(bunifuTextBoxQuantity.Text);
                     string notes = bunifuTextBoxNotes.Text;
                     float discount = Convert.ToSingle(bunifuTextBoxDiscount.Text);
-                    float grandTotal = Convert.ToSingle(bunifuTextBoxGrandTotal.Text);
                     string payment = bunifuDropdownPayment.SelectedItem?.ToString();
 
                     // Perform form validation
@@ -70,7 +69,6 @@ namespace Goodness_Pharmacy
                         command.Parameters.AddWithValue("@Quantity", quantity);
                         command.Parameters.AddWithValue("@Notes", notes);
                         command.Parameters.AddWithValue("@Discount", discount);
-                        command.Parameters.AddWithValue("@GrandTotal", grandTotal);
                         command.Parameters.AddWithValue("@Payment", payment);
 
                         // Open the connection

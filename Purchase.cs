@@ -162,7 +162,7 @@ namespace Goodness_Pharmacy
             {
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    // Get the values to be inserted from your Windows Form controls
+                    // Get the values to be updated from your Windows Form controls
                     int id = Convert.ToInt32(bunifuTextBoxPurchaseId.Text);
                     string supplierName = comboBoxSupplierName.SelectedItem?.ToString(); // Get selected item from ComboBox
                     int invoiceNo = Convert.ToInt32(bunifuTextBoxInvoiceNo.Text);
@@ -171,9 +171,11 @@ namespace Goodness_Pharmacy
                     int quantity = Convert.ToInt32(bunifuTextBoxPurchaseQuantity.Text);
                     float total = float.Parse(bunifuTextBoxPurchaseTotal.Text);
 
-                    // Create the SQL insert query
-                    string query = "INSERT INTO Purchase (Id, Supplier_Name, Invoice_No, Purchase_Date, Details, Quantity, Total) " +
-                                   "VALUES (@Id, @SupplierName, @InvoiceNo, @PurchaseDate, @Details, @Quantity, @Total)";
+                    // Create the SQL update query
+                    string query = "UPDATE Purchase " +
+                                   "SET Supplier_Name = @SupplierName, Invoice_No = @InvoiceNo, Purchase_Date = @PurchaseDate, " +
+                                   "Details = @Details, Quantity = @Quantity, Total = @Total " +
+                                   "WHERE Id = @Id";
 
                     // Create a SqlCommand object with the query and connection
                     using (SqlCommand command = new SqlCommand(query, connection))
@@ -197,7 +199,11 @@ namespace Goodness_Pharmacy
                         connection.Close();
 
                         // Display a success message or perform any additional tasks
-                        MessageBox.Show("Purchase data inserted successfully!");
+                        MessageBox.Show("Purchase data updated successfully!");
+
+                        // Call the method to update the DataGridView in the "manage_purchase" form
+                        Manage_Purchases managePurchaseForm = Application.OpenForms["ManagePurchaseForm"] as Manage_Purchases;
+                        managePurchaseForm?.LoadPurchaseData();
                     }
                 }
             }
@@ -209,23 +215,58 @@ namespace Goodness_Pharmacy
             catch (Exception ex)
             {
                 // Handle other exceptions
-                MessageBox.Show("An exception occurred");
-        }
+                MessageBox.Show("An exception occurred: " + ex.Message);
+            }
         }
 
         private void bunifuButton210_Click(object sender, EventArgs e)
         {
-            // Assuming you have a button named "btnClear"
+            // Get the purchase ID from your Windows Form control
+            int id = Convert.ToInt32(bunifuTextBoxPurchaseId.Text);
 
+            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
 
-            // Clear the text boxes
-            bunifuTextBoxPurchaseId.Text = string.Empty;
-            comboBoxSupplierName.SelectedIndex = -1;
-            bunifuTextBoxInvoiceNo.Text = string.Empty;
-            bunifuDatePickerPurchaseDate.Value = DateTime.Today;
-            bunifuTextBoxPurchaseDetails.Text = string.Empty;
-            bunifuTextBoxPurchaseQuantity.Text = string.Empty;
-            bunifuTextBoxPurchaseTotal.Text = string.Empty;
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    // Create the SQL delete query
+                    string query = "DELETE FROM Purchase WHERE Id = @Id";
+
+                    // Create a SqlCommand object with the query and connection
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        // Add the purchase ID as a parameter to the query
+                        command.Parameters.AddWithValue("@Id", id);
+
+                        // Open the connection
+                        connection.Open();
+
+                        // Execute the query
+                        command.ExecuteNonQuery();
+
+                        // Close the connection
+                        connection.Close();
+
+                        // Display a success message or perform any additional tasks
+                        MessageBox.Show("Purchase data deleted successfully!");
+
+                        // Call the method to update the DataGridView in the "manage_purchase" form
+                        Manage_Purchases managePurchaseForm = Application.OpenForms["ManagePurchaseForm"] as Manage_Purchases;
+                        managePurchaseForm?.LoadPurchaseData();
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                // Handle SQL exception
+                MessageBox.Show("An SQL exception occurred: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                // Handle other exceptions
+                MessageBox.Show("An exception occurred: " + ex.Message);
+            }
 
 
         }

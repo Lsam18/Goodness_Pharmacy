@@ -23,7 +23,7 @@ namespace Goodness_Pharmacy
 
         private void bunifuButton210_Click(object sender, EventArgs e)
         {
-            Manage_Customers managesup =  new Manage_Customers();
+            Manage_Suppliers managesup =  new Manage_Suppliers();
             managesup.Show();
             this.Close();
 
@@ -108,10 +108,10 @@ namespace Goodness_Pharmacy
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     // Get the values to be inserted from your Windows Form controls
-                    int id = Convert.ToInt32(bunifuTextBoxCustomerIdsup.Text);
-                    string name = bunifuTextBoxCustomerNamesup.Text;
+                    int id = Convert.ToInt32(bunifuTextBoxSupplierIdsup.Text);
+                    string name = bunifuTextBoxSupplierNamesup.Text;
                     string address = bunifuTextBoxCustomerAddresssup.Text;
-                    int phone = Convert.ToInt32(bunifuTextBoxCustomerPhonesup.Text);
+                    int phone = Convert.ToInt32(bunifuTextBoxSupplierPhonesup.Text);
 
                     // Create the SQL insert query
                     string query = "INSERT INTO Supplier (Id, Name, Address, Phone) " +
@@ -152,6 +152,112 @@ namespace Goodness_Pharmacy
             }
         }
 
-       
+        private void bunifuButton211_Click(object sender, EventArgs e)
+        {
+            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    // Get the values to be updated from your Windows Form controls
+                    int id = Convert.ToInt32(bunifuTextBoxSupplierIdsup.Text);
+                    string name = bunifuTextBoxSupplierNamesup.Text;
+                    string address = bunifuTextBoxCustomerAddresssup.Text;
+                    int phone = Convert.ToInt32(bunifuTextBoxSupplierPhonesup.Text);
+
+                    // Create the SQL update query
+                    string query = "UPDATE Supplier " +
+                                   "SET Name = @Name, Address = @Address, Phone = @Phone " +
+                                   "WHERE Id = @Id";
+
+                    // Create a SqlCommand object with the query and connection
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        // Add parameters to prevent SQL injection and set their values
+                        command.Parameters.AddWithValue("@Id", id);
+                        command.Parameters.AddWithValue("@Name", name);
+                        command.Parameters.AddWithValue("@Address", address);
+                        command.Parameters.AddWithValue("@Phone", phone);
+
+                        // Open the connection
+                        connection.Open();
+
+                        // Execute the query
+                        command.ExecuteNonQuery();
+
+                        // Close the connection
+                        connection.Close();
+
+                        // Display a success message or perform any additional tasks
+                        MessageBox.Show("Supplier data updated successfully!");
+
+                        // Call the method to update the DataGridView in the "manage_supplier" form
+                        Manage_Suppliers manageSupplierForm = Application.OpenForms["ManageSupplierForm"] as Manage_Suppliers;
+                        manageSupplierForm?.LoadSupplierData();
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                // Handle SQL exception
+                MessageBox.Show("An SQL exception occurred: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                // Handle other exceptions
+                MessageBox.Show("An exception occurred: " + ex.Message);
+            }
+        }
+
+        private void bunifuButton212_Click(object sender, EventArgs e)
+        {
+            // Get the purchase ID from your Windows Form control
+            int id = Convert.ToInt32(bunifuTextBoxSupplierIdsup.Text);
+
+            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    // Create the SQL delete query
+                    string query = "DELETE FROM Supplier WHERE Id = @Id";
+
+                    // Create a SqlCommand object with the query and connection
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        // Add the purchase ID as a parameter to the query
+                        command.Parameters.AddWithValue("@Id", id);
+
+                        // Open the connection
+                        connection.Open();
+
+                        // Execute the query
+                        command.ExecuteNonQuery();
+
+                        // Close the connection
+                        connection.Close();
+
+                        // Display a success message or perform any additional tasks
+                        MessageBox.Show("Purchase data deleted successfully!");
+
+                        // Call the method to update the DataGridView in the "manage_purchase" form
+                        Manage_Purchases managePurchaseForm = Application.OpenForms["ManagePurchaseForm"] as Manage_Purchases;
+                        managePurchaseForm?.LoadPurchaseData();
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                // Handle SQL exception
+                MessageBox.Show("An SQL exception occurred: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                // Handle other exceptions
+                MessageBox.Show("An exception occurred: " + ex.Message);
+            }
+        }
     }
 }

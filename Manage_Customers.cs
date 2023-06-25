@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Bunifu.UI.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -104,5 +106,56 @@ namespace Goodness_Pharmacy
 
             }
         }
+
+        private void Manage_Customers_Load(object sender, EventArgs e)
+        {
+            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
+            string query = "SELECT Id, Name, Address, Phone FROM customer";
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    // Create a SqlCommand object with the query and connection
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        // Create a DataTable to store the retrieved data
+                        DataTable dataTable = new DataTable();
+
+                        // Open the connection
+                        connection.Open();
+
+                        // Execute the query and load the results into the DataTable
+                        SqlDataAdapter adapter = new SqlDataAdapter(command);
+                        adapter.Fill(dataTable);
+
+                        // Bind the DataTable to the DataGridView
+                        bunifuDataGridView1.DataSource = dataTable;
+
+                        // Close the connection
+                        connection.Close();
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                // Handle SQL exception
+                MessageBox.Show("An SQL exception occurred: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                // Handle other exceptions
+                MessageBox.Show("An exception occurred: " + ex.Message);
+            }
+        }
+        public void LoadCustomerData()
+        {
+            // Same code as before to load the data into the DataGridView
+            // ...
+
+            // Refresh the DataGridView to reflect the updated data
+            bunifuDataGridView1.Refresh();
+        }
+
     }
 }

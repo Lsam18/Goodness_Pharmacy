@@ -1620,7 +1620,7 @@
             this.bunifuButton210.IdleIconLeftImage = null;
             this.bunifuButton210.IdleIconRightImage = null;
             this.bunifuButton210.IndicateFocus = false;
-            this.bunifuButton210.Location = new System.Drawing.Point(617, 749);
+            this.bunifuButton210.Location = new System.Drawing.Point(594, 749);
             this.bunifuButton210.Name = "bunifuButton210";
             this.bunifuButton210.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton210.OnDisabledState.BorderRadius = 4;
@@ -1677,7 +1677,7 @@
             this.bunifuButton211.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(167)))), ((int)(((byte)(104)))));
             this.bunifuButton211.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton211.BackgroundImage")));
             this.bunifuButton211.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.bunifuButton211.ButtonText = "Submit and Add Another";
+            this.bunifuButton211.ButtonText = "Update Details";
             this.bunifuButton211.ButtonTextMarginLeft = 0;
             this.bunifuButton211.ColorContrastOnClick = 45;
             this.bunifuButton211.ColorContrastOnHover = 45;
@@ -1710,7 +1710,7 @@
             this.bunifuButton211.IdleIconLeftImage = null;
             this.bunifuButton211.IdleIconRightImage = null;
             this.bunifuButton211.IndicateFocus = false;
-            this.bunifuButton211.Location = new System.Drawing.Point(879, 749);
+            this.bunifuButton211.Location = new System.Drawing.Point(842, 749);
             this.bunifuButton211.Name = "bunifuButton211";
             this.bunifuButton211.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton211.OnDisabledState.BorderRadius = 4;
