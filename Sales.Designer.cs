@@ -1923,6 +1923,7 @@
             this.bunifuButton210.TextMarginLeft = 0;
             this.bunifuButton210.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton210.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton210.Click += new System.EventHandler(this.bunifuButton210_Click);
             // 
             // bunifuShapes2
             // 

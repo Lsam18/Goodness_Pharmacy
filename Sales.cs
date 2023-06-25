@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -352,5 +353,93 @@ namespace Goodness_Pharmacy
                 MessageBox.Show("You selected medicine: " + selectedMedicine);
             }
         }
+
+        private StringBuilder receiptBuilder;
+        private PrintDocument printDocument;
+
+        private void bunifuButton210_Click(object sender, EventArgs e)
+        {
+            // Check if there are any rows in the DataGridView
+            if (bunifuDataGridView1.Rows.Count == 0)
+            {
+                MessageBox.Show("There are no items in the cart.");
+                return;
+            }
+
+            // Create a StringBuilder to store the receipt text
+            receiptBuilder = new StringBuilder();
+
+            // Append header information to the receipt
+            receiptBuilder.AppendLine("Goodness Pharmacy");
+            receiptBuilder.AppendLine("Receipt");
+            receiptBuilder.AppendLine("--------------------------");
+            receiptBuilder.AppendLine($"Date: {DateTime.Now}");
+            receiptBuilder.AppendLine();
+
+            // Iterate through the rows of the DataGridView to generate item details
+            foreach (DataGridViewRow row in bunifuDataGridView1.Rows)
+            {
+                // Retrieve the selected row from the DataGridView
+                if (row.Cells[0].Value != null)
+                {
+                    string medicine = row.Cells[0].Value.ToString();
+                    int saleCode = Convert.ToInt32(row.Cells[1].Value);
+                    int quantity = Convert.ToInt32(row.Cells[2].Value);
+                    float grandTotal = Convert.ToSingle(row.Cells[3].Value);
+
+                    receiptBuilder.AppendLine($"Medicine: {medicine}");
+                    receiptBuilder.AppendLine($"Sale Code: {saleCode}");
+                    receiptBuilder.AppendLine($"Quantity: {quantity}");
+                    receiptBuilder.AppendLine($"Grand Total: {grandTotal}");
+                    receiptBuilder.AppendLine("--------------------------");
+                }
+                else
+                {
+                    // Handle the case where the cell value is null
+                    MessageBox.Show("The cell value is null.");
+                }
+            }
+
+            // Display the generated receipt
+            MessageBox.Show(receiptBuilder.ToString(), "Receipt");
+
+            // Create the PrintDocument instance
+            printDocument = new PrintDocument();
+            printDocument.PrintPage += PrintDocument_PrintPage;
+
+            // Print the document
+            PrintDialog printDialog = new PrintDialog();
+            printDialog.Document = printDocument;
+            if (printDialog.ShowDialog() == DialogResult.OK)
+            {
+                printDocument.Print();
+            }
+        }
+
+        private void PrintDocument_PrintPage(object sender, PrintPageEventArgs e)
+        {
+            // Retrieve the receipt text from the StringBuilder
+            string receiptText = receiptBuilder.ToString();
+
+            // Set the font, margins, and format for the printing
+            Font font = new Font("Arial", 10);
+            Margins margins = new Margins(50, 50, 50, 50);
+            RectangleF printArea = new RectangleF(
+                margins.Left, margins.Top,
+                e.PageBounds.Width - margins.Left - margins.Right,
+                e.PageBounds.Height - margins.Top - margins.Bottom);
+
+            StringFormat format = new StringFormat
+            {
+                Alignment = StringAlignment.Near,
+                LineAlignment = StringAlignment.Center
+            };
+
+            // Print the receipt text
+            e.Graphics.DrawString(receiptText, font, Brushes.Black, printArea, format);
+        }
+
+
+
     }
 }
