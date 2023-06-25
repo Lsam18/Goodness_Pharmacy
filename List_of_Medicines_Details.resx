@@ -527,7 +527,7 @@
   <data name="bunifuButton25.IdleIconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAAAI5JREFUKFNjeO/qYPDew8HhvZtDwAcPu/tA/B8J3wfLgbGFAgOaJG7sbnceaLIV
+        EQAACxEBf2RfkQAAAI5JREFUKFNjeO/qYPDew8HhvZtDwAcPu/tA/B8J3wfLgbGFAgOaJG7sbnceaLIV
         0GTbBMLYxoEBBD662/UDdYOcgBV/9LCrBysEuQcoALIKKGg7Hx1DNfwHuxmmGGQVWDcaeO9h1zCqGAZQ
         FQNjEMQBYmA6sGtAxyBxuGIQ+OBuux6qASt+72k3gYGBgQEACrPwCDKFxbsAAAAASUVORK5CYII=
 </value>
@@ -535,7 +535,7 @@
   <data name="bunifuButton25.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAAAI5JREFUKFNjeO/qYPDew8HhvZtDwAcPu/tA/B8J3wfLgbGFAgOaJG7sbnceaLIV
+        EQAACxEBf2RfkQAAAI5JREFUKFNjeO/qYPDew8HhvZtDwAcPu/tA/B8J3wfLgbGFAgOaJG7sbnceaLIV
         0GTbBMLYxoEBBD662/UDdYOcgBV/9LCrBysEuQcoALIKKGg7Hx1DNfwHuxmmGGQVWDcaeO9h1zCqGAZQ
         FQNjEMQBYmA6sGtAxyBxuGIQ+OBuux6qASt+72k3gYGBgQEACrPwCDKFxbsAAAAASUVORK5CYII=
 </value>
@@ -649,6 +649,27 @@ headache, and trouble sleeping may occur. If any of these effects persist or wor
         QmCC
 </value>
   </data>
+  <data name="bunifuLabel30.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 20.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel28.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel9.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 20.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel10.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel11.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 20.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel12.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel13.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
   <data name="bunifuPanel9.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAhgAAACICAYAAAClfZJ6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -675,6 +696,21 @@ headache, and trouble sleeping may occur. If any of these effects persist or wor
         1xRJi+gMALC7pkhaRGcAgN01RdLiw+Px+PH6+tpfAAC/7u3t7f3Tp09/Ny9++vr58+e/Pt5/y8M555xz
         7pfu4uL5+fm3j28AgP/a09M/p8NfflfoENgAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="bunifuLabel29.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 20.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel22.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel21.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 20.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel20.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel16.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
   <data name="bunifuLabel8.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 15.75pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
@@ -1353,7 +1389,7 @@ headache, and trouble sleeping may occur. If any of these effects persist or wor
   <data name="bunifuButton211.IdleIconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAAAKFJREFUOE+dkm0NhDAQRJGABKQgAQdnAQdUAg7AyUk4CScBCcu8siW9XCgfk0zC
+        EQAACxEBf2RfkQAAAKFJREFUOE+dkm0NhDAQRJGABKQgAQdnAQdUAg7AyUk4CScBCcu8siW9XCgfk0zC
         DPu2/dHKzAb5rgZA9JbDRTNrCQxVJuVWntwvr6OYlf9BfXdbFTfH7VLrv0/B0SP5I08ej8Fc6hv5K+eL
         yqC6BHFi7fUlcJYBG6+imJWLYH/Qn4K1/HMaYhagBHLNxeMuZgFKIFftPe5iFiCBj54c4aYsrCfC2GtE
         fBkjAAAAAElFTkSuQmCC
@@ -1362,7 +1398,7 @@ headache, and trouble sleeping may occur. If any of these effects persist or wor
   <data name="bunifuButton211.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAAAKFJREFUOE+dkm0NhDAQRJGABKQgAQdnAQdUAg7AyUk4CScBCcu8siW9XCgfk0zC
+        EQAACxEBf2RfkQAAAKFJREFUOE+dkm0NhDAQRJGABKQgAQdnAQdUAg7AyUk4CScBCcu8siW9XCgfk0zC
         DPu2/dHKzAb5rgZA9JbDRTNrCQxVJuVWntwvr6OYlf9BfXdbFTfH7VLrv0/B0SP5I08ej8Fc6hv5K+eL
         yqC6BHFi7fUlcJYBG6+imJWLYH/Qn4K1/HMaYhagBHLNxeMuZgFKIFftPe5iFiCBj54c4aYsrCfC2GtE
         fBkjAAAAAElFTkSuQmCC
@@ -1380,7 +1416,7 @@ headache, and trouble sleeping may occur. If any of these effects persist or wor
   <data name="bunifuButton212.IdleIconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAwAAAAOCAYAAAAbvf3sAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAAAKlJREFUKFPFkW0RwkAMRE/CSUACEpCAA3BAHVAn4AAJlYCESqiE4+1ly3CUr3+8
+        EQAACxEBf2RfkQAAAKlJREFUKFPFkW0RwkAMRE/CSUACEpCAA3BAHVAn4AAJlYCESqiE4+1ly3CUr3+8
         mZ02e0ma5tIzpZQVmlBv6z0kZXRGQkVrHy3hUJ1HZfqpAnF0SgsHSpLuXXnvkehsBRjb8Jcj4A2SwwBD
         nSaHDfgdKg4DYv3o6LABf/+fgsu3AsizsYu47v30QtqSuKKsgnn/v+hQv/II5gZpDCnG+ARJukSN115W
         JaUbH9EdM4HIrAAAAAAASUVORK5CYII=
@@ -1389,7 +1425,7 @@ headache, and trouble sleeping may occur. If any of these effects persist or wor
   <data name="bunifuButton212.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAwAAAAOCAYAAAAbvf3sAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAAAKlJREFUKFPFkW0RwkAMRE/CSUACEpCAA3BAHVAn4AAJlYCESqiE4+1ly3CUr3+8
+        EQAACxEBf2RfkQAAAKlJREFUKFPFkW0RwkAMRE/CSUACEpCAA3BAHVAn4AAJlYCESqiE4+1ly3CUr3+8
         mZ02e0ma5tIzpZQVmlBv6z0kZXRGQkVrHy3hUJ1HZfqpAnF0SgsHSpLuXXnvkehsBRjb8Jcj4A2SwwBD
         nSaHDfgdKg4DYv3o6LABf/+fgsu3AsizsYu47v30QtqSuKKsgnn/v+hQv/II5gZpDCnG+ARJukSN115W
         JaUbH9EdM4HIrAAAAAAASUVORK5CYII=
@@ -1407,7 +1443,7 @@ headache, and trouble sleeping may occur. If any of these effects persist or wor
   <data name="bunifuButton213.IdleIconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAA8AAAANCAYAAAB2HjRBAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAAANxJREFUOE+FkgsRgzAQRCMBCUioBBy0DoqD4qBIqAQcVAISKgEJlUD33SyfdEK7
+        EQAACxEBf2RfkQAAANxJREFUOE+FkgsRgzAQRCMBCUioBBy0DoqD4qBIqAQcVAISKgEJlUD33SyfdEK7
         MztJ9m5zF470D/M8j+LZxxwKtGZtKYPNrY85FLiIN3ESK8voaCfxJXL5nbPDORR4OJFKlcilXAjeInot
         orMfbQ1zI2ImITrwfhC7SBKIiXSymYEEKqytH0E5dLleGNiL7L32XgdWoD0d5u+XsLS+TOCIky0bJPIe
         WqeD/gevtuRw8CmWKkK6K/4TAQUZx3e1PcvzBgoyR9BYQqMqiA94CCVg5u17cyeCmEJKKX0Az/9pSUX7
@@ -1417,7 +1453,7 @@ headache, and trouble sleeping may occur. If any of these effects persist or wor
   <data name="bunifuButton213.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAA8AAAANCAYAAAB2HjRBAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAAANxJREFUOE+FkgsRgzAQRCMBCUioBBy0DoqD4qBIqAQcVAISKgEJlUD33SyfdEK7
+        EQAACxEBf2RfkQAAANxJREFUOE+FkgsRgzAQRCMBCUioBBy0DoqD4qBIqAQcVAISKgEJlUD33SyfdEK7
         MztJ9m5zF470D/M8j+LZxxwKtGZtKYPNrY85FLiIN3ESK8voaCfxJXL5nbPDORR4OJFKlcilXAjeInot
         orMfbQ1zI2ImITrwfhC7SBKIiXSymYEEKqytH0E5dLleGNiL7L32XgdWoD0d5u+XsLS+TOCIky0bJPIe
         WqeD/gevtuRw8CmWKkK6K/4TAQUZx3e1PcvzBgoyR9BYQqMqiA94CCVg5u17cyeCmEJKKX0Az/9pSUX7
@@ -1436,7 +1472,7 @@ headache, and trouble sleeping may occur. If any of these effects persist or wor
   <data name="bunifuButton214.IdleIconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAA4AAAAKCAYAAACE2W/HAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAAALBJREFUKFOtkGERwjAMhZGAhEnBwXAADsBB54A52ByAg0lAwiRMQnhfm4ze/owf
+        EQAACxEBf2RfkQAAALBJREFUKFOtkGERwjAMhZGAhEnBwXAADsBB54A52ByAg0lAwiRMQnhfm4ze/owf
         vLvvLk3ymjaHWmZ2E4uYxd1zT8+l3LSVCleBejGW0BoRedR6+1dKdmL2GANqxamEWV1urqVkNAxiKuEP
         E5EKTH0LjGfP8cf1z/+RbjuKVN3OVOKL4LnUH4KtN2HigFg5zWwV4p9cxP8x04MSxhAmFlMT5pcP4SVo
         4UBxj96N/hKbPrYTWd/pEsR8AAAAAElFTkSuQmCC
@@ -1445,7 +1481,7 @@ headache, and trouble sleeping may occur. If any of these effects persist or wor
   <data name="bunifuButton214.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAA4AAAAKCAYAAACE2W/HAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAAALBJREFUKFOtkGERwjAMhZGAhEnBwXAADsBB54A52ByAg0lAwiRMQnhfm4ze/owf
+        EQAACxEBf2RfkQAAALBJREFUKFOtkGERwjAMhZGAhEnBwXAADsBB54A52ByAg0lAwiRMQnhfm4ze/owf
         vLvvLk3ymjaHWmZ2E4uYxd1zT8+l3LSVCleBejGW0BoRedR6+1dKdmL2GANqxamEWV1urqVkNAxiKuEP
         E5EKTH0LjGfP8cf1z/+RbjuKVN3OVOKL4LnUH4KtN2HigFg5zWwV4p9cxP8x04MSxhAmFlMT5pcP4SVo
         4UBxj96N/hKbPrYTWd/pEsR8AAAAAElFTkSuQmCC
@@ -1463,7 +1499,7 @@ headache, and trouble sleeping may occur. If any of these effects persist or wor
   <data name="bunifuButton215.IdleIconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAYAAAAmlE46AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAAAMNJREFUOE+VkQERwjAQBCMBCZWABJyAg9ZJcQAOkFAJlVAJSAh3n/uQ6SQN7MxN
+        EQAACxEBf2RfkQAAAMNJREFUOE+VkQERwjAQBCMBCZWABJyAg9ZJcQAOkFAJlVAJSAh3n/uQ6SQN7MxN
         k8tfJ58PNWKMZ+gNbVzL7qOAs8ruo0BGdh/UrilibLL7oJg98rrs868eR+gK3fiVfYyK90w6boOisj9n
         0XEbFJWjcPoPhKIXtOz00LH3P2trxoUF0F3rLJ0PEH9ieGhO2yYMcDTOxFD+yw8wbDdgsPYYNVg3WIhg
         8zQ7wVHUxkHvGyIwJojXTVcAWJ+4h/iCo+yCED70SreziQsgxgAAAABJRU5ErkJggg==
@@ -1472,7 +1508,7 @@ headache, and trouble sleeping may occur. If any of these effects persist or wor
   <data name="bunifuButton215.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAYAAAAmlE46AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAAAMNJREFUOE+VkQERwjAQBCMBCZWABJyAg9ZJcQAOkFAJlVAJSAh3n/uQ6SQN7MxN
+        EQAACxEBf2RfkQAAAMNJREFUOE+VkQERwjAQBCMBCZWABJyAg9ZJcQAOkFAJlVAJSAh3n/uQ6SQN7MxN
         k8tfJ58PNWKMZ+gNbVzL7qOAs8ruo0BGdh/UrilibLL7oJg98rrs868eR+gK3fiVfYyK90w6boOisj9n
         0XEbFJWjcPoPhKIXtOz00LH3P2trxoUF0F3rLJ0PEH9ieGhO2yYMcDTOxFD+yw8wbDdgsPYYNVg3WIhg
         8zQ7wVHUxkHvGyIwJojXTVcAWJ+4h/iCo+yCED70SreziQsgxgAAAABJRU5ErkJggg==
@@ -1490,7 +1526,7 @@ headache, and trouble sleeping may occur. If any of these effects persist or wor
   <data name="bunifuButton216.IdleIconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAA4AAAAICAYAAADJEc7MAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAAAI1JREFUKFN1kAERgzAQBCMBCZWABCRUQp2AA+qgdYQEJCAh7PUvoYF2Z26G7PGB
+        EQAACxEBf2RfkQAAAI1JREFUKFN1kAERgzAQBCMBCZWABCRUQp2AA+qgdYQEJCAh7PUvoYF2Z26G7PGB
         JP0i53wnNy8r9huZrQ6QDyJWqwruHdWpQ3Rk+VRB70rdGCq/yGDdDK2kJxPRbw2kDE1+PUB8D9Wz8fwk
         hcvQTLRzMyRY62uFzjpAaEi0Oxq8bvI4U8GFDny5/v+ktAPLVMEiQf/0awAAAABJRU5ErkJggg==
 </value>
@@ -1498,7 +1534,7 @@ headache, and trouble sleeping may occur. If any of these effects persist or wor
   <data name="bunifuButton216.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAA4AAAAICAYAAADJEc7MAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAAAI1JREFUKFN1kAERgzAQBCMBCZWABCRUQp2AA+qgdYQEJCAh7PUvoYF2Z26G7PGB
+        EQAACxEBf2RfkQAAAI1JREFUKFN1kAERgzAQBCMBCZWABCRUQp2AA+qgdYQEJCAh7PUvoYF2Z26G7PGB
         JP0i53wnNy8r9huZrQ6QDyJWqwruHdWpQ3Rk+VRB70rdGCq/yGDdDK2kJxPRbw2kDE1+PUB8D9Wz8fwk
         hcvQTLRzMyRY62uFzjpAaEi0Oxq8bvI4U8GFDny5/v+ktAPLVMEiQf/0awAAAABJRU5ErkJggg==
 </value>
@@ -1515,7 +1551,7 @@ headache, and trouble sleeping may occur. If any of these effects persist or wor
   <data name="bunifuButton217.IdleIconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAAAKZJREFUOE+VkgENg0AQBJFQCUh5KThoJeAAHLQOKgEJlVAp1537+6RNeHpMMuEP
+        EQAACxEBf2RfkQAAAKZJREFUOE+VkgENg0AQBJFQCUh5KThoJeAAHLQOKgEJlVAp1537+6RNeHpMMuEP
         dgM8DGa2yLMsFOEup6QPaa04DUnIUmjFp5yTkvXiykK8k8JMsdS1jfE0XcjUqJVuUTPnS4wOGYLisMju
         bTE6ZAiK/WLM3/iddfxbZMs3+Yq1X+Mo4fBR2fo1RocMQdEv7kGmRn+LV9l+q543CV68yPZhM+jdbfwA
         q1MOQjkXvZwAAAAASUVORK5CYII=
@@ -1524,7 +1560,7 @@ headache, and trouble sleeping may occur. If any of these effects persist or wor
   <data name="bunifuButton217.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAAAKZJREFUOE+VkgENg0AQBJFQCUh5KThoJeAAHLQOKgEJlVAp1537+6RNeHpMMuEP
+        EQAACxEBf2RfkQAAAKZJREFUOE+VkgENg0AQBJFQCUh5KThoJeAAHLQOKgEJlVAp1537+6RNeHpMMuEP
         dgM8DGa2yLMsFOEup6QPaa04DUnIUmjFp5yTkvXiykK8k8JMsdS1jfE0XcjUqJVuUTPnS4wOGYLisMju
         bTE6ZAiK/WLM3/iddfxbZMs3+Yq1X+Mo4fBR2fo1RocMQdEv7kGmRn+LV9l+q543CV68yPZhM+jdbfwA
         q1MOQjkXvZwAAAAASUVORK5CYII=
@@ -1542,14 +1578,14 @@ headache, and trouble sleeping may occur. If any of these effects persist or wor
   <data name="bunifuButton218.IdleIconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAAAFFJREFUOE9j+P//fz0QkwrqQRpBYD8QN6Dh+1CMLg5S+x+msYEBDQDFQAr2Q7lw
+        EQAACxEBf2RfkQAAAFFJREFUOE9j+P//fz0QkwrqQRpBYD8QN6Dh+1CMLg5S+x+msYEBDQDFQAr2Q7lw
         AFIL0jD4NJLtR5yAkMYhFDi00whSBBJAxgSTHIhDIvjfAAAfGNLoiaj6swAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="bunifuButton218.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAAAFFJREFUOE9j+P//fz0QkwrqQRpBYD8QN6Dh+1CMLg5S+x+msYEBDQDFQAr2Q7lw
+        EQAACxEBf2RfkQAAAFFJREFUOE9j+P//fz0QkwrqQRpBYD8QN6Dh+1CMLg5S+x+msYEBDQDFQAr2Q7lw
         AFIL0jD4NJLtR5yAkMYhFDi00whSBBJAxgSTHIhDIvjfAAAfGNLoiaj6swAAAABJRU5ErkJggg==
 </value>
   </data>
@@ -1642,7 +1678,7 @@ headache, and trouble sleeping may occur. If any of these effects persist or wor
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAA7IAAAObCAYAAABuI70KAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAA/7JJREFUeF7svQeYHtV5t/9KQoCwbIwdHJzwxSSBJPhLPscJ3/cPcWwLY1ToNuDY
+        EQAACxEBf2RfkQAA/7JJREFUeF7svQeYHtV5t/9KQoCwbIwdHJzwxSSBJPhLPscJ3/cPcWwLY1ToNuDY
         OHYMrsTBDrEdI8ANTFPfVa+AAAESAkRR77333pBAvXdtf/5zz+5vdRifd7VardAKPbqu+3pnzszOnDaj
         53ee55zJmZnjOI7jOI7jOI7jnDFEEx3HcRzHcRzHcRynoRJNdBzHcRzHcRzHcZyGSjTRcRzHcRzHcRzH
         cRoq0UTHcRzHcRzHcRzHaahEEx3HcRzHcRzHcRynoRJNdBzHcRzHcRzHcZyGSjTRcRzHcRzHcRzHcRoq
@@ -7520,41 +7556,5 @@ headache, and trouble sleeping may occur. If any of these effects persist or wor
         AAAAAAAAAO7KmAgAAAAAAADgroyJAAAAAAAAAO7KmAgAAAAAAADgroyJAAAAAAAAAO7KmAgAAAAAAADg
         royJAAAAAAAAAO7KmAgAAAAAAADgnsj6f4PEp//poJvEAAAAAElFTkSuQmCC
 </value>
-  </data>
-  <data name="bunifuLabel29.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 20.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
-  </data>
-  <data name="bunifuLabel22.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
-  </data>
-  <data name="bunifuLabel21.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 20.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
-  </data>
-  <data name="bunifuLabel20.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
-  </data>
-  <data name="bunifuLabel16.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
-  </data>
-  <data name="bunifuLabel30.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 20.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
-  </data>
-  <data name="bunifuLabel28.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
-  </data>
-  <data name="bunifuLabel9.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 20.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
-  </data>
-  <data name="bunifuLabel10.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
-  </data>
-  <data name="bunifuLabel11.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 20.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
-  </data>
-  <data name="bunifuLabel12.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
-  </data>
-  <data name="bunifuLabel13.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
 </root>

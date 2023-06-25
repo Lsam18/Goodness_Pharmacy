@@ -37,7 +37,6 @@ namespace Goodness_Pharmacy
                     int saleCode = Convert.ToInt32(bunifuTextBox3.Text);
                     string supplierName = bunifuDropdownSupplierName.SelectedItem?.ToString();
                     DateTime date = bunifuDatePickerDate.Value;
-                    string category = bunifuDropdownCategory.SelectedItem?.ToString();
                     string medicine = bunifuDropdownMedicine.SelectedItem?.ToString();
                     int quantity = Convert.ToInt32(bunifuTextBoxQuantity.Text);
                     string notes = bunifuTextBoxNotes.Text;
@@ -47,7 +46,6 @@ namespace Goodness_Pharmacy
 
                     // Perform form validation
                     if (string.IsNullOrEmpty(supplierName) ||
-                        string.IsNullOrEmpty(category) ||
                         string.IsNullOrEmpty(medicine) ||
                         string.IsNullOrEmpty(payment))
                     {
@@ -56,8 +54,8 @@ namespace Goodness_Pharmacy
                     }
 
                     // Create the SQL insert query
-                    string query = "INSERT INTO Sales (Sale_Code, Supplier_Name, Date, Category, Medicine, Quantity, Notes, Discount, Grand_Total, Payment) " +
-                                   "VALUES (@SaleCode, @SupplierName, @Date, @Category, @Medicine, @Quantity, @Notes, @Discount, @GrandTotal, @Payment)";
+                    string query = "INSERT INTO Sales (Sale_Code, Supplier_Name, Date, Medicine, Quantity, Notes, Discount, Grand_Total, Payment) " +
+                                   "VALUES (@SaleCode, @SupplierName, @Date, @Medicine, @Quantity, @Notes, @Discount, @GrandTotal, @Payment)";
 
                     // Create a SqlCommand object with the query and connection
                     using (SqlCommand command = new SqlCommand(query, connection))
@@ -66,7 +64,6 @@ namespace Goodness_Pharmacy
                         command.Parameters.AddWithValue("@SaleCode", saleCode);
                         command.Parameters.AddWithValue("@SupplierName", supplierName);
                         command.Parameters.AddWithValue("@Date", date);
-                        command.Parameters.AddWithValue("@Category", category);
                         command.Parameters.AddWithValue("@Medicine", medicine);
                         command.Parameters.AddWithValue("@Quantity", quantity);
                         command.Parameters.AddWithValue("@Notes", notes);
@@ -86,6 +83,46 @@ namespace Goodness_Pharmacy
                         // Display a success message or perform any additional tasks
                         MessageBox.Show("Data inserted successfully!");
                     }
+
+                    // After inserting the data, retrieve the required columns from the Sales table
+                    string selectQuery = "SELECT Medicine, Sale_Code, Quantity, Grand_Total FROM Sales";
+
+                    // Clear the existing rows in the DataGridView
+                    bunifuDataGridView1.Rows.Clear();
+
+                    // Create a new SqlCommand object with the select query and connection
+                    using (SqlCommand selectCommand = new SqlCommand(selectQuery, connection))
+                    {
+                        // Open the connection
+                        connection.Open();
+
+                        // Execute the SELECT query and retrieve the data
+                        using (SqlDataReader reader = selectCommand.ExecuteReader())
+                        {
+                            // Check if there are rows returned
+                            if (reader.HasRows)
+                            {
+                                // Iterate through the rows and add them to the DataGridView
+                                while (reader.Read())
+                                {
+
+                                    // Retrieve the values from the reader
+                                    
+                                    string selectedMedicine = reader.GetString(0);
+                                    int selectedSaleCode = Convert.ToInt32(reader.GetValue(1));
+                                    int selectedQuantity = reader.GetInt32(2);
+                                    double selectedGrandTotal = reader.GetDouble(3);
+
+                                    // Add the values to the DataGridView as a new row
+                                    bunifuDataGridView1.Rows.Add(selectedMedicine, selectedSaleCode, selectedQuantity, selectedGrandTotal);
+
+                                }
+                            }
+                        }
+
+                        // Close the connection
+                        connection.Close();
+                    }
                 }
             }
             catch (SqlException ex)
@@ -96,15 +133,12 @@ namespace Goodness_Pharmacy
             catch (Exception ex)
             {
                 // Handle other exceptions
-                MessageBox.Show("An exception occurred: " + ex.Message);
+                MessageBox.Show("An exception occurred: " + ex.Message + "\n\n" + ex.StackTrace);
             }
 
-
-
-
-
-
         }
+
+
 
         private void bunifuButton21_Click(object sender, EventArgs e)
         {
@@ -235,6 +269,68 @@ namespace Goodness_Pharmacy
             {
                 // Handle other exceptions
                 MessageBox.Show("An exception occurred: " + ex.Message);
+            }
+
+            // Clear the existing items in the dropdown
+            bunifuDropdownMedicine.Items.Clear();
+
+            try
+            {
+                // Establish the database connection
+                using (SqlConnection connection = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30"))
+                {
+                    // Create the SQL query to fetch medicine names
+                    string query = "SELECT Medicine_Name FROM AddMedicine";
+
+                    // Create a SqlCommand object with the query and connection
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        // Open the connection
+                        connection.Open();
+
+                        // Execute the query and retrieve the data
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            // Check if there are rows returned
+                            if (reader.HasRows)
+                            {
+                                // Iterate through the rows and add medicine names to the dropdown
+                                while (reader.Read())
+                                {
+                                    string medicineName = reader.GetString(0);
+                                    bunifuDropdownMedicine.Items.Add(medicineName);
+                                }
+                            }
+                        }
+
+                        // Close the connection
+                        connection.Close();
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                // Handle SQL exception
+                MessageBox.Show("An SQL exception occurred: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                // Handle other exceptions
+                MessageBox.Show("An exception occurred: " + ex.Message);
+            }
+        }
+
+        private void bunifuDropdownMedicine_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Get the selected medicine name from the dropdown
+            string selectedMedicine = bunifuDropdownMedicine.SelectedItem?.ToString();
+
+            // Check if a medicine name is selected
+            if (!string.IsNullOrEmpty(selectedMedicine))
+            {
+                // Perform actions based on the selected medicine name
+                // For example, you can display additional information about the medicine or retrieve related data from the database.
+                MessageBox.Show("You selected medicine: " + selectedMedicine);
             }
         }
     }
