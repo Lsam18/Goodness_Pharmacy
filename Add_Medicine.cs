@@ -49,15 +49,15 @@ namespace Goodness_Pharmacy
 
         private void bunifuButton216_Click(object sender, EventArgs e)
         {
-            Report report = new Report();
-            report.Show();
+            Sales_Report salesrep = new Sales_Report();
+            salesrep.Show();
             this.Close();
         }
 
         private void bunifuButton215_Click(object sender, EventArgs e)
         {
-            Report report = new Report();
-            report.Show();
+            Sales_Report salesrep = new Sales_Report();
+            salesrep.Show();
             this.Close();
         }
 
@@ -103,7 +103,7 @@ namespace Goodness_Pharmacy
 
         private void bunifuButton21_Click(object sender, EventArgs e)
         {
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Goodness_Pharmacy\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
+            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
 
             try
             {
