@@ -154,14 +154,9 @@ namespace Goodness_Pharmacy
                 // Handle other exceptions
                 MessageBox.Show("An exception occurred: " + ex.Message);
             }
-
         }
+
         private int currentIndex = 0;
-        private void List_of_Medicines_Main_Load(object sender, EventArgs e)
-        {
-            LoadMedicineData();
-        }
-
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
             if (currentIndex < bunifuDataGridView1.Rows.Count - 1)
@@ -174,12 +169,10 @@ namespace Goodness_Pharmacy
             }
         }
 
-
-        private void bunifuImageButton2_Click(object sender, EventArgs e)
+        private void List_of_Medicines_Main_Load(object sender, EventArgs e)
         {
-
+            LoadMedicineData();
         }
-
     }
 
 }

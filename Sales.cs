@@ -53,6 +53,33 @@ namespace Goodness_Pharmacy
                         return; // Stop further execution
                     }
 
+                    // Check if the selected quantity is available in the AddMedicine table
+                    string availableQuantityQuery = "SELECT Quantity FROM AddMedicine WHERE Medicine_Name = @Medicine_Name";
+
+                    using (SqlCommand availableQuantityCommand = new SqlCommand(availableQuantityQuery, connection))
+                    {
+                        availableQuantityCommand.Parameters.AddWithValue("@Medicine_Name", medicine);
+
+                        // Execute the command and retrieve the available quantity
+                        object availableQuantityResult = availableQuantityCommand.ExecuteScalar();
+
+                        if (availableQuantityResult != null)
+                        {
+                            int availableQuantity = Convert.ToInt32(availableQuantityResult);
+
+                            if (quantity > availableQuantity)
+                            {
+                                MessageBox.Show("Selected quantity is not available in stock.");
+                                return; // Stop further execution
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Selected medicine is not found in stock.");
+                            return; // Stop further execution
+                        }
+                    }
+
                     // Create the SQL insert query without the grand total parameter
                     string query = "INSERT INTO Sales (Sale_Code, Supplier_Name, Date, Medicine, Quantity, Notes, Discount, Payment) " +
                                    "VALUES (@SaleCode, @SupplierName, @Date, @Medicine, @Quantity, @Notes, @Discount, @Payment)";
@@ -109,6 +136,18 @@ namespace Goodness_Pharmacy
                     // Update the total label with the calculated total
                     totalLabel.Text = total.ToString();
 
+                    // Reduce the available quantity in the AddMedicine table
+                    string reduceQuantityQuery = "UPDATE AddMedicine SET Quantity = Quantity - @Quantity " +
+                                                 "WHERE Medicine_Name = @Medicine_Name";
+
+                    using (SqlCommand reduceQuantityCommand = new SqlCommand(reduceQuantityQuery, connection))
+                    {
+                        reduceQuantityCommand.Parameters.AddWithValue("@Quantity", quantity);
+                        reduceQuantityCommand.Parameters.AddWithValue("@Medicine_Name", medicine);
+
+                        reduceQuantityCommand.ExecuteNonQuery();
+                    }
+
                     connection.Close(); // Close the connection here
                 }
 
@@ -125,6 +164,7 @@ namespace Goodness_Pharmacy
                 MessageBox.Show("An exception occurred: " + ex.Message);
             }
         }
+
 
 
 

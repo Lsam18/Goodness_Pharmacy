@@ -14,6 +14,8 @@ namespace Goodness_Pharmacy
 {
     public partial class admin_Details : Form
     {
+        private int currentIndex = 0;
+
         public admin_Details()
         {
             InitializeComponent();
@@ -88,66 +90,65 @@ namespace Goodness_Pharmacy
 
             if (result == DialogResult.Yes)
             {
-
                 Application.Exit();
             }
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
             DialogResult result = MessageBox.Show("Are you sure you want to sign out?", "Sign Out", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
                 Login_and_Signup logsign = new Login_and_Signup();
                 logsign.Show();
                 this.Hide();
-
             }
         }
 
         private void admin_Details_Load(object sender, EventArgs e)
         {
-            using (SqlConnection connection = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30"))
+            RefreshDataGridView();
+        }
+
+        public void RefreshDataGridView()
+        {
+            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
+
+            try
             {
-                try
+                using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    // Create the SQL select query
-                    string query = "SELECT * FROM adminsignup";
+                    // Create a select query to retrieve the updated data
+                    string selectQuery = "SELECT * FROM adminsignup";
 
-                    // Create a SqlCommand object with the query and connection
-                    using (SqlCommand command = new SqlCommand(query, connection))
+                    // Create a new DataTable to store the retrieved data
+                    DataTable adminTable = new DataTable();
+
+                    // Create a new SqlDataAdapter with the select query and connection
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(selectQuery, connection))
                     {
-                        // Create a DataTable to store the retrieved data
-                        DataTable dataTable = new DataTable();
-
-                        // Open the connection
-                        connection.Open();
-
-                        // Create a SqlDataAdapter to execute the query and fill the DataTable
-                        SqlDataAdapter adapter = new SqlDataAdapter(command);
-                        adapter.Fill(dataTable);
-
-                        // Set the DataTable as the DataSource for the DataGridView
-                        bunifuDataGridView1.DataSource = dataTable;
+                        // Fill the DataTable with the data from the adminsignup table
+                        adapter.Fill(adminTable);
                     }
-                }
-                catch (SqlException ex)
-                {
-                    // Handle SQL exception
-                    MessageBox.Show("An SQL exception occurred: " + ex.Message);
-                }
-                catch (Exception ex)
-                {
-                    // Handle other exceptions
-                    MessageBox.Show("An exception occurred: " + ex.Message);
+
+                    // Set the DataTable as the DataSource for the DataGridView
+                    bunifuDataGridView1.DataSource = adminTable;
                 }
             }
+            catch (SqlException ex)
+            {
+                // Handle SQL exception
+                MessageBox.Show("An SQL exception occurred: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                // Handle other exceptions
+                MessageBox.Show("An exception occurred: " + ex.Message);
+            }
         }
-        private int currentIndex = 0;
+
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-          
             if (currentIndex < bunifuDataGridView1.Rows.Count - 1)
             {
                 // Increment the current index to move to the next record
@@ -170,6 +171,11 @@ namespace Goodness_Pharmacy
             }
         }
 
-       
+        private void bunifuButton21_Click(object sender, EventArgs e)
+        {
+            Admin_Signup signup = new Admin_Signup();
+            signup.Show();
+            this.Close();
+        }
     }
 }
