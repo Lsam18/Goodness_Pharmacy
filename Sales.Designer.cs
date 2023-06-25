@@ -107,7 +107,7 @@
             this.bunifuShapes2 = new Bunifu.UI.WinForms.BunifuShapes();
             this.bunifuDatePickerDate = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.bunifuTextBoxQuantity = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.totalLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.bunifuPanel2.SuspendLayout();
@@ -2043,21 +2043,21 @@
             this.bunifuTextBoxQuantity.UseSystemPasswordChar = false;
             this.bunifuTextBoxQuantity.WordWrap = true;
             // 
-            // bunifuLabel4
+            // totalLabel
             // 
-            this.bunifuLabel4.AllowParentOverrides = false;
-            this.bunifuLabel4.AutoEllipsis = false;
-            this.bunifuLabel4.CursorType = null;
-            this.bunifuLabel4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel4.ForeColor = System.Drawing.Color.Black;
-            this.bunifuLabel4.Location = new System.Drawing.Point(1213, 604);
-            this.bunifuLabel4.Name = "bunifuLabel4";
-            this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(31, 19);
-            this.bunifuLabel4.TabIndex = 64;
-            this.bunifuLabel4.Text = "0.00";
-            this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.totalLabel.AllowParentOverrides = false;
+            this.totalLabel.AutoEllipsis = false;
+            this.totalLabel.CursorType = null;
+            this.totalLabel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.totalLabel.ForeColor = System.Drawing.Color.Black;
+            this.totalLabel.Location = new System.Drawing.Point(1213, 604);
+            this.totalLabel.Name = "totalLabel";
+            this.totalLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.totalLabel.Size = new System.Drawing.Size(31, 19);
+            this.totalLabel.TabIndex = 64;
+            this.totalLabel.Text = "0.00";
+            this.totalLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.totalLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // Sales
             // 
@@ -2065,7 +2065,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(235)))), ((int)(((byte)(243)))));
             this.ClientSize = new System.Drawing.Size(1460, 802);
-            this.Controls.Add(this.bunifuLabel4);
+            this.Controls.Add(this.totalLabel);
             this.Controls.Add(this.bunifuTextBoxQuantity);
             this.Controls.Add(this.bunifuDatePickerDate);
             this.Controls.Add(this.bunifuShapes2);
@@ -2160,6 +2160,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;
+        private Bunifu.UI.WinForms.BunifuLabel totalLabel;
     }
 }

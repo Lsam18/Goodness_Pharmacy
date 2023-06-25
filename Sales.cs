@@ -22,7 +22,7 @@ namespace Goodness_Pharmacy
             bunifuLabel2.Text = Program.UserName;
         }
 
-    
+
 
         private void bunifuButton213_Click(object sender, EventArgs e)
         {
@@ -32,6 +32,8 @@ namespace Goodness_Pharmacy
             {
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
+                    connection.Open(); // Open the connection here
+
                     // Get the values to be inserted from your Windows Form controls
                     int saleCode = Convert.ToInt32(bunifuTextBox3.Text);
                     string supplierName = bunifuDropdownSupplierName.SelectedItem?.ToString();
@@ -68,77 +70,49 @@ namespace Goodness_Pharmacy
                         command.Parameters.AddWithValue("@Discount", discount);
                         command.Parameters.AddWithValue("@Payment", payment);
 
-                        // Open the connection
-                        connection.Open();
-
                         // Execute the query
                         command.ExecuteNonQuery();
-
-                        // Close the connection
-                        connection.Close();
-
-                        // Display a success message or perform any additional tasks
-                        MessageBox.Show("Data inserted successfully!");
                     }
 
-                    // After inserting the data, retrieve the required columns from the Sales table
-                    string selectQuery = "SELECT Medicine, Sale_Code, Quantity FROM Sales";
+                    // Calculate the grand total for the current item
+                    float sellPrice = 0.0f; // Initialize with a default value
+                    string sellPriceQuery = "SELECT Sell_Price FROM AddMedicine WHERE Medicine_Name = @Medicine_Name";
 
-                    // Clear the existing rows in the DataGridView
-                    bunifuDataGridView1.Rows.Clear();
-
-                    // Create a new SqlCommand object with the select query and connection
-                    using (SqlCommand selectCommand = new SqlCommand(selectQuery, connection))
+                    using (SqlCommand sellPriceCommand = new SqlCommand(sellPriceQuery, connection))
                     {
-                        // Open the connection
-                        connection.Open();
+                        sellPriceCommand.Parameters.AddWithValue("@Medicine_Name", medicine);
 
-                        // Execute the SELECT query and retrieve the data
-                        using (SqlDataReader reader = selectCommand.ExecuteReader())
+                        // Execute the command and retrieve the sell price
+                        object sellPriceResult = sellPriceCommand.ExecuteScalar();
+
+                        if (sellPriceResult != null)
                         {
-                            // Check if there are rows returned
-                            if (reader.HasRows)
-                            {
-                                // Iterate through the rows and add them to the DataGridView
-                                while (reader.Read())
-                                {
-                                    // Retrieve the values from the reader
-                                    string selectedMedicine = reader.GetString(0);
-                                    int selectedSaleCode = Convert.ToInt32(reader.GetValue(1));
-                                    int selectedQuantity = reader.GetInt32(2);
-
-                                    // Close the reader before executing the sell price query
-                                    reader.Close();
-
-                                    // Fetch the sell price for the selected medicine from the database
-                                    float sellPrice = 0.0f; // Initialize with a default value
-                                    string sellPriceQuery = "SELECT Sell_Price FROM AddMedicine WHERE Medicine_Name = @Medicine_Name";
-
-                                    using (SqlCommand sellPriceCommand = new SqlCommand(sellPriceQuery, connection))
-                                    {
-                                        sellPriceCommand.Parameters.AddWithValue("@Medicine_Name", selectedMedicine);
-                                        object sellPriceResult = sellPriceCommand.ExecuteScalar();
-                                        if (sellPriceResult != null)
-                                        {
-                                            sellPrice = Convert.ToSingle(sellPriceResult);
-                                        }
-                                    }
-
-                                    // Calculate the grand total based on the quantity and discount
-                                    float selectedGrandTotal = selectedQuantity * (sellPrice - discount);
-
-                                    // Add the values to the DataGridView as a new row
-                                    bunifuDataGridView1.Rows.Add(selectedMedicine, selectedSaleCode, selectedQuantity, selectedGrandTotal);
-                                }
-                            }
+                            sellPrice = Convert.ToSingle(sellPriceResult);
                         }
-
-                        // Close the connection
-                        connection.Close();
                     }
 
+                    float grandTotal = quantity * (sellPrice - discount);
 
+                    // Add the values to the DataGridView as a new row
+                    bunifuDataGridView1.Rows.Add(medicine, saleCode, quantity, grandTotal);
+
+                    // Calculate the total of all items under the same sale code
+                    float total = 0.0f;
+                    foreach (DataGridViewRow row in bunifuDataGridView1.Rows)
+                    {
+                        if (row.Cells[1].Value != null && row.Cells[1].Value.ToString() == saleCode.ToString())
+                        {
+                            total += Convert.ToSingle(row.Cells[3].Value);
+                        }
+                    }
+
+                    // Update the total label with the calculated total
+                    totalLabel.Text = total.ToString();
+
+                    connection.Close(); // Close the connection here
                 }
+
+                MessageBox.Show("Data inserted successfully!");
             }
             catch (SqlException ex)
             {
@@ -148,10 +122,14 @@ namespace Goodness_Pharmacy
             catch (Exception ex)
             {
                 // Handle other exceptions
-                MessageBox.Show("An exception occurred: " + ex.Message + "\n\n" + ex.StackTrace);
+                MessageBox.Show("An exception occurred: " + ex.Message);
             }
-
         }
+
+
+
+
+
 
 
 
