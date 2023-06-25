@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -109,5 +110,83 @@ namespace Goodness_Pharmacy
 
             }
         }
+        public void LoadMedicineData()
+        {
+            // Code to load medicine data into the DataGridView
+            // ...
+
+            // Example code:
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Goodness_Pharmacy\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    // Create the SQL select query
+                    string query = "SELECT * FROM AddMedicine";
+
+                    // Create a SqlCommand object with the query and connection
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        // Open the connection
+                        connection.Open();
+
+                        // Create a SqlDataAdapter to fill the DataTable
+                        SqlDataAdapter adapter = new SqlDataAdapter(command);
+                        DataTable dataTable = new DataTable();
+                        adapter.Fill(dataTable);
+
+                        // Set the DataGridView's data source
+                        bunifuDataGridView1.DataSource = dataTable;
+
+                        // Close the connection
+                        connection.Close();
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                // Handle SQL exception
+                MessageBox.Show("An SQL exception occurred: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                // Handle other exceptions
+                MessageBox.Show("An exception occurred: " + ex.Message);
+            }
+
+        }
+        private int currentIndex = 0;
+        private void List_of_Medicines_Main_Load(object sender, EventArgs e)
+        {
+            LoadMedicineData();
+        }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            if (currentIndex < bunifuDataGridView1.Rows.Count - 1)
+            {
+                // Increment the current index to move to the next record
+                currentIndex++;
+
+                // Display the data of the next record in the DataGridView
+                bunifuDataGridView1.CurrentCell = bunifuDataGridView1.Rows[currentIndex].Cells[0];
+            }
+        }
+
+
+        private void bunifuImageButton2_Click(object sender, EventArgs e)
+        {
+            if (currentIndex > 0)
+            {
+                // Decrement the current index to move to the previous record
+                currentIndex--;
+
+                // Display the data of the previous record in the DataGridView
+                bunifuDataGridView1.CurrentCell = bunifuDataGridView1.Rows[currentIndex].Cells[0];
+            }
+        }
+
     }
+
 }
