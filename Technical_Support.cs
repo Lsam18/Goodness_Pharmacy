@@ -16,6 +16,8 @@ namespace Goodness_Pharmacy
         public Technical_Support()
         {
             InitializeComponent();
+            linkLabel2.Text = Program.UserRole + " - Sign Out";
+            bunifuLabel3.Text = Program.UserName;
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -108,7 +110,7 @@ namespace Goodness_Pharmacy
 
         private void bunifuButton219_Click(object sender, EventArgs e)
         {
-            if (Program.UserRole == "admin")
+            if (Program.UserRole == "Admin")
             {
                 MessageBox.Show("Access granted");
                 admin_Details objAdmin = new admin_Details();
@@ -121,7 +123,7 @@ namespace Goodness_Pharmacy
 
         private void bunifuButton21_Click(object sender, EventArgs e)
         {
-            if (Program.UserRole == "admin")
+            if (Program.UserRole == "Admin")
             {
                 MessageBox.Show("Access granted");
                 Employee_Details objEmp = new Employee_Details();

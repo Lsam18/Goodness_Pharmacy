@@ -19,7 +19,7 @@ namespace Goodness_Pharmacy
         public Dashboard()
         {
             InitializeComponent();
-            linkLabel1.Text = Program.UserRole+" -Sign Out";
+            linkLabel1.Text = Program.UserRole+" - Sign Out";
             bunifuLabel2.Text = Program.UserName;
         }
 

@@ -1439,7 +1439,7 @@
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel1.Size = new System.Drawing.Size(236, 23);
             this.bunifuLabel1.TabIndex = 83;
-            this.bunifuLabel1.Text = "Administartor Registration";
+            this.bunifuLabel1.Text = "Administrator Registration";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
