@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -17,6 +18,7 @@ namespace Goodness_Pharmacy
             InitializeComponent();
             linkLabel1.Text = Program.UserRole + " - Sign Out";
             bunifuLabel2.Text = Program.UserName;
+
         }
 
         private void bunifuButton21_Click(object sender, EventArgs e)
@@ -102,5 +104,101 @@ namespace Goodness_Pharmacy
 
             }
         }
+
+        private void Sales_Report_Load(object sender, EventArgs e)
+        {
+            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
+
+            // Define the SELECT query to fetch all data from the Sales table
+            string selectQuery = "SELECT * FROM Sales";
+
+            // Create a DataTable to hold the retrieved data
+            DataTable salesData = new DataTable();
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    // Create a SqlDataAdapter to execute the SELECT query and fill the DataTable
+                    SqlDataAdapter adapter = new SqlDataAdapter(selectQuery, connection);
+
+                    // Open the connection
+                    connection.Open();
+
+                    // Fill the DataTable with the data from the Sales table
+                    adapter.Fill(salesData);
+
+                    // Close the connection
+                    connection.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle any potential exceptions that occurred during the database operations
+                MessageBox.Show("An error occurred while retrieving sales data: " + ex.Message);
+                return;
+            }
+
+            // Bind the DataTable to the DataGridView
+            dataGridViewSales.DataSource = salesData;
+
+
+
+
+
+
+        }
+
+
+        private void bunifuButton213_Click(object sender, EventArgs e)
+        {
+            // Get the filter values from the TextBoxes and DatePicker
+            string supplierNameFilter = bunifuTextBox1.Text.Trim();
+            string salesCodeFilterText = bunifuTextBoxQuantity.Text.Trim();
+            DateTime dateFilter = bunifuDatePicker1.Value;
+
+            // Parse the sales code filter value if it's a valid integer
+            int? salesCodeFilter = null;
+            if (!string.IsNullOrEmpty(salesCodeFilterText))
+            {
+                int parsedSalesCode;
+                if (int.TryParse(salesCodeFilterText, out parsedSalesCode))
+                {
+                    salesCodeFilter = parsedSalesCode;
+                }
+            }
+
+            // Apply the filters to the DataTable bound to the DataGridView
+            DataTable salesData = dataGridViewSales.DataSource as DataTable;
+
+            if (salesData != null)
+            {
+                // Construct the filter expression based on the filter values
+                string filterExpression = "";
+
+                if (!string.IsNullOrEmpty(supplierNameFilter))
+                {
+                    // Add the supplier name filter condition
+                    filterExpression += $"[Supplier_Name] LIKE '%{supplierNameFilter}%' AND ";
+                }
+
+                if (salesCodeFilter.HasValue)
+                {
+                    // Add the sales code filter condition
+                    filterExpression += $"[Sale_Code] = {salesCodeFilter.Value} AND ";
+                }
+
+                // Remove the trailing "AND" if there are filter conditions
+                if (!string.IsNullOrEmpty(filterExpression))
+                {
+                    filterExpression = filterExpression.Remove(filterExpression.Length - 5);
+                }
+
+                // Apply the filter to the DataTable
+                salesData.DefaultView.RowFilter = filterExpression;
+            }
+        }
+
+
     }
 }

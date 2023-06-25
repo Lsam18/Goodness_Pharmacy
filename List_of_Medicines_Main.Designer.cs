@@ -1054,9 +1054,9 @@
             this.bunifuLabel2.Location = new System.Drawing.Point(477, 107);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(222, 25);
+            this.bunifuLabel2.Size = new System.Drawing.Size(164, 25);
             this.bunifuLabel2.TabIndex = 32;
-            this.bunifuLabel2.Text = "List of Medicines (298)";
+            this.bunifuLabel2.Text = "List of Medicines ";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -1295,7 +1295,6 @@
             this.bunifuImageButton2.WaitOnLoad = false;
             this.bunifuImageButton2.Zoom = 20;
             this.bunifuImageButton2.ZoomSpeed = 10;
-            this.bunifuImageButton2.Click += new System.EventHandler(this.bunifuImageButton2_Click);
             // 
             // List_of_Medicines_Main
             // 

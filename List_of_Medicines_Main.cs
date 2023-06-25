@@ -177,14 +177,7 @@ namespace Goodness_Pharmacy
 
         private void bunifuImageButton2_Click(object sender, EventArgs e)
         {
-            if (currentIndex > 0)
-            {
-                // Decrement the current index to move to the previous record
-                currentIndex--;
 
-                // Display the data of the previous record in the DataGridView
-                bunifuDataGridView1.CurrentCell = bunifuDataGridView1.Rows[currentIndex].Cells[0];
-            }
         }
 
     }

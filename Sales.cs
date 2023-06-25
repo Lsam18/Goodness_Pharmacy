@@ -21,11 +21,7 @@ namespace Goodness_Pharmacy
             bunifuLabel2.Text = Program.UserName;
         }
 
-        private void bunifuButton211_Click(object sender, EventArgs e)
-        {
-            Bill bill = new Bill();
-            bill.Show();
-        }
+    
 
         private void bunifuButton213_Click(object sender, EventArgs e)
         {
