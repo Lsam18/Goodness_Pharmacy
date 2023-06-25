@@ -36,8 +36,8 @@ namespace Goodness_Pharmacy
 
         private void bunifuButton216_Click(object sender, EventArgs e)
         {
-            Report report = new Report();
-            report.Show();
+            Sales_Report salesrep = new Sales_Report();
+            salesrep.Show();
             this.Close();
         }
 

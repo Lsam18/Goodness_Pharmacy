@@ -43,8 +43,8 @@ namespace Goodness_Pharmacy
 
         private void bunifuButton23_Click(object sender, EventArgs e)
         {
-            Report report = new Report();
-            report.Show();
+            Sales_Report salesrep = new Sales_Report();
+            salesrep.Show();
         }
 
         private void bunifuButton24_Click(object sender, EventArgs e)
