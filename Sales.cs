@@ -26,7 +26,7 @@ namespace Goodness_Pharmacy
 
         private void bunifuButton213_Click(object sender, EventArgs e)
         {
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\mifra\source\repos\Goodness_Pharmacy\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Goodness_Pharmacy\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
 
             try
             {
@@ -172,18 +172,10 @@ namespace Goodness_Pharmacy
 
 
 
-<<<<<<< HEAD
 
 
-        private void bunifuButton21_Click(object sender, EventArgs e)
-=======
-            private void bunifuButton21_Click(object sender, EventArgs e)
->>>>>>> 210d6209a2cbd8d5096a391dfff12dcfc66e7714
-        {
-            Dashboard dash = new Dashboard();
-            dash.Show();
-            this.Close();
-        }
+
+       
 
         private void bunifuButton22_Click(object sender, EventArgs e)
         {
@@ -277,7 +269,7 @@ namespace Goodness_Pharmacy
             try
             {
                 // Establish the database connection
-                using (SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\mifra\source\repos\Goodness_Pharmacy\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30"))
+                using (SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Goodness_Pharmacy\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30"))
                 {
                     // Create the SQL query to fetch suppliers
                     string query = "SELECT Name FROM Supplier";
@@ -325,7 +317,7 @@ namespace Goodness_Pharmacy
             try
             {
                 // Establish the database connection
-                using (SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\mifra\source\repos\Goodness_Pharmacy\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30"))
+                using (SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Goodness_Pharmacy\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30"))
                 {
                     // Create the SQL query to fetch medicine names
                     string query = "SELECT Medicine_Name FROM AddMedicine";
