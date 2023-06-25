@@ -1132,7 +1132,7 @@
             this.bunifuButton211.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(51)))), ((int)(((byte)(66)))));
             this.bunifuButton211.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton211.BackgroundImage")));
             this.bunifuButton211.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.bunifuButton211.ButtonText = "           Get Technial Help";
+            this.bunifuButton211.ButtonText = "           Get Technical Help";
             this.bunifuButton211.ButtonTextMarginLeft = 0;
             this.bunifuButton211.ColorContrastOnClick = 45;
             this.bunifuButton211.ColorContrastOnHover = 45;
