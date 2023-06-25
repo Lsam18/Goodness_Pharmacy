@@ -72,8 +72,6 @@
             this.bunifuLabel7 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel8 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuDatePicker1 = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.dataGridViewSales = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.bunifuTextBoxQuantity = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuLabel11 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -1088,48 +1086,6 @@
             this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuLabel8
-            // 
-            this.bunifuLabel8.AllowParentOverrides = false;
-            this.bunifuLabel8.AutoEllipsis = false;
-            this.bunifuLabel8.CursorType = null;
-            this.bunifuLabel8.Font = new System.Drawing.Font("Calibri", 14.25F);
-            this.bunifuLabel8.ForeColor = System.Drawing.Color.Black;
-            this.bunifuLabel8.Location = new System.Drawing.Point(344, 200);
-            this.bunifuLabel8.Name = "bunifuLabel8";
-            this.bunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel8.Size = new System.Drawing.Size(87, 23);
-            this.bunifuLabel8.TabIndex = 34;
-            this.bunifuLabel8.Text = "Date Range";
-            this.bunifuLabel8.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel8.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bunifuDatePicker1
-            // 
-            this.bunifuDatePicker1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(235)))), ((int)(((byte)(243)))));
-            this.bunifuDatePicker1.BorderColor = System.Drawing.Color.Black;
-            this.bunifuDatePicker1.BorderRadius = 4;
-            this.bunifuDatePicker1.Color = System.Drawing.Color.Black;
-            this.bunifuDatePicker1.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thin;
-            this.bunifuDatePicker1.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
-            this.bunifuDatePicker1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuDatePicker1.DisplayWeekNumbers = false;
-            this.bunifuDatePicker1.DPHeight = 0;
-            this.bunifuDatePicker1.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.bunifuDatePicker1.FillDatePicker = false;
-            this.bunifuDatePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuDatePicker1.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDatePicker1.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuDatePicker1.Icon")));
-            this.bunifuDatePicker1.IconColor = System.Drawing.Color.Black;
-            this.bunifuDatePicker1.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
-            this.bunifuDatePicker1.LeftTextMargin = 5;
-            this.bunifuDatePicker1.Location = new System.Drawing.Point(344, 229);
-            this.bunifuDatePicker1.MinimumSize = new System.Drawing.Size(4, 32);
-            this.bunifuDatePicker1.Name = "bunifuDatePicker1";
-            this.bunifuDatePicker1.Size = new System.Drawing.Size(205, 32);
-            this.bunifuDatePicker1.TabIndex = 36;
-            this.bunifuDatePicker1.Value = new System.DateTime(2023, 6, 21, 12, 44, 0, 0);
-            // 
             // dataGridViewSales
             // 
             this.dataGridViewSales.AllowCustomTheming = false;
@@ -1221,7 +1177,7 @@
             this.bunifuTextBoxQuantity.IconRight = null;
             this.bunifuTextBoxQuantity.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBoxQuantity.Lines = new string[0];
-            this.bunifuTextBoxQuantity.Location = new System.Drawing.Point(599, 229);
+            this.bunifuTextBoxQuantity.Location = new System.Drawing.Point(327, 252);
             this.bunifuTextBoxQuantity.MaxLength = 32767;
             this.bunifuTextBoxQuantity.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBoxQuantity.Modified = false;
@@ -1275,12 +1231,12 @@
             this.bunifuLabel11.CursorType = null;
             this.bunifuLabel11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel11.ForeColor = System.Drawing.Color.Black;
-            this.bunifuLabel11.Location = new System.Drawing.Point(599, 204);
+            this.bunifuLabel11.Location = new System.Drawing.Point(327, 227);
             this.bunifuLabel11.Name = "bunifuLabel11";
             this.bunifuLabel11.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel11.Size = new System.Drawing.Size(86, 19);
+            this.bunifuLabel11.Size = new System.Drawing.Size(169, 19);
             this.bunifuLabel11.TabIndex = 64;
-            this.bunifuLabel11.Text = "Sales Code";
+            this.bunifuLabel11.Text = "Sales Code (Optional) ";
             this.bunifuLabel11.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel11.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -1313,7 +1269,7 @@
             this.bunifuTextBox1.IconRight = null;
             this.bunifuTextBox1.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBox1.Lines = new string[0];
-            this.bunifuTextBox1.Location = new System.Drawing.Point(874, 227);
+            this.bunifuTextBox1.Location = new System.Drawing.Point(601, 250);
             this.bunifuTextBox1.MaxLength = 32767;
             this.bunifuTextBox1.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBox1.Modified = false;
@@ -1342,7 +1298,7 @@
             this.bunifuTextBox1.Padding = new System.Windows.Forms.Padding(3);
             this.bunifuTextBox1.PasswordChar = '\0';
             this.bunifuTextBox1.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.bunifuTextBox1.PlaceholderText = "25";
+            this.bunifuTextBox1.PlaceholderText = "Enter Supplier Name";
             this.bunifuTextBox1.ReadOnly = false;
             this.bunifuTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.bunifuTextBox1.SelectedText = "";
@@ -1356,7 +1312,7 @@
             this.bunifuTextBox1.TextMarginBottom = 0;
             this.bunifuTextBox1.TextMarginLeft = 3;
             this.bunifuTextBox1.TextMarginTop = 1;
-            this.bunifuTextBox1.TextPlaceholder = "25";
+            this.bunifuTextBox1.TextPlaceholder = "Enter Supplier Name";
             this.bunifuTextBox1.UseSystemPasswordChar = false;
             this.bunifuTextBox1.WordWrap = true;
             // 
@@ -1367,12 +1323,12 @@
             this.bunifuLabel4.CursorType = null;
             this.bunifuLabel4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel4.ForeColor = System.Drawing.Color.Black;
-            this.bunifuLabel4.Location = new System.Drawing.Point(874, 200);
+            this.bunifuLabel4.Location = new System.Drawing.Point(601, 223);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(116, 19);
+            this.bunifuLabel4.Size = new System.Drawing.Size(199, 19);
             this.bunifuLabel4.TabIndex = 66;
-            this.bunifuLabel4.Text = "Supplier Name";
+            this.bunifuLabel4.Text = "Supplier Name (Optional)";
             this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -1423,7 +1379,7 @@
             this.bunifuButton213.IdleIconLeftImage = null;
             this.bunifuButton213.IdleIconRightImage = null;
             this.bunifuButton213.IndicateFocus = false;
-            this.bunifuButton213.Location = new System.Drawing.Point(1242, 229);
+            this.bunifuButton213.Location = new System.Drawing.Point(1244, 250);
             this.bunifuButton213.Name = "bunifuButton213";
             this.bunifuButton213.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton213.OnDisabledState.BorderRadius = 4;
@@ -1479,8 +1435,6 @@
             this.Controls.Add(this.bunifuTextBoxQuantity);
             this.Controls.Add(this.bunifuLabel11);
             this.Controls.Add(this.dataGridViewSales);
-            this.Controls.Add(this.bunifuDatePicker1);
-            this.Controls.Add(this.bunifuLabel8);
             this.Controls.Add(this.bunifuLabel7);
             this.Controls.Add(this.bunifuLabel3);
             this.Controls.Add(this.bunifuLabel6);
@@ -1526,8 +1480,6 @@
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel7;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel6;
-        private Bunifu.UI.WinForms.BunifuDatePicker bunifuDatePicker1;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel8;
         private Bunifu.UI.WinForms.BunifuDataGridView dataGridViewSales;
         private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox1;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;

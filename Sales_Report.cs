@@ -152,10 +152,9 @@ namespace Goodness_Pharmacy
 
         private void bunifuButton213_Click(object sender, EventArgs e)
         {
-            // Get the filter values from the TextBoxes and DatePicker
+            // Get the filter values from the TextBoxes
             string supplierNameFilter = bunifuTextBox1.Text.Trim();
             string salesCodeFilterText = bunifuTextBoxQuantity.Text.Trim();
-            DateTime dateFilter = bunifuDatePicker1.Value;
 
             // Parse the sales code filter value if it's a valid integer
             int? salesCodeFilter = null;
@@ -196,8 +195,15 @@ namespace Goodness_Pharmacy
 
                 // Apply the filter to the DataTable
                 salesData.DefaultView.RowFilter = filterExpression;
+
+                // Check if any records match the filter
+                if (salesData.DefaultView.Count == 0)
+                {
+                    MessageBox.Show("No records found matching the filter criteria.");
+                }
             }
         }
+
 
 
     }
