@@ -455,7 +455,11 @@ namespace Goodness_Pharmacy
             e.Graphics.DrawString(receiptText, font, Brushes.Black, printArea, format);
         }
 
-
-
+        private void bunifuButton21_Click(object sender, EventArgs e)
+        {
+            Dashboard dash = new Dashboard();
+            dash.Show();
+            this.Close();
+        }
     }
 }
