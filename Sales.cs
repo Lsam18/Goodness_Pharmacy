@@ -26,7 +26,7 @@ namespace Goodness_Pharmacy
 
         private void bunifuButton213_Click(object sender, EventArgs e)
         {
-            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\mifra\source\repos\Goodness_Pharmacy\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
 
             try
             {
@@ -43,13 +43,14 @@ namespace Goodness_Pharmacy
                     string notes = bunifuTextBoxNotes.Text;
                     float discount = Convert.ToSingle(bunifuTextBoxDiscount.Text);
                     string payment = bunifuDropdownPayment.SelectedItem?.ToString();
+                    float discountPercentage = Convert.ToSingle(bunifuTextBoxDiscount.Text) / 100;
 
                     // Perform form validation
                     if (string.IsNullOrEmpty(supplierName) ||
                         string.IsNullOrEmpty(medicine) ||
                         string.IsNullOrEmpty(payment))
                     {
-                        MessageBox.Show("Please fill in all the required fields.");
+                        MessageBox.Show("Supplier, Medicine and Payment options are required");
                         return; // Stop further execution
                     }
 
@@ -102,6 +103,7 @@ namespace Goodness_Pharmacy
                     }
 
                     // Calculate the grand total for the current item
+                    
                     float sellPrice = 0.0f; // Initialize with a default value
                     string sellPriceQuery = "SELECT Sell_Price FROM AddMedicine WHERE Medicine_Name = @Medicine_Name";
 
@@ -118,23 +120,22 @@ namespace Goodness_Pharmacy
                         }
                     }
 
-                    float grandTotal = quantity * (sellPrice - discount);
+                    float discountAmount = sellPrice * discountPercentage;
+                    float grandTotal = quantity * (sellPrice - discountAmount);
 
                     // Add the values to the DataGridView as a new row
                     bunifuDataGridView1.Rows.Add(medicine, saleCode, quantity, grandTotal);
 
-                    // Calculate the total of all items under the same sale code
-                    float total = 0.0f;
+                    // Calculate the total of all items with discounts
+                    float totalWithDiscounts = 0.0f;
                     foreach (DataGridViewRow row in bunifuDataGridView1.Rows)
                     {
-                        if (row.Cells[1].Value != null && row.Cells[1].Value.ToString() == saleCode.ToString())
-                        {
-                            total += Convert.ToSingle(row.Cells[3].Value);
-                        }
+                        float rowGrandTotal = Convert.ToSingle(row.Cells[3].Value);
+                        totalWithDiscounts += rowGrandTotal;
                     }
 
-                    // Update the total label with the calculated total
-                    totalLabel.Text = total.ToString();
+                    // Update the total label with the calculated total with discounts
+                    totalLabel.Text = totalWithDiscounts.ToString();
 
                     // Reduce the available quantity in the AddMedicine table
                     string reduceQuantityQuery = "UPDATE AddMedicine SET Quantity = Quantity - @Quantity " +
@@ -171,9 +172,13 @@ namespace Goodness_Pharmacy
 
 
 
+<<<<<<< HEAD
 
 
         private void bunifuButton21_Click(object sender, EventArgs e)
+=======
+            private void bunifuButton21_Click(object sender, EventArgs e)
+>>>>>>> 210d6209a2cbd8d5096a391dfff12dcfc66e7714
         {
             Dashboard dash = new Dashboard();
             dash.Show();
@@ -208,9 +213,14 @@ namespace Goodness_Pharmacy
 
         private void bunifuButton25_Click(object sender, EventArgs e)
         {
-            Supplier sup = new Supplier();
-            sup.Show();
+            if (Program.UserRole == "Admin")
+            {
+                Supplier supplier = new Supplier();
+                supplier.Show();
             this.Close();
+        }
+            else
+                MessageBox.Show("You do not have permission to access this");
         }
 
         private void bunifuButton26_Click(object sender, EventArgs e)
@@ -254,7 +264,7 @@ namespace Goodness_Pharmacy
             {
                 // Perform actions based on the selected Supplier
                 // For example, you can display additional information about the Supplier or retrieve related data from the database.
-                MessageBox.Show("You double-clicked on Supplier: " + selectedSupplier);
+                MessageBox.Show("Supplier: " + selectedSupplier);
             }
         }
 
@@ -267,7 +277,7 @@ namespace Goodness_Pharmacy
             try
             {
                 // Establish the database connection
-                using (SqlConnection connection = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30"))
+                using (SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\mifra\source\repos\Goodness_Pharmacy\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30"))
                 {
                     // Create the SQL query to fetch suppliers
                     string query = "SELECT Name FROM Supplier";
@@ -315,7 +325,7 @@ namespace Goodness_Pharmacy
             try
             {
                 // Establish the database connection
-                using (SqlConnection connection = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30"))
+                using (SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\mifra\source\repos\Goodness_Pharmacy\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30"))
                 {
                     // Create the SQL query to fetch medicine names
                     string query = "SELECT Medicine_Name FROM AddMedicine";
@@ -368,7 +378,7 @@ namespace Goodness_Pharmacy
             {
                 // Perform actions based on the selected medicine name
                 // For example, you can display additional information about the medicine or retrieve related data from the database.
-                MessageBox.Show("You selected medicine: " + selectedMedicine);
+                MessageBox.Show("Medicine: " + selectedMedicine);
             }
         }
 
@@ -411,11 +421,7 @@ namespace Goodness_Pharmacy
                     receiptBuilder.AppendLine($"Grand Total: {grandTotal}");
                     receiptBuilder.AppendLine("--------------------------");
                 }
-                else
-                {
-                    // Handle the case where the cell value is null
-                    MessageBox.Show("The cell value is null.");
-                }
+             
             }
 
             // Display the generated receipt
