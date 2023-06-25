@@ -73,9 +73,14 @@ namespace Goodness_Pharmacy
 
         private void bunifuButton214_Click(object sender, EventArgs e)
         {
+            if (Program.UserRole == "Admin")
+            {
             Supplier supplier = new Supplier();
             supplier.Show();
             this.Close();
+        }
+            else
+                MessageBox.Show("You do not have permission to access this");
         }
 
         private void bunifuButton213_Click(object sender, EventArgs e)
