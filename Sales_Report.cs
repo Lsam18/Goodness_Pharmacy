@@ -112,7 +112,7 @@ namespace Goodness_Pharmacy
 
         private void Sales_Report_Load(object sender, EventArgs e)
         {
-            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Goodness Pharmacy\Goodness_pharm.mdf"";Integrated Security=True;Connect Timeout=30";
 
             // Define the SELECT query to fetch all data from the Sales table
             string selectQuery = "SELECT * FROM Sales";

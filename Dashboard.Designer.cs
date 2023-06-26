@@ -1549,6 +1549,7 @@
             this.totalmedlabel.Name = "totalmedlabel";
             this.totalmedlabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.totalmedlabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+           
             // 
             // bunifuLabel20
             // 

@@ -118,7 +118,7 @@ namespace Goodness_Pharmacy
 
         private void Manage_Purchases_Load(object sender, EventArgs e)
         {
-            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Goodness Pharmacy\Goodness_pharm.mdf"";Integrated Security=True;Connect Timeout=30";
             string query = "SELECT Id, Supplier_Name, Invoice_No, Purchase_Date, Details, Quantity, Total FROM Purchase";
 
             try

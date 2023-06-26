@@ -25,7 +25,13 @@ namespace Goodness_Pharmacy
 
         private void bunifuButton24_Click(object sender, EventArgs e)
         {
-            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
+            
+
+        }
+
+        private void bunifuButton21_Click(object sender, EventArgs e)
+        {
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Goodness Pharmacy\Goodness_pharm.mdf"";Integrated Security=True;Connect Timeout=30";
 
             try
             {
@@ -122,9 +128,6 @@ namespace Goodness_Pharmacy
                 // Handle other exceptions
                 MessageBox.Show("An exception occurred: " + ex.Message);
             }
-
         }
-
-       
     }
 }
