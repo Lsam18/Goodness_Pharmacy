@@ -121,7 +121,7 @@ namespace Goodness_Pharmacy
             // ...
 
             // Example code:
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Goodness_Pharmacy\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
+            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
 
             try
             {
@@ -144,7 +144,18 @@ namespace Goodness_Pharmacy
                         // Set the DataGridView's data source
                         bunifuDataGridView1.DataSource = dataTable;
 
-                        // Close the connection
+                        foreach (DataGridViewRow row in bunifuDataGridView1.Rows)
+                        {
+                            if (row.Cells["Quantity"].Value != null && Convert.ToInt32(row.Cells["Quantity"].Value) < 5)
+                            {
+                                //highlight the row
+                                row.DefaultCellStyle.BackColor = Color.Brown;
+                                row.DefaultCellStyle.ForeColor = Color.White;
+                                row.DefaultCellStyle.SelectionBackColor = Color.Brown;
+                                row.DefaultCellStyle.SelectionForeColor = Color.White;
+                            }
+                        }
+
                         connection.Close();
                     }
                 }

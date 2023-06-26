@@ -101,7 +101,7 @@ namespace Goodness_Pharmacy
 
         private void bunifuButton213_Click(object sender, EventArgs e)
         {
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\mifra\source\repos\Goodness_Pharmacy\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
+            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
 
             try
             {
@@ -155,7 +155,7 @@ namespace Goodness_Pharmacy
 
         private void bunifuButton211_Click(object sender, EventArgs e)
         {
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\mifra\source\repos\Goodness_Pharmacy\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
+            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
 
             try
             {
@@ -221,7 +221,7 @@ namespace Goodness_Pharmacy
                 // Get the purchase ID from your Windows Form control
                 int id = Convert.ToInt32(bunifuTextBoxCustomerId.Text);
 
-                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\mifra\source\repos\Goodness_Pharmacy\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
+                string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
 
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {

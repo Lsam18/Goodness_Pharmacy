@@ -118,7 +118,7 @@ namespace Goodness_Pharmacy
 
         private void bunifuButton21_Click(object sender, EventArgs e)
         {
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Goodness_Pharmacy\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
+            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
 
             try
             {
@@ -200,7 +200,7 @@ namespace Goodness_Pharmacy
             }
 
         }
-        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Goodness_Pharmacy\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
+        string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
 
         private void bunifuButton22_Click(object sender, EventArgs e)
         {

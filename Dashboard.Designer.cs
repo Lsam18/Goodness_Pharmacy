@@ -91,6 +91,8 @@
             this.bunifuLabel16 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuShapes2 = new Bunifu.UI.WinForms.BunifuShapes();
             this.bunifuPanel10 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.emplabel = new Bunifu.UI.WinForms.BunifuLabel();
+            this.supLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.admlabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel24 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel23 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -113,8 +115,6 @@
             this.bunifuLabel19 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuShapes5 = new Bunifu.UI.WinForms.BunifuShapes();
             this.bunifuPanel8 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.supLabel = new Bunifu.UI.WinForms.BunifuLabel();
-            this.emplabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.bunifuPanel2.SuspendLayout();
@@ -1058,7 +1058,7 @@
             this.bunifuButton210.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(167)))), ((int)(((byte)(104)))));
             resources.ApplyResources(this.bunifuButton210, "bunifuButton210");
             this.bunifuButton210.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.bunifuButton210.ButtonText = "View Detailed Report  >>";
+            this.bunifuButton210.ButtonText = "Visit Inventory  >>";
             this.bunifuButton210.ButtonTextMarginLeft = 0;
             this.bunifuButton210.ColorContrastOnClick = 45;
             this.bunifuButton210.ColorContrastOnHover = 45;
@@ -1312,7 +1312,7 @@
             this.bunifuButton212.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(245)))));
             resources.ApplyResources(this.bunifuButton212, "bunifuButton212");
             this.bunifuButton212.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.bunifuButton212.ButtonText = "Visit Inventory >>";
+            this.bunifuButton212.ButtonText = "View Detailed Report  >>";
             this.bunifuButton212.ButtonTextMarginLeft = 0;
             this.bunifuButton212.ColorContrastOnClick = 45;
             this.bunifuButton212.ColorContrastOnHover = 45;
@@ -1688,6 +1688,28 @@
             this.bunifuPanel10.Controls.Add(this.bunifuShapes4);
             this.bunifuPanel10.Name = "bunifuPanel10";
             this.bunifuPanel10.ShowBorders = true;
+            // 
+            // emplabel
+            // 
+            this.emplabel.AllowParentOverrides = false;
+            this.emplabel.AutoEllipsis = false;
+            this.emplabel.CursorType = null;
+            resources.ApplyResources(this.emplabel, "emplabel");
+            this.emplabel.ForeColor = System.Drawing.Color.Black;
+            this.emplabel.Name = "emplabel";
+            this.emplabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.emplabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // supLabel
+            // 
+            this.supLabel.AllowParentOverrides = false;
+            this.supLabel.AutoEllipsis = false;
+            this.supLabel.CursorType = null;
+            resources.ApplyResources(this.supLabel, "supLabel");
+            this.supLabel.ForeColor = System.Drawing.Color.Black;
+            this.supLabel.Name = "supLabel";
+            this.supLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.supLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // admlabel
             // 
@@ -2100,28 +2122,6 @@
             this.bunifuPanel8.Controls.Add(this.bunifuPanel9);
             this.bunifuPanel8.Name = "bunifuPanel8";
             this.bunifuPanel8.ShowBorders = true;
-            // 
-            // supLabel
-            // 
-            this.supLabel.AllowParentOverrides = false;
-            this.supLabel.AutoEllipsis = false;
-            this.supLabel.CursorType = null;
-            resources.ApplyResources(this.supLabel, "supLabel");
-            this.supLabel.ForeColor = System.Drawing.Color.Black;
-            this.supLabel.Name = "supLabel";
-            this.supLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.supLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // emplabel
-            // 
-            this.emplabel.AllowParentOverrides = false;
-            this.emplabel.AutoEllipsis = false;
-            this.emplabel.CursorType = null;
-            resources.ApplyResources(this.emplabel, "emplabel");
-            this.emplabel.ForeColor = System.Drawing.Color.Black;
-            this.emplabel.Name = "emplabel";
-            this.emplabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.emplabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // Dashboard
             // 

@@ -111,7 +111,7 @@ namespace Goodness_Pharmacy
 
         private void Employee_Details_Load(object sender, EventArgs e)
         {
-            using (SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Goodness_Pharmacy\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30"))
+            using (SqlConnection connection = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30"))
             {
                 try
                 {

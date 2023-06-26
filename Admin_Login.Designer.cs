@@ -211,7 +211,7 @@
             this.bunifuTextBoxusername.Padding = new System.Windows.Forms.Padding(3);
             this.bunifuTextBoxusername.PasswordChar = '\0';
             this.bunifuTextBoxusername.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.bunifuTextBoxusername.PlaceholderText = "Enter Username";
+            this.bunifuTextBoxusername.PlaceholderText = "";
             this.bunifuTextBoxusername.ReadOnly = false;
             this.bunifuTextBoxusername.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.bunifuTextBoxusername.SelectedText = "";
@@ -225,7 +225,7 @@
             this.bunifuTextBoxusername.TextMarginBottom = 0;
             this.bunifuTextBoxusername.TextMarginLeft = 3;
             this.bunifuTextBoxusername.TextMarginTop = 1;
-            this.bunifuTextBoxusername.TextPlaceholder = "Enter Username";
+            this.bunifuTextBoxusername.TextPlaceholder = "";
             this.bunifuTextBoxusername.UseSystemPasswordChar = false;
             this.bunifuTextBoxusername.WordWrap = true;
             // 
@@ -285,9 +285,9 @@
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBoxPassword.OnIdleState = stateProperties4;
             this.bunifuTextBoxPassword.Padding = new System.Windows.Forms.Padding(3);
-            this.bunifuTextBoxPassword.PasswordChar = '\0';
+            this.bunifuTextBoxPassword.PasswordChar = '*';
             this.bunifuTextBoxPassword.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.bunifuTextBoxPassword.PlaceholderText = "Enter Password";
+            this.bunifuTextBoxPassword.PlaceholderText = "";
             this.bunifuTextBoxPassword.ReadOnly = false;
             this.bunifuTextBoxPassword.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.bunifuTextBoxPassword.SelectedText = "";
@@ -301,7 +301,7 @@
             this.bunifuTextBoxPassword.TextMarginBottom = 0;
             this.bunifuTextBoxPassword.TextMarginLeft = 3;
             this.bunifuTextBoxPassword.TextMarginTop = 1;
-            this.bunifuTextBoxPassword.TextPlaceholder = "Enter Password";
+            this.bunifuTextBoxPassword.TextPlaceholder = "";
             this.bunifuTextBoxPassword.UseSystemPasswordChar = false;
             this.bunifuTextBoxPassword.WordWrap = true;
             // 

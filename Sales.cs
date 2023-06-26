@@ -26,7 +26,7 @@ namespace Goodness_Pharmacy
 
         private void bunifuButton213_Click(object sender, EventArgs e)
         {
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Goodness_Pharmacy\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
+            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
 
             try
             {
@@ -269,7 +269,7 @@ namespace Goodness_Pharmacy
             try
             {
                 // Establish the database connection
-                using (SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Goodness_Pharmacy\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30"))
+                using (SqlConnection connection = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30"))
                 {
                     // Create the SQL query to fetch suppliers
                     string query = "SELECT Name FROM Supplier";
@@ -317,7 +317,7 @@ namespace Goodness_Pharmacy
             try
             {
                 // Establish the database connection
-                using (SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Goodness_Pharmacy\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30"))
+                using (SqlConnection connection = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30"))
                 {
                     // Create the SQL query to fetch medicine names
                     string query = "SELECT Medicine_Name FROM AddMedicine";
