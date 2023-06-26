@@ -21,6 +21,222 @@ namespace Goodness_Pharmacy
             InitializeComponent();
             linkLabel1.Text = Program.UserRole+" - Sign Out";
             bunifuLabel2.Text = Program.UserName;
+
+            //dashboardstatistics
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\mifra\source\repos\Goodness_Pharmacy\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
+            string query1 = "SELECT COUNT(*) AS TotalSuppliers FROM Supplier";
+            string query2 = "SELECT COUNT(*) AS TotalAdmins FROM adminsignup";
+            string query3 = "SELECT COUNT(*) AS TotalEmp FROM Employeesign";
+            string query4 = "SELECT COUNT(*) AS TotalCus FROM Customer";
+            string query5 = "SELECT TOP 1 Medicine FROM Sales GROUP BY Medicine ORDER BY COUNT(*) DESC";
+            string freqMedicine = null;
+            string query6 = "SELECT COUNT(*) AS TotalMed FROM AddMedicine";
+            string query7 = "SELECT COUNT(DISTINCT Medicine_Group) AS NoTypes FROM AddMedicine";
+            string query8 = "SELECT SUM(Quantity) AS TotalSoldQuantity FROM Sales";
+            string query9 = "SELECT COUNT(*) AS TotalSales FROM Sales";
+            int totalSoldQuantity = 0;
+            //1
+            try
+            {
+                using (SqlConnection con = new SqlConnection(connectionString))
+                {
+                    using (SqlCommand command = new SqlCommand(query1, con))
+                    {
+                        con.Open();
+                        int totalSuppliers = (int)command.ExecuteScalar();
+                        supLabel.Text = totalSuppliers.ToString();
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("An SQL exception occurred: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An exception occurred: " + ex.Message);
+            }
+            //2
+            try
+            {
+                using (SqlConnection con = new SqlConnection(connectionString))
+                {
+                    using (SqlCommand command = new SqlCommand(query2, con))
+                    {
+                        con.Open();
+                        int totalAdmins = (int)command.ExecuteScalar();
+                        admlabel.Text = "Admins: " + totalAdmins.ToString();
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("An SQL exception occurred: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An exception occurred: " + ex.Message);
+            }
+            //3
+            try
+            {
+                using (SqlConnection con = new SqlConnection(connectionString))
+                {
+                    using (SqlCommand command = new SqlCommand(query3, con))
+                    {
+                        con.Open();
+                        int TotalEmp = (int)command.ExecuteScalar();
+                        emplabel.Text = "Employees: " + TotalEmp.ToString();
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("An SQL exception occurred: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An exception occurred: " + ex.Message);
+            }
+            //4
+            try
+            {
+                using (SqlConnection con = new SqlConnection(connectionString))
+                {
+                    using (SqlCommand command = new SqlCommand(query4, con))
+                    {
+                        con.Open();
+                        int TotalCus = (int)command.ExecuteScalar();
+                        cuslabel.Text = TotalCus.ToString();
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("An SQL exception occurred: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An exception occurred: " + ex.Message);
+            }
+            //5
+            try
+            {
+                using (SqlConnection con = new SqlConnection(connectionString))
+                {
+                    using (SqlCommand command = new SqlCommand(query5, con))
+                    {
+                        con.Open();
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                freqMedicine = reader.GetString(0);
+                            }
+                        }
+                        medLabel.Text = freqMedicine.ToString();
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                // Handle SQL exception
+                MessageBox.Show("An SQL exception occurred: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                // Handle other exceptions
+                MessageBox.Show("An exception occurred: " + ex.Message);
+            }
+            //6
+            try
+            {
+                using (SqlConnection con = new SqlConnection(connectionString))
+                {
+                    using (SqlCommand command = new SqlCommand(query6, con))
+                    {
+                        con.Open();
+                        int TotalMed = (int)command.ExecuteScalar();
+                        totalmedlabel.Text = TotalMed.ToString();
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("An SQL exception occurred: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An exception occurred: " + ex.Message);
+            }
+            //7
+            try
+            {
+                using (SqlConnection con = new SqlConnection(connectionString))
+                {
+                    using (SqlCommand command = new SqlCommand(query7, con))
+                    {
+                        con.Open();
+                        int NoTypes = (int)command.ExecuteScalar();
+                        medGrplabel.Text = NoTypes.ToString();
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("An SQL exception occurred: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An exception occurred: " + ex.Message);
+            }
+            //8
+            try
+            {
+                using (SqlConnection con = new SqlConnection(connectionString))
+                {
+                    using (SqlCommand command = new SqlCommand(query8, con))
+                    {
+                        con.Open();
+                        object result = command.ExecuteScalar();
+
+                        if (result != DBNull.Value)
+                        {
+                            totalSoldQuantity = Convert.ToInt32(result);
+                        }
+                        medsaleslabel.Text = totalSoldQuantity.ToString();
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("An SQL exception occurred: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An exception occurred: " + ex.Message);
+            }
+            //9
+            try
+            {
+                using (SqlConnection con = new SqlConnection(connectionString))
+                {
+                    using (SqlCommand command = new SqlCommand(query9, con))
+                    {
+                        con.Open();
+                        int TotalSales = (int)command.ExecuteScalar();
+                        saleslabel.Text = TotalSales.ToString();
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("An SQL exception occurred: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An exception occurred: " + ex.Message);
+            }
         }
 
         private void bunifuButton29_Click(object sender, EventArgs e)
