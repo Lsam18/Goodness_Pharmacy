@@ -164,6 +164,7 @@ namespace Goodness_Pharmacy
                 MessageBox.Show("An exception occurred: " + ex.Message);
             }
 
+
         }
 
         private void bunifuButton211_Click(object sender, EventArgs e)
@@ -205,17 +206,24 @@ namespace Goodness_Pharmacy
                         connection.Open();
 
                         // Execute the query
-                        command.ExecuteNonQuery();
+                        int rowsAffected = command.ExecuteNonQuery();
 
                         // Close the connection
                         connection.Close();
 
-                        // Display a success message or perform any additional tasks
-                        MessageBox.Show("Purchase data updated successfully!");
+                        if (rowsAffected > 0)
+                        {
+                            // Display a success message or perform any additional tasks
+                            MessageBox.Show("Purchase data updated successfully!");
 
-                        // Call the method to update the DataGridView in the "manage_purchase" form
-                        Manage_Purchases managePurchaseForm = Application.OpenForms["ManagePurchaseForm"] as Manage_Purchases;
-                        managePurchaseForm?.LoadPurchaseData();
+                            // Call the method to update the DataGridView in the "manage_purchase" form
+                            Manage_Purchases managePurchaseForm = Application.OpenForms["ManagePurchaseForm"] as Manage_Purchases;
+                            managePurchaseForm?.LoadPurchaseData();
+                        }
+                        else
+                        {
+                            MessageBox.Show("No purchase found with the specified ID.");
+                        }
                     }
                 }
             }
@@ -229,11 +237,12 @@ namespace Goodness_Pharmacy
                 // Handle other exceptions
                 MessageBox.Show("An exception occurred: " + ex.Message);
             }
+
         }
 
         private void bunifuButton210_Click(object sender, EventArgs e)
         {
-            
+
 
             try
             {
@@ -256,17 +265,24 @@ namespace Goodness_Pharmacy
                         connection.Open();
 
                         // Execute the query
-                        command.ExecuteNonQuery();
+                        int rowsAffected = command.ExecuteNonQuery();
 
                         // Close the connection
                         connection.Close();
 
-                        // Display a success message or perform any additional tasks
-                        MessageBox.Show("Purchase data deleted successfully!");
+                        if (rowsAffected > 0)
+                        {
+                            // Display a success message or perform any additional tasks
+                            MessageBox.Show("Purchase data deleted successfully!");
 
-                        // Call the method to update the DataGridView in the "manage_purchase" form
-                        Manage_Purchases managePurchaseForm = Application.OpenForms["ManagePurchaseForm"] as Manage_Purchases;
-                        managePurchaseForm?.LoadPurchaseData();
+                            // Call the method to update the DataGridView in the "manage_purchase" form
+                            Manage_Purchases managePurchaseForm = Application.OpenForms["ManagePurchaseForm"] as Manage_Purchases;
+                            managePurchaseForm?.LoadPurchaseData();
+                        }
+                        else
+                        {
+                            MessageBox.Show("No purchase found with the specified ID.");
+                        }
                     }
                 }
             }
@@ -280,6 +296,7 @@ namespace Goodness_Pharmacy
                 // Handle other exceptions
                 MessageBox.Show("An exception occurred: " + ex.Message);
             }
+
 
 
         }

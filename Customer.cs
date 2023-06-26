@@ -101,7 +101,7 @@ namespace Goodness_Pharmacy
 
         private void bunifuButton213_Click(object sender, EventArgs e)
         {
-            string connectionString = @"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Goodness Pharmacy\Goodness_pharm.mdf"";Integrated Security=True;Connect Timeout=30";
 
             try
             {
@@ -155,7 +155,7 @@ namespace Goodness_Pharmacy
 
         private void bunifuButton211_Click(object sender, EventArgs e)
         {
-            string connectionString = @"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Goodness Pharmacy\Goodness_pharm.mdf"";Integrated Security=True;Connect Timeout=30";
 
             try
             {
@@ -163,43 +163,72 @@ namespace Goodness_Pharmacy
                 {
                     // Get the values to be updated from your Windows Form controls
                     int id = Convert.ToInt32(bunifuTextBoxCustomerId.Text);
-                    string name = bunifuTextBoxCustomerName.Text;
-                    string address = bunifuTextBoxCustomerAddress.Text;
-                    int phone = Convert.ToInt32(bunifuTextBoxCustomerPhone.Text);
 
                     // Create the SQL update query
-                    string query = "UPDATE customer " +
-                                   "SET Name = @Name, Address = @Address, Phone = @Phone " +
-                                   "WHERE Id = @Id";
+                    string query = "UPDATE customer SET ";
+
+                    // Create a list to store the parameters and their corresponding values
+                    List<SqlParameter> parameters = new List<SqlParameter>();
+
+                    // Check if the customer name field is filled
+                    if (!string.IsNullOrEmpty(bunifuTextBoxCustomerName.Text))
+                    {
+                        query += "Name = @Name, ";
+                        parameters.Add(new SqlParameter("@Name", bunifuTextBoxCustomerName.Text));
+                    }
+
+                    // Check if the customer address field is filled
+                    if (!string.IsNullOrEmpty(bunifuTextBoxCustomerAddress.Text))
+                    {
+                        query += "Address = @Address, ";
+                        parameters.Add(new SqlParameter("@Address", bunifuTextBoxCustomerAddress.Text));
+                    }
+
+                    // Check if the customer phone field is filled
+                    if (!string.IsNullOrEmpty(bunifuTextBoxCustomerPhone.Text))
+                    {
+                        int phone = Convert.ToInt32(bunifuTextBoxCustomerPhone.Text);
+                        query += "Phone = @Phone, ";
+                        parameters.Add(new SqlParameter("@Phone", phone));
+                    }
+
+                    // Remove the trailing comma and space from the query
+                    query = query.TrimEnd(',', ' ');
+
+                    // Add the WHERE clause for the ID
+                    query += " WHERE Id = @Id";
+                    parameters.Add(new SqlParameter("@Id", id));
 
                     // Create a SqlCommand object with the query and connection
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        // Add parameters to prevent SQL injection and set their values
-                        command.Parameters.AddWithValue("@Id", id);
-                        command.Parameters.AddWithValue("@Name", name);
-                        command.Parameters.AddWithValue("@Address", address);
-                        command.Parameters.AddWithValue("@Phone", phone);
+                        // Add the parameters to the command
+                        command.Parameters.AddRange(parameters.ToArray());
 
                         // Open the connection
                         connection.Open();
 
                         // Execute the query
-                        command.ExecuteNonQuery();
+                        int rowsAffected = command.ExecuteNonQuery();
 
                         // Close the connection
                         connection.Close();
 
-                        // Display a success message or perform any additional tasks
-                        MessageBox.Show("Customer data updated successfully!");
+                        if (rowsAffected > 0)
+                        {
+                            // Display a success message or perform any additional tasks
+                            MessageBox.Show("Customer data updated successfully!");
 
-                        // Call the method to update the DataGridView in the "manage_customers" form
-                        Manage_Customers manageCustomersForm = Application.OpenForms["ManageCustomersForm"] as Manage_Customers;
-                        manageCustomersForm?.LoadCustomerData();
+                            // Call the method to update the DataGridView in the "manage_customers" form
+                            Manage_Customers manageCustomersForm = Application.OpenForms["ManageCustomersForm"] as Manage_Customers;
+                            manageCustomersForm?.LoadCustomerData();
+                        }
+                        else
+                        {
+                            MessageBox.Show("No customer found with the specified ID.");
+                        }
                     }
-
                 }
-
             }
             catch (SqlException ex)
             {
@@ -211,17 +240,18 @@ namespace Goodness_Pharmacy
                 // Handle other exceptions
                 MessageBox.Show("An exception occurred: " + ex.Message);
             }
+
         }
 
         private void bunifuButton212_Click(object sender, EventArgs e)
         {
-            
+
             try
             {
-                // Get the purchase ID from your Windows Form control
+                // Get the customer ID from your Windows Form control
                 int id = Convert.ToInt32(bunifuTextBoxCustomerId.Text);
 
-                string connectionString = @"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
+                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Goodness Pharmacy\Goodness_pharm.mdf"";Integrated Security=True;Connect Timeout=30";
 
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
@@ -231,24 +261,31 @@ namespace Goodness_Pharmacy
                     // Create a SqlCommand object with the query and connection
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        // Add the purchase ID as a parameter to the query
+                        // Add the customer ID as a parameter to the query
                         command.Parameters.AddWithValue("@Id", id);
 
                         // Open the connection
                         connection.Open();
 
                         // Execute the query
-                        command.ExecuteNonQuery();
+                        int rowsAffected = command.ExecuteNonQuery();
 
                         // Close the connection
                         connection.Close();
 
-                        // Display a success message or perform any additional tasks
-                        MessageBox.Show("Customer data deleted successfully!");
+                        if (rowsAffected > 0)
+                        {
+                            // Display a success message or perform any additional tasks
+                            MessageBox.Show("Customer data deleted successfully!");
 
-                        // Call the method to update the DataGridView in the "manage_purchase" form
-                        Manage_Purchases managePurchaseForm = Application.OpenForms["ManagePurchaseForm"] as Manage_Purchases;
-                        managePurchaseForm?.LoadPurchaseData();
+                            // Call the method to update the DataGridView in the "manage_purchase" form
+                            Manage_Purchases managePurchaseForm = Application.OpenForms["ManagePurchaseForm"] as Manage_Purchases;
+                            managePurchaseForm?.LoadPurchaseData();
+                        }
+                        else
+                        {
+                            MessageBox.Show("No customer found with the specified ID.");
+                        }
                     }
                 }
             }
@@ -262,6 +299,7 @@ namespace Goodness_Pharmacy
                 // Handle other exceptions
                 MessageBox.Show("An exception occurred: " + ex.Message);
             }
+
         }
     }
 }

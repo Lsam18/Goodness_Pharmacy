@@ -168,39 +168,89 @@ namespace Goodness_Pharmacy
                 {
                     // Get the values to be updated from your Windows Form controls
                     int id = Convert.ToInt32(bunifuTextBoxSupplierIdsup.Text);
-                    string name = bunifuTextBoxSupplierNamesup.Text;
-                    string address = bunifuTextBoxCustomerAddresssup.Text;
-                    int phone = Convert.ToInt32(bunifuTextBoxSupplierPhonesup.Text);
 
                     // Create the SQL update query
-                    string query = "UPDATE Supplier " +
-                                   "SET Name = @Name, Address = @Address, Phone = @Phone " +
-                                   "WHERE Id = @Id";
+                    string query = "UPDATE Supplier SET ";
+
+                    // Create a flag variable to track if any optional field has been filled
+                    bool isOptionalFieldFilled = false;
+
+                    // Check if the name field is filled
+                    if (!string.IsNullOrWhiteSpace(bunifuTextBoxSupplierNamesup.Text))
+                    {
+                        query += "Name = @Name, ";
+                        isOptionalFieldFilled = true;
+                    }
+
+                    // Check if the address field is filled
+                    if (!string.IsNullOrWhiteSpace(bunifuTextBoxCustomerAddresssup.Text))
+                    {
+                        query += "Address = @Address, ";
+                        isOptionalFieldFilled = true;
+                    }
+
+                    // Check if the phone field is filled
+                    if (!string.IsNullOrWhiteSpace(bunifuTextBoxSupplierPhonesup.Text))
+                    {
+                        int phone = Convert.ToInt32(bunifuTextBoxSupplierPhonesup.Text);
+                        query += "Phone = @Phone, ";
+                        isOptionalFieldFilled = true;
+                    }
+
+                    // Check if any optional field has been filled
+                    if (!isOptionalFieldFilled)
+                    {
+                        MessageBox.Show("At least one field should be filled to perform an update.");
+                        return;
+                    }
+
+                    // Remove the trailing comma and space from the query
+                    query = query.TrimEnd(',', ' ');
+
+                    // Add the condition for the ID
+                    query += " WHERE Id = @Id";
 
                     // Create a SqlCommand object with the query and connection
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        // Add parameters to prevent SQL injection and set their values
+                        // Add the ID parameter
                         command.Parameters.AddWithValue("@Id", id);
-                        command.Parameters.AddWithValue("@Name", name);
-                        command.Parameters.AddWithValue("@Address", address);
-                        command.Parameters.AddWithValue("@Phone", phone);
+
+                        // Add the optional parameters
+                        if (query.Contains("@Name"))
+                            command.Parameters.AddWithValue("@Name", bunifuTextBoxSupplierNamesup.Text);
+
+                        if (query.Contains("@Address"))
+                            command.Parameters.AddWithValue("@Address", bunifuTextBoxCustomerAddresssup.Text);
+
+                        if (query.Contains("@Phone"))
+                        {
+                            int phone = Convert.ToInt32(bunifuTextBoxSupplierPhonesup.Text);
+                            command.Parameters.AddWithValue("@Phone", phone);
+                        }
 
                         // Open the connection
                         connection.Open();
 
                         // Execute the query
-                        command.ExecuteNonQuery();
+                        int rowsAffected = command.ExecuteNonQuery();
 
                         // Close the connection
                         connection.Close();
 
-                        // Display a success message or perform any additional tasks
-                        MessageBox.Show("Supplier data updated successfully!");
+                        if (rowsAffected > 0)
+                        {
+                            // Display a success message or perform any additional tasks
+                            MessageBox.Show("Supplier data updated successfully!");
 
-                        // Call the method to update the DataGridView in the "manage_supplier" form
-                        Manage_Suppliers manageSupplierForm = Application.OpenForms["ManageSupplierForm"] as Manage_Suppliers;
-                        manageSupplierForm?.LoadSupplierData();
+                            // Call the method to update the DataGridView in the "manage_supplier" form
+                            Manage_Suppliers manageSupplierForm = Application.OpenForms["ManageSupplierForm"] as Manage_Suppliers;
+                            manageSupplierForm?.LoadSupplierData();
+                        }
+                        else
+                        {
+                            MessageBox.Show("No supplier found with the specified ID.");
+                        }
                     }
                 }
             }
@@ -214,18 +264,18 @@ namespace Goodness_Pharmacy
                 // Handle other exceptions
                 MessageBox.Show("An exception occurred: " + ex.Message);
             }
+
         }
 
         private void bunifuButton212_Click(object sender, EventArgs e)
         {
             // Get the purchase ID from your Windows Form control
-           
-
             try
             {
+                // Get the supplier ID from your Windows Form control
                 int id = Convert.ToInt32(bunifuTextBoxSupplierIdsup.Text);
 
-                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Goodness Pharmacy\Goodness_pharm.mdf""         ;Integrated Security=True;Connect Timeout=30";
+                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Goodness Pharmacy\Goodness_pharm.mdf"";Integrated Security=True;Connect Timeout=30";
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     // Create the SQL delete query
@@ -234,24 +284,31 @@ namespace Goodness_Pharmacy
                     // Create a SqlCommand object with the query and connection
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        // Add the purchase ID as a parameter to the query
+                        // Add the supplier ID as a parameter to the query
                         command.Parameters.AddWithValue("@Id", id);
 
                         // Open the connection
                         connection.Open();
 
                         // Execute the query
-                        command.ExecuteNonQuery();
+                        int rowsAffected = command.ExecuteNonQuery();
 
                         // Close the connection
                         connection.Close();
 
-                        // Display a success message or perform any additional tasks
-                        MessageBox.Show("Supplier data deleted successfully!");
+                        if (rowsAffected > 0)
+                        {
+                            // Display a success message or perform any additional tasks
+                            MessageBox.Show("Supplier data deleted successfully!");
 
-                        // Call the method to update the DataGridView in the "manage_purchase" form
-                        Manage_Purchases managePurchaseForm = Application.OpenForms["ManagePurchaseForm"] as Manage_Purchases;
-                        managePurchaseForm?.LoadPurchaseData();
+                            // Call the method to update the DataGridView in the "manage_supplier" form
+                            Manage_Suppliers manageSupplierForm = Application.OpenForms["ManageSupplierForm"] as Manage_Suppliers;
+                            manageSupplierForm?.LoadSupplierData();
+                        }
+                        else
+                        {
+                            MessageBox.Show("No supplier found with the specified ID.");
+                        }
                     }
                 }
             }
@@ -265,6 +322,7 @@ namespace Goodness_Pharmacy
                 // Handle other exceptions
                 MessageBox.Show("An exception occurred: " + ex.Message);
             }
+
         }
     }
 }

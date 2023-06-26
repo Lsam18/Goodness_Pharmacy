@@ -26,7 +26,7 @@ namespace Goodness_Pharmacy
 
         private void bunifuButton213_Click(object sender, EventArgs e)
         {
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Goodness Pharmacy\Goodness_pharm.mdf"";Integrated Security=True;Connect Timeout=30";
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Goodness Pharmacy\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
 
             try
             {
@@ -36,7 +36,7 @@ namespace Goodness_Pharmacy
 
                     // Get the values to be inserted from your Windows Form controls
                     int saleCode = Convert.ToInt32(bunifuTextBox3.Text);
-                    string supplierName = bunifuDropdownSupplierName.SelectedItem?.ToString();
+                    string customerName = bunifuDropdownCustomer.SelectedItem?.ToString();
                     DateTime date = bunifuDatePickerDate.Value;
                     string medicine = bunifuDropdownMedicine.SelectedItem?.ToString();
                     int quantity = Convert.ToInt32(bunifuTextBoxQuantity.Text);
@@ -46,11 +46,11 @@ namespace Goodness_Pharmacy
                     float discountPercentage = Convert.ToSingle(bunifuTextBoxDiscount.Text) / 100;
 
                     // Perform form validation
-                    if (string.IsNullOrEmpty(supplierName) ||
+                    if (string.IsNullOrEmpty(customerName) ||
                         string.IsNullOrEmpty(medicine) ||
                         string.IsNullOrEmpty(payment))
                     {
-                        MessageBox.Show("Supplier, Medicine and Payment options are required");
+                        MessageBox.Show("Customer, Medicine, and Payment options are required");
                         return; // Stop further execution
                     }
 
@@ -81,29 +81,7 @@ namespace Goodness_Pharmacy
                         }
                     }
 
-                    // Create the SQL insert query without the grand total parameter
-                    string query = "INSERT INTO Sales (Sale_Code, Supplier_Name, Date, Medicine, Quantity, Notes, Discount, Payment) " +
-                                   "VALUES (@SaleCode, @SupplierName, @Date, @Medicine, @Quantity, @Notes, @Discount, @Payment)";
-
-                    // Create a SqlCommand object with the query and connection
-                    using (SqlCommand command = new SqlCommand(query, connection))
-                    {
-                        // Add parameters to prevent SQL injection and set their values
-                        command.Parameters.AddWithValue("@SaleCode", saleCode);
-                        command.Parameters.AddWithValue("@SupplierName", supplierName);
-                        command.Parameters.AddWithValue("@Date", date);
-                        command.Parameters.AddWithValue("@Medicine", medicine);
-                        command.Parameters.AddWithValue("@Quantity", quantity);
-                        command.Parameters.AddWithValue("@Notes", notes);
-                        command.Parameters.AddWithValue("@Discount", discount);
-                        command.Parameters.AddWithValue("@Payment", payment);
-
-                        // Execute the query
-                        command.ExecuteNonQuery();
-                    }
-
                     // Calculate the grand total for the current item
-                    
                     float sellPrice = 0.0f; // Initialize with a default value
                     string sellPriceQuery = "SELECT Sell_Price FROM AddMedicine WHERE Medicine_Name = @Medicine_Name";
 
@@ -122,6 +100,29 @@ namespace Goodness_Pharmacy
 
                     float discountAmount = sellPrice * discountPercentage;
                     float grandTotal = quantity * (sellPrice - discountAmount);
+
+                    // Create the SQL insert query without the grand total parameter
+                    string query = "INSERT INTO Sales (Sale_Code, Customer_Name, Date, Medicine, Quantity, Notes, Discount, Grand_Total, Payment, Sell_Price) " +
+                                   "VALUES (@SaleCode, @CustomerName, @Date, @Medicine, @Quantity, @Notes, @Discount, @GrandTotal, @Payment, @SellPrice)";
+
+                    // Create a SqlCommand object with the query and connection
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        // Add parameters to prevent SQL injection and set their values
+                        command.Parameters.AddWithValue("@SaleCode", saleCode);
+                        command.Parameters.AddWithValue("@CustomerName", customerName);
+                        command.Parameters.AddWithValue("@Date", date);
+                        command.Parameters.AddWithValue("@Medicine", medicine);
+                        command.Parameters.AddWithValue("@Quantity", quantity);
+                        command.Parameters.AddWithValue("@Notes", notes);
+                        command.Parameters.AddWithValue("@Discount", discount);
+                        command.Parameters.AddWithValue("@GrandTotal", grandTotal);
+                        command.Parameters.AddWithValue("@Payment", payment);
+                        command.Parameters.AddWithValue("@SellPrice", sellPrice);
+
+                        // Execute the query
+                        command.ExecuteNonQuery();
+                    }
 
                     // Add the values to the DataGridView as a new row
                     bunifuDataGridView1.Rows.Add(medicine, saleCode, quantity, grandTotal);
@@ -164,6 +165,8 @@ namespace Goodness_Pharmacy
                 // Handle other exceptions
                 MessageBox.Show("An exception occurred: " + ex.Message);
             }
+
+
         }
 
 
@@ -175,7 +178,7 @@ namespace Goodness_Pharmacy
 
 
 
-       
+
 
         private void bunifuButton22_Click(object sender, EventArgs e)
         {
@@ -248,31 +251,29 @@ namespace Goodness_Pharmacy
 
         private void Select_supplier_sales_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // Get the selected Supplier from the dropdown
-            string selectedSupplier = bunifuDropdownSupplierName.SelectedItem?.ToString();
+            // Get the selected customer from the dropdown
+            string selectedCustomer = bunifuDropdownCustomer.SelectedItem?.ToString();
 
-            // Check if a Supplier is selected
-            if (!string.IsNullOrEmpty(selectedSupplier))
+            // Check if a customer is selected
+            if (!string.IsNullOrEmpty(selectedCustomer))
             {
-                // Perform actions based on the selected Supplier
-                // For example, you can display additional information about the Supplier or retrieve related data from the database.
-                MessageBox.Show("Supplier: " + selectedSupplier);
+                // Perform actions based on the selected customer
+                // For example, you can display additional information about the customer or retrieve related data from the database.
+                MessageBox.Show("Customer: " + selectedCustomer);
             }
         }
 
+
         private void Sales_Load(object sender, EventArgs e)
         {
-
-            // Clear the existing items in the dropdown
-            bunifuDropdownSupplierName.Items.Clear();
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Goodness Pharmacy\Goodness_pharm.mdf"";Integrated Security=True;Connect Timeout=30";
 
             try
             {
-                // Establish the database connection
-                using (SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Goodness Pharmacy\Goodness_pharm.mdf"";Integrated Security=True;Connect Timeout=30"))
+                using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    // Create the SQL query to fetch suppliers
-                    string query = "SELECT Name FROM Supplier";
+                    // Create the SQL select query
+                    string query = "SELECT Name FROM Customer";
 
                     // Create a SqlCommand object with the query and connection
                     using (SqlCommand command = new SqlCommand(query, connection))
@@ -280,18 +281,17 @@ namespace Goodness_Pharmacy
                         // Open the connection
                         connection.Open();
 
-                        // Execute the query and retrieve the data
+                        // Execute the query and get the results
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
-                            // Check if there are rows returned
-                            if (reader.HasRows)
+                            // Clear the existing items in the dropdown textbox
+                            bunifuDropdownCustomer.Items.Clear();
+
+                            // Loop through the results and add each customer name to the dropdown
+                            while (reader.Read())
                             {
-                                // Iterate through the rows and add suppliers to the dropdown
-                                while (reader.Read())
-                                {
-                                    string supplierName = reader.GetString(0);
-                                    bunifuDropdownSupplierName.Items.Add(supplierName);
-                                }
+                                string name = reader.GetString(0);
+                                bunifuDropdownCustomer.Items.Add(name);
                             }
                         }
 
@@ -310,16 +310,14 @@ namespace Goodness_Pharmacy
                 // Handle other exceptions
                 MessageBox.Show("An exception occurred: " + ex.Message);
             }
-
-            // Clear the existing items in the dropdown
-            bunifuDropdownMedicine.Items.Clear();
+            // Code for populating the dropdown textbox with added medicine names
+            
 
             try
             {
-                // Establish the database connection
-                using (SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Goodness Pharmacy\Goodness_pharm.mdf"";Integrated Security=True;Connect Timeout=30"))
+                using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    // Create the SQL query to fetch medicine names
+                    // Create the SQL select query
                     string query = "SELECT Medicine_Name FROM AddMedicine";
 
                     // Create a SqlCommand object with the query and connection
@@ -328,18 +326,17 @@ namespace Goodness_Pharmacy
                         // Open the connection
                         connection.Open();
 
-                        // Execute the query and retrieve the data
+                        // Execute the query and get the results
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
-                            // Check if there are rows returned
-                            if (reader.HasRows)
+                            // Clear the existing items in the dropdown textbox
+                            bunifuDropdownMedicine.Items.Clear();
+
+                            // Loop through the results and add each medicine name to the dropdown
+                            while (reader.Read())
                             {
-                                // Iterate through the rows and add medicine names to the dropdown
-                                while (reader.Read())
-                                {
-                                    string medicineName = reader.GetString(0);
-                                    bunifuDropdownMedicine.Items.Add(medicineName);
-                                }
+                                string medicineName = reader.GetString(0);
+                                bunifuDropdownMedicine.Items.Add(medicineName);
                             }
                         }
 
