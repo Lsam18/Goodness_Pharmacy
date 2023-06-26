@@ -158,7 +158,7 @@ namespace Goodness_Pharmacy
         private void bunifuButton213_Click(object sender, EventArgs e)
         {
             // Get the filter values from the TextBoxes
-            string supplierNameFilter = bunifuTextBox1.Text.Trim();
+            string customerNameFilter = bunifuTextBox1.Text.Trim();
             string salesCodeFilterText = bunifuTextBoxQuantity.Text.Trim();
 
             // Parse the sales code filter value if it's a valid integer
@@ -180,10 +180,10 @@ namespace Goodness_Pharmacy
                 // Construct the filter expression based on the filter values
                 string filterExpression = "";
 
-                if (!string.IsNullOrEmpty(supplierNameFilter))
+                if (!string.IsNullOrEmpty(customerNameFilter))
                 {
-                    // Add the supplier name filter condition
-                    filterExpression += $"[Supplier_Name] LIKE '%{supplierNameFilter}%' AND ";
+                    // Add the customer name filter condition
+                    filterExpression += $"[Customer_Name] LIKE '%{customerNameFilter}%' AND ";
                 }
 
                 if (salesCodeFilter.HasValue)
@@ -208,6 +208,7 @@ namespace Goodness_Pharmacy
                 }
             }
         }
+
 
 
 
