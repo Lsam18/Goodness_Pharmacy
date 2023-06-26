@@ -148,14 +148,16 @@ namespace Goodness_Pharmacy
         private void bunifuButton217_Click(object sender, EventArgs e)
         {
 
-            Manage_Suppliers ms = new Manage_Suppliers();
-            ms.Show();
+            Technical_Support tech = new Technical_Support();
+            tech.Show();
+            this.Close();
         }
 
         private void bunifuButton216_Click(object sender, EventArgs e)
         {
             Customer customer = new Customer();
             customer.Show();
+            this.Close();
         }
 
        

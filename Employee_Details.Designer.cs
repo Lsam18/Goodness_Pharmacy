@@ -520,7 +520,7 @@
             this.bunifuButton211.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(51)))), ((int)(((byte)(66)))));
             this.bunifuButton211.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton211.BackgroundImage")));
             this.bunifuButton211.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.bunifuButton211.ButtonText = "           Get Technical Help";
+            this.bunifuButton211.ButtonText = "           User Management";
             this.bunifuButton211.ButtonTextMarginLeft = 0;
             this.bunifuButton211.ColorContrastOnClick = 45;
             this.bunifuButton211.ColorContrastOnHover = 45;
@@ -1163,7 +1163,7 @@
             this.bunifuDataGridView1.HeaderBackColor = System.Drawing.Color.DarkSlateGray;
             this.bunifuDataGridView1.HeaderBgColor = System.Drawing.Color.Empty;
             this.bunifuDataGridView1.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.Location = new System.Drawing.Point(345, 200);
+            this.bunifuDataGridView1.Location = new System.Drawing.Point(345, 197);
             this.bunifuDataGridView1.Name = "bunifuDataGridView1";
             this.bunifuDataGridView1.RowHeadersVisible = false;
             this.bunifuDataGridView1.RowTemplate.Height = 40;
@@ -1260,6 +1260,7 @@
             this.bunifuButton21.TextMarginLeft = 0;
             this.bunifuButton21.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton21.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton21.Click += new System.EventHandler(this.bunifuButton21_Click);
             // 
             // bunifuLabel7
             // 

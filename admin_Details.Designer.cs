@@ -783,7 +783,7 @@
             this.bunifuButton21.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(72)))), ((int)(((byte)(62)))));
             this.bunifuButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton21.BackgroundImage")));
             this.bunifuButton21.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.bunifuButton21.ButtonText = "Update Details";
+            this.bunifuButton21.ButtonText = "Add/Update Admin";
             this.bunifuButton21.ButtonTextMarginLeft = 0;
             this.bunifuButton21.ColorContrastOnClick = 45;
             this.bunifuButton21.ColorContrastOnHover = 45;
@@ -1133,7 +1133,7 @@
             this.bunifuButton211.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(51)))), ((int)(((byte)(66)))));
             this.bunifuButton211.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton211.BackgroundImage")));
             this.bunifuButton211.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.bunifuButton211.ButtonText = "           Get Technical Help";
+            this.bunifuButton211.ButtonText = "           User Management";
             this.bunifuButton211.ButtonTextMarginLeft = 0;
             this.bunifuButton211.ColorContrastOnClick = 45;
             this.bunifuButton211.ColorContrastOnHover = 45;

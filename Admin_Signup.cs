@@ -33,7 +33,7 @@ namespace Goodness_Pharmacy
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     // Get the values to be inserted from your Windows Form controls
-                    int id = Convert.ToInt32(bunifuTextBox4.Text);
+                    int id = Convert.ToInt32(bunifuTextBoxDelete.Text);
                     string firstName = bunifuTextBox1.Text;
                     string lastName = bunifuTextBox2.Text;
                     string nic = bunifuTextBox3.Text;
@@ -41,7 +41,7 @@ namespace Goodness_Pharmacy
                     string gender = bunifuDropdown1.SelectedItem?.ToString(); // Validate selected item
                     int phoneNo = Convert.ToInt32(bunifuTextBox5.Text);
                     string username = bunifuTextBox8.Text;
-                    string password = bunifuTextBox6.Text;
+                    string password = bunifuTextBoxPasswordDelete.Text;
                     string confirmPassword = bunifuTextBox10.Text;
                     string email = bunifuTextBox9.Text;
                     DateTime hireDate = bunifuDatePicker2.Value;
@@ -137,7 +137,7 @@ namespace Goodness_Pharmacy
                 {
                     // Get the values to be updated from your Windows Form controls
                     int id;
-                    if (!int.TryParse(bunifuTextBox4.Text, out id))
+                    if (!int.TryParse(bunifuTextBoxDelete.Text, out id))
                     {
                         MessageBox.Show("Invalid ID. Please enter a valid integer value.");
                         return; // Stop further execution
@@ -191,7 +191,7 @@ namespace Goodness_Pharmacy
                         parameters.Add("@Username");
                     }
 
-                    if (!string.IsNullOrEmpty(bunifuTextBox6.Text))
+                    if (!string.IsNullOrEmpty(bunifuTextBoxPasswordDelete.Text))
                     {
                         updateFields.Add("Password = @Password");
                         parameters.Add("@Password");
@@ -265,7 +265,7 @@ namespace Goodness_Pharmacy
                                     parameterValue = bunifuTextBox8.Text;
                                     break;
                                 case "@Password":
-                                    parameterValue = bunifuTextBox6.Text;
+                                    parameterValue = bunifuTextBoxPasswordDelete.Text;
                                     break;
                                 case "@ConfirmPassword":
                                     parameterValue = bunifuTextBox10.Text;
@@ -320,7 +320,61 @@ namespace Goodness_Pharmacy
             }
         }
 
+        private void bunifuButton22_Click(object sender, EventArgs e)
+        {
+            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Goodness_Pharmacy\\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
 
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    // Get the ID and password from your Windows Form controls
+                    int idToDelete = Convert.ToInt32(bunifuTextBoxDelete.Text);
+                    string passwordToDelete = bunifuTextBoxPasswordDelete.Text;
 
+                    // Create the SQL delete query with additional condition for the password
+                    string query = "DELETE FROM adminsignup WHERE Id = @Id AND Password = @Password";
+
+                    // Create a SqlCommand object with the query and connection
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        // Add parameters to prevent SQL injection and set their values
+                        command.Parameters.AddWithValue("@Id", idToDelete);
+                        command.Parameters.AddWithValue("@Password", passwordToDelete);
+
+                        // Open the connection
+                        connection.Open();
+
+                        // Execute the query
+                        int rowsAffected = command.ExecuteNonQuery();
+
+                        // Close the connection
+                        connection.Close();
+
+                        if (rowsAffected > 0)
+                        {
+                            // Display a success message or perform any additional tasks
+                            MessageBox.Show("Record deleted successfully!");
+                        }
+                        else
+                        {
+                            // Display a message if no record was found with the provided ID and password
+                            MessageBox.Show("No record found with the provided ID and password.");
+                        }
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                // Handle SQL exception
+                MessageBox.Show("An SQL exception occurred: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                // Handle other exceptions
+                MessageBox.Show("An exception occurred: " + ex.Message);
+            }
+
+        }
     }
 }

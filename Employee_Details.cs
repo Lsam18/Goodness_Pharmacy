@@ -111,7 +111,7 @@ namespace Goodness_Pharmacy
 
         private void Employee_Details_Load(object sender, EventArgs e)
         {
-            using (SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\mifra\source\repos\Goodness_Pharmacy\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30"))
+            using (SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Goodness_Pharmacy\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30"))
             {
                 try
                 {
@@ -171,6 +171,13 @@ namespace Goodness_Pharmacy
                 // Display the data of the previous record in the DataGridView
                 bunifuDataGridView1.CurrentCell = bunifuDataGridView1.Rows[currentIndex].Cells[0];
             }
+        }
+
+        private void bunifuButton21_Click(object sender, EventArgs e)
+        {
+            Employee_SignUp emp = new Employee_SignUp();
+            emp.Show();
+            this.Close();
         }
     }
 }
