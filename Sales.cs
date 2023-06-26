@@ -374,9 +374,6 @@ namespace Goodness_Pharmacy
             }
         }
 
-        private StringBuilder receiptBuilder;
-        private PrintDocument printDocument;
-
         private void bunifuButton210_Click(object sender, EventArgs e)
         {
             // Check if there are any rows in the DataGridView
@@ -387,7 +384,7 @@ namespace Goodness_Pharmacy
             }
 
             // Create a StringBuilder to store the receipt text
-            receiptBuilder = new StringBuilder();
+            StringBuilder receiptBuilder = new StringBuilder();
 
             // Append header information to the receipt
             receiptBuilder.AppendLine("Goodness Pharmacy");
@@ -395,6 +392,8 @@ namespace Goodness_Pharmacy
             receiptBuilder.AppendLine("--------------------------");
             receiptBuilder.AppendLine($"Date: {DateTime.Now}");
             receiptBuilder.AppendLine();
+
+            float total = 0.0f; // Cumulative total variable
 
             // Iterate through the rows of the DataGridView to generate item details
             foreach (DataGridViewRow row in bunifuDataGridView1.Rows)
@@ -407,20 +406,22 @@ namespace Goodness_Pharmacy
                     int quantity = Convert.ToInt32(row.Cells[2].Value);
                     float grandTotal = Convert.ToSingle(row.Cells[3].Value);
 
+                    total += grandTotal; // Add grand total to the cumulative total
+
                     receiptBuilder.AppendLine($"Medicine: {medicine}");
                     receiptBuilder.AppendLine($"Sale Code: {saleCode}");
                     receiptBuilder.AppendLine($"Quantity: {quantity}");
-                    receiptBuilder.AppendLine($"Grand Total: {grandTotal}");
                     receiptBuilder.AppendLine("--------------------------");
                 }
-             
             }
+
+            receiptBuilder.AppendLine($"Total: {total}"); // Display the cumulative total
 
             // Display the generated receipt
             MessageBox.Show(receiptBuilder.ToString(), "Receipt");
 
             // Create the PrintDocument instance
-            printDocument = new PrintDocument();
+            PrintDocument printDocument = new PrintDocument();
             printDocument.PrintPage += PrintDocument_PrintPage;
 
             // Print the document
@@ -435,7 +436,7 @@ namespace Goodness_Pharmacy
         private void PrintDocument_PrintPage(object sender, PrintPageEventArgs e)
         {
             // Retrieve the receipt text from the StringBuilder
-            string receiptText = receiptBuilder.ToString();
+            string receiptText = totalLabel.ToString();
 
             // Set the font, margins, and format for the printing
             Font font = new Font("Arial", 10);
@@ -454,6 +455,7 @@ namespace Goodness_Pharmacy
             // Print the receipt text
             e.Graphics.DrawString(receiptText, font, Brushes.Black, printArea, format);
         }
+
 
         private void bunifuButton21_Click(object sender, EventArgs e)
         {
