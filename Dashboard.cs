@@ -23,7 +23,7 @@ namespace Goodness_Pharmacy
             bunifuLabel2.Text = Program.UserName;
 
             //dashboardstatistics
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\mifra\source\repos\Goodness_Pharmacy\Goodness_pharm.mdf;Integrated Security=True;Connect Timeout=30";
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Goodness Pharmacy\Goodness_pharm.mdf"";Integrated Security=True;Connect Timeout=30";
             string query1 = "SELECT COUNT(*) AS TotalSuppliers FROM Supplier";
             string query2 = "SELECT COUNT(*) AS TotalAdmins FROM adminsignup";
             string query3 = "SELECT COUNT(*) AS TotalEmp FROM Employeesign";

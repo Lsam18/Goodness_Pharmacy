@@ -121,6 +121,26 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bunifuButton22.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAK0AAAAnCAYAAAB9hMj9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADiSURBVHhe7dyxTQNBFEXRCQkpgdIogpAe1ibx2MlWQQ2U
+        QBFESCSIANab8gp4ls5IJ5j7J/zxjP0sp8dxmB/jcP6FTtt+vlyex7rejXE8P23hKz+EJvN7cxnb5fP/
+        EFrNn+vShgEUixGaxQjNYoRmMUKzGKFZjNAsRmgWIzSLEZrFCM1ihGYxQrMYoVmM0CxGaBYjNIsRmsUI
+        zWKEZjFCsxihWYzQLEZoFiM0ixGaxQjNYoRmMUKzGKFZjNAsRmgWIzTbf1ZOA2i1/2FvcbkJ8+ptjGW9
+        H8f5mh9Bk/k+ltPDH1U6zyxWrdVMAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="bunifuButton21.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAK0AAAAnCAYAAAB9hMj9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADiSURBVHhe7dyxTQNBFEXRCQkpgdIogpAe1ibx2MlWQQ2U
+        QBFESCSIANab8gp4ls5IJ5j7J/zxjP0sp8dxmB/jcP6FTtt+vlyex7rejXE8P23hKz+EJvN7cxnb5fP/
+        EFrNn+vShgEUixGaxQjNYoRmMUKzGKFZjNAsRmgWIzSLEZrFCM1ihGYxQrMYoVmM0CxGaBYjNIsRmsUI
+        zWKEZjFCsxihWYzQLEZoFiM0ixGaxQjNYoRmMUKzGKFZjNAsRmgWIzTbf1ZOA2i1/2FvcbkJ8+ptjGW9
+        H8f5mh9Bk/k+ltPDH1U6zyxWrdVMAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="bunifuDatePicker2.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -163,7 +183,7 @@
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAA7IAAAObCAYAAABuI70KAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAA/7JJREFUeF7svQeYHtV5t/9KQoCwbIwdHJzwxSSBJPhLPscJ3/cPcWwLY1ToNuDY
+        DAAACwwBP0AiyAAA/7JJREFUeF7svQeYHtV5t/9KQoCwbIwdHJzwxSSBJPhLPscJ3/cPcWwLY1ToNuDY
         OHYMrsTBDrEdI8ANTFPfVa+AAAESAkRR77333pBAvXdtf/5zz+5vdRifd7VardAKPbqu+3pnzszOnDaj
         53ee55zJmZnjOI7jOI7jOI7jnDFEEx3HcRzHcRzHcRynoRJNdBzHcRzHcRzHcZyGSjTRcRzHcRzHcRzH
         cRoq0UTHcRzHcRzHcRzHaahEEx3HcRzHcRzHcRynoRJNdBzHcRzHcRzHcZyGSjTRcRzHcRzHcRzHcRoq
