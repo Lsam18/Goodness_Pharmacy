@@ -90,7 +90,7 @@ Thank you for considering contributing to the Goodness Pharmacy Management Syste
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [CC0-1.0 License](license).
 
 use below command to clone the repository.
 
